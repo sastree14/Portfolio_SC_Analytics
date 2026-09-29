@@ -2,73 +2,57 @@
 
 **A document-analysis system that extracts evidence, retrieves supporting passages and produces reviewable findings.**
 
-Designed for **Due diligence · legal and commercial review · investment analysis · procurement · compliance**.
+**Designed for:** Due diligence · legal review · investment analysis · compliance
 
-## What changes for the business
+## Why this project matters
 
-- Reduce time spent searching long document sets
-- Keep findings linked to the source evidence used to produce them
-- Separate extracted facts from model interpretation
-- Create repeatable review workflows across many documents
+- Reduce time spent searching large document sets
+- Keep every finding tied to source evidence
+- Separate extracted fact from interpretation
+- Make document review repeatable
 
-[Business impact →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-A data room contains supplier contracts, commercial agreements and financial notes. The system extracts clauses, retrieves evidence for predefined questions and produces a finding register with source references.
+```text
+Document ingest
+    ↓\n    Text extraction
+        ↓\n        Chunking + embeddings
+            ↓\n            Vector retrieval
+                ↓\n                Structured analysis
+                    ↓\n                    Finding register
+                        ↓\n                        Review
+```
 
 ## Technology at a glance
 
 **Python · FastAPI · Qdrant · PostgreSQL · PyMuPDF · OpenAI · S3 / MinIO · Docker · Pydantic**
 
-The technology is visible here for fast technical screening. The business explanation does not depend on understanding the stack.
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
-## How the system works
+## What is included
 
-```text
-Business event / request
-        ↓
-Validation + context
-        ↓
-Core decision / orchestration layer
-        ↓
-Controlled integration boundary
-        ↓
-Result, action or analytical output
-        ↓
-Audit / monitoring
-```
-
-For implementation details, tests, SQL and infrastructure, use the [technical entry point](technical/README.md).
-
-## Evidence
-
-- [Business impact](docs/BUSINESS_IMPACT.md)
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example input](examples/inputs/example.json)
-- [Example output](examples/outputs/result.json)
-- [Example execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-```bash
-cd technical
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python src/main.py
-pytest -q
-```
+Representative documents, extracted chunks, metadata, retrieval hits and evidence-linked findings.
 
-The included example is deterministic and does not require external credentials. Real integrations are activated through environment configuration.
+The repository does not contain client credentials or confidential records.
 
-## Credentials
+## Local review
 
-No credentials are committed. Integration boundaries and expected environment variables are documented explicitly.
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
 
-[Credentials and integrations →](docs/CREDENTIALS_AND_INTEGRATIONS.md)
+[Open the technical implementation →](technical/README.md)

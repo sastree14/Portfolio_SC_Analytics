@@ -1,38 +1,58 @@
 # SC-22 · Resource, Capacity & Scheduling Optimization
 
-**A constrained scheduling engine that assigns work to limited resources while respecting skills, capacity and service targets.**
+**A scheduling engine that assigns work to limited resources while respecting skills, capacity and service targets.**
 
-Designed for **Professional services · operations · field teams · manufacturing · workforce planning**.
+**Designed for:** Professional services · operations · field teams · manufacturing
 
-## Business impact
+## Why this project matters
 
 - Allocate constrained resources consistently
-- Expose capacity bottlenecks before they become delays
-- Balance utilization against service-level commitments
-- Compare feasible schedules instead of relying on manual planning
+- Expose bottlenecks early
+- Balance utilization with service commitments
+- Generate feasible schedules automatically
 
-## Example use case
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-A service team has jobs with deadlines, required skills and estimated durations. The engine assigns work to available people while minimizing lateness and excessive utilization.
+## Example operating flow
+
+```text
+Jobs
+    ↓\n    Resources + skills
+        ↓\n        Availability
+            ↓\n            Constraints
+                ↓\n                Solver
+                    ↓\n                    Schedule
+                        ↓\n                        Operational hand-off
+```
 
 ## Technology at a glance
 
 **Python · OR-Tools · Pyomo · Pandas · FastAPI · PostgreSQL · Docker · Plotly**
 
-## Evidence
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
-- [Business impact](docs/BUSINESS_IMPACT.md)
+## What is included
+
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-The technical README contains the exact environment and execution path.
+Representative jobs, durations, deadlines, resource calendars, skill matrices and optimized assignments.
 
-The public example is deterministic and does not require production credentials.
+The repository does not contain client credentials or confidential records.
+
+## Local review
+
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
+
+[Open the technical implementation →](technical/README.md)

@@ -1,74 +1,58 @@
 # SC-03 · AI Sales & CRM Automation System
 
-**A sales-operations system that scores inbound activity, prepares follow-ups and keeps CRM actions controlled.**
+**A sales-operations system that scores inbound activity, prepares follow-ups and controls CRM actions.**
 
-Designed for **B2B sales · agencies · SaaS · professional services · RevOps**.
+**Designed for:** B2B sales · agencies · SaaS · RevOps
 
-## What changes for the business
+## Why this project matters
 
-- Prioritize leads using consistent scoring rules and model signals
-- Reduce manual CRM updates and follow-up preparation
-- Keep the salesperson in control before high-impact customer communication
-- Create a measurable path from inbound signal to next action
+- Prioritize leads consistently
+- Reduce manual CRM administration
+- Prepare context-aware follow-ups
+- Keep salespeople in control of material customer actions
 
-[Business impact →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-An inbound lead requests pricing. The system enriches CRM context, calculates priority, drafts the next action and waits for salesperson approval before updating the deal.
+```text
+Inbound signal
+    ↓\n    CRM context
+        ↓\n        Lead score
+            ↓\n            Next-action draft
+                ↓\n                Approval
+                    ↓\n                    CRM update
+                        ↓\n                        Audit
+```
 
 ## Technology at a glance
 
 **Python · FastAPI · PostgreSQL · n8n · HubSpot API · Webhooks · OpenAI · Docker · SQL**
 
-The technology is visible here for fast technical screening. The business explanation does not depend on understanding the stack.
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
-## How the system works
+## What is included
 
-```text
-Business event / request
-        ↓
-Validation + context
-        ↓
-Core decision / orchestration layer
-        ↓
-Controlled integration boundary
-        ↓
-Result, action or analytical output
-        ↓
-Audit / monitoring
-```
-
-For implementation details, tests, SQL and infrastructure, use the [technical entry point](technical/README.md).
-
-## Evidence
-
-- [Business impact](docs/BUSINESS_IMPACT.md)
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example input](examples/inputs/example.json)
-- [Example output](examples/outputs/result.json)
-- [Example execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-```bash
-cd technical
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python src/main.py
-pytest -q
-```
+Representative contacts, deal state, engagement signals, scores, proposed actions and CRM update events.
 
-The included example is deterministic and does not require external credentials. Real integrations are activated through environment configuration.
+The repository does not contain client credentials or confidential records.
 
-## Credentials
+## Local review
 
-No credentials are committed. Integration boundaries and expected environment variables are documented explicitly.
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
 
-[Credentials and integrations →](docs/CREDENTIALS_AND_INTEGRATIONS.md)
+[Open the technical implementation →](technical/README.md)

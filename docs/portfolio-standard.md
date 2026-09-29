@@ -1,59 +1,41 @@
 # Portfolio standard
 
-This document defines the minimum standard for public SC-Analytics projects.
+Every public SC-Analytics project must be useful to both a business reviewer and a technical reviewer.
 
-## 1. Completed evidence only
+## Business layer
 
-The public portfolio should present work that can be reviewed independently.
+A project must state:
 
-Planning material, unfinished experiments and internal commercial roadmaps do not belong in the public project index.
+- the problem it addresses
+- the operating impact
+- a realistic example workflow
+- the KPIs or decisions it supports
+- the technologies used, visible without dominating the narrative
 
-## 2. Business problem first
+## Technical layer
 
-Projects are presented around a business problem or decision.
+A project must include, when applicable:
 
-The technology stack supports the explanation; it is not the opening argument.
-
-## 3. Technical evidence
-
-A technical reviewer should be able to understand:
-
-- system architecture
-- data flow
-- implementation
-- integrations
+- architecture
+- technical decisions
+- data documentation
+- credentials and integrations
+- security and permissions
 - environments
-- validation
-- security or permissions where relevant
 - limitations
-- production considerations
+- SQL / model / workflow code
+- tests or deterministic validation
+- representative inputs, outputs and logs
+- a local review path
 
-## 4. Public data
+## Visual evidence
 
-Confidential records are never published.
+Analytical visuals should be native to the technology or output being demonstrated. Editorial diagrams follow the SC-Analytics visual system. Native-tool screenshots are never fabricated when the tool itself is the object of the demonstration.
 
-Where necessary, public datasets reproduce the relevant structure of the source workflow using synthetic values.
+## Technology claims
 
-## 5. Technology claims
+A tool should appear because it has a defensible responsibility in the project. Platform-specific expertise should not be implied when the repository does not contain evidence for it.
 
-A technology should appear when it is relevant to the implemented system and can be defended technically.
+## Results
 
-Platform-specific expertise should not be implied when the project does not demonstrate it.
-
-## 6. Visual consistency
-
-Public visual assets should follow the SC-Analytics editorial system.
-
-Project documentation should not introduce unrelated visual languages for individual case studies.
-
-## 7. Writing
-
-Writing should be specific, concise and evidence-based.
-
-Avoid generic claims, inflated language and unnecessary repetition.
-
-## 8. Project depth
-
-Not every project requires the same volume of material.
-
-A flagship case study may include extensive architecture, results and supporting documentation. A focused technical implementation may be smaller while still meeting the same evidence standard.
+Measured public-example outputs may be reported as example results. Production client impact is only claimed when it has actually been measured and is publishable.

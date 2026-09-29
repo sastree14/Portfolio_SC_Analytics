@@ -1,13 +1,21 @@
-# Examples
+# Example evidence
 
-This directory contains inspectable evidence generated from the implementation.
+This folder contains the inspectable public evidence for **SC-01 · Long-Running AI Agent Platform**.
 
-- `inputs/` contains example requests.
-- `outputs/` contains actual API responses generated with the mock provider.
-- `logs/` contains an execution trace generated from the persisted event history.
+## Inputs
 
-The examples can be regenerated with:
+Representative input payloads or datasets used by the example.
 
-```bash
-python technical/scripts/generate_examples.py
-```
+## Outputs
+
+Structured outputs produced by the implementation.
+
+## Logs
+
+A readable execution trace showing the order of the main processing steps.
+
+## Visuals
+
+Analytical output for the project when a chart or diagram materially improves interpretation.
+
+For business interpretation, see [Results](../docs/RESULTS.md). For code-level details, see [Technical implementation](../technical/README.md).

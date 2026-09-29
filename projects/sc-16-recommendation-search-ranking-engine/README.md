@@ -1,41 +1,57 @@
 # SC-16 · Recommendation, Search & Ranking Engine
 
-**A hybrid recommendation and ranking system combining behavioural signals, content similarity and business rules.**
+**A hybrid recommendation and ranking system combining behavioural signals, semantic similarity and business rules.**
 
-Designed for **Marketplaces · e-commerce · media · SaaS · internal knowledge discovery**.
+**Designed for:** Marketplaces · e-commerce · media · knowledge discovery
 
-## Business impact
+## Why this project matters
 
-- Increase relevance beyond simple popularity sorting
-- Combine customer behaviour with item content
-- Keep business constraints visible in final ranking
-- Measure ranking quality using offline evaluation
+- Improve relevance beyond popularity sorting
+- Combine behaviour with item content
+- Keep business constraints explicit
+- Measure ranking quality offline
 
-[Business impact in detail →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-A user opens a marketplace category. The engine retrieves content-similar items, combines behavioural features, ranks candidates and applies inventory and eligibility rules before returning results.
+```text
+User / query
+    ↓\n    Candidate generation
+        ↓\n        Embeddings / similarity
+            ↓\n            Ranking model
+                ↓\n                Business rules
+                    ↓\n                    Top-K response
+```
 
 ## Technology at a glance
 
 **Python · Scikit-learn · LightGBM · Sentence Transformers · FAISS · FastAPI · PostgreSQL · Redis**
 
-## What a reviewer can inspect
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
+## What is included
+
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-See [technical/README.md](technical/README.md) for the project-specific execution path.
+Representative users, items, interactions, text embeddings, candidate sets and ranked outputs.
 
-## Technology and business are separated deliberately
+The repository does not contain client credentials or confidential records.
 
-A non-technical reviewer can understand the decision and impact from this page. A technical reviewer can enter the implementation, SQL, model logic, tests and environment configuration directly.
+## Local review
+
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
+
+[Open the technical implementation →](technical/README.md)

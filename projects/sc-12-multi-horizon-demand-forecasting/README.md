@@ -2,40 +2,57 @@
 
 **A forecasting system that compares baselines and machine-learning models across multiple planning horizons.**
 
-Designed for **E-commerce · retail · inventory planning · finance · operations**.
+**Designed for:** E-commerce · retail · inventory planning · finance
 
-## Business impact
+## Why this project matters
 
-- Measure forecast quality separately by planning horizon
-- Expose bias as well as absolute forecast error
-- Translate forecasts into inventory and purchasing decisions
-- Compare complex models against simple operational baselines
+- Measure forecast quality by horizon
+- Expose forecast bias as well as absolute error
+- Translate predictions into planning decisions
+- Benchmark complex models against simple baselines
 
-[Business impact in detail →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-Daily SKU demand is forecast at H1, H3, H6 and H9. The system backtests each horizon, compares baseline and ML approaches, then exposes the selected forecast with prediction intervals.
+```text
+Orders + inventory
+    ↓\n    Feature engineering
+        ↓\n        Baseline models
+            ↓\n            ML candidates
+                ↓\n                Backtesting by horizon
+                    ↓\n                    Forecast selection
+                        ↓\n                        Planning output
+```
 
 ## Technology at a glance
 
 **Python · Pandas · Statsmodels · XGBoost · LightGBM · Plotly · FastAPI · PostgreSQL**
 
-## What a reviewer can inspect
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
+## What is included
+
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-See [technical/README.md](technical/README.md) for the project-specific execution path.
+Representative SKU history, calendar features, backtest folds, horizon-level metrics, forecasts and prediction intervals.
 
-## Technology and business are separated deliberately
+The repository does not contain client credentials or confidential records.
 
-A non-technical reviewer can understand the decision and impact from this page. A technical reviewer can enter the implementation, SQL, model logic, tests and environment configuration directly.
+## Local review
+
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
+
+[Open the technical implementation →](technical/README.md)

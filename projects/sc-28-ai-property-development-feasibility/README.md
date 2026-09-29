@@ -1,38 +1,58 @@
 # SC-28 · AI Property Development Feasibility & Operations System
 
-**A property-development decision system combining feasibility modelling, document analysis, scenario review and workflow automation.**
+**A property-development decision system combining feasibility modelling, documents, scenarios and workflow automation.**
 
-Designed for **Property developers · investment teams · development finance · project operations**.
+**Designed for:** Property development · investment · development finance
 
-## Business impact
+## Why this project matters
 
-- Bring acquisition assumptions, development costs and financing into one feasibility view
-- Use structured document extraction to reduce manual review
-- Compare downside and upside cases before committing capital
-- Track approval and due-diligence steps through one workflow
+- Unify acquisition and development assumptions
+- Reduce document-review effort
+- Compare downside and upside cases
+- Move projects through explicit review gates
 
-## Example use case
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-A potential development site is loaded with acquisition cost, build assumptions and financing terms. Documents are summarized, scenarios are calculated and the project moves through defined review gates.
+## Example operating flow
+
+```text
+Site + deal inputs
+    ↓\n    Document extraction
+        ↓\n        Cost / revenue model
+            ↓\n            Finance
+                ↓\n                Scenario analysis
+                    ↓\n                    Investment gate
+                        ↓\n                        Workflow
+```
 
 ## Technology at a glance
 
 **Python · FastAPI · PostgreSQL · Pandas · GeoPandas · OpenAI · n8n · Docker · Plotly**
 
-## Evidence
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
-- [Business impact](docs/BUSINESS_IMPACT.md)
+## What is included
+
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-The technical README contains the exact environment and execution path.
+Representative site coordinates, acquisition terms, build costs, financing assumptions, document-extracted terms and scenario outputs.
 
-The public example is deterministic and does not require production credentials.
+The repository does not contain client credentials or confidential records.
+
+## Local review
+
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
+
+[Open the technical implementation →](technical/README.md)

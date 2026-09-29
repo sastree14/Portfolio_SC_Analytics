@@ -1,24 +1,23 @@
 # Technical implementation
 
-## Map
+This is the code-level entry point for **SC-22 · Resource, Capacity & Scheduling Optimization**.
 
-- `src/` — project-specific analytical logic
-- `tests/` — deterministic smoke test
-- `sql/` — storage / monitoring queries
-- `data/` — representative input
-- `infra/` — local container notes
+## Main responsibilities
 
-## Run
+- OR-Tools covers discrete scheduling efficiently while Pyomo provides a transparent algebraic alternative.
+- Skill and capacity constraints are data-driven rather than hardcoded.
+- The objective can be changed without redesigning the scheduling data model.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python src/main.py
-pytest -q
-```
+## Technical map
 
-## Stack
+- `README.md/` — project implementation asset
+- `data/` — project implementation asset
+- `requirements.txt/` — project implementation asset
+- `sql/` — project implementation asset
+- `src/` — project implementation asset
+- `tests/` — project implementation asset
+
+## Technology
 
 - Python
 - OR-Tools
@@ -28,3 +27,18 @@ pytest -q
 - PostgreSQL
 - Docker
 - Plotly
+
+## Validation
+
+See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+
+## Local execution
+
+Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
+
+## Read next
+
+- [Architecture](../docs/ARCHITECTURE.md)
+- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
+- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
+- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
