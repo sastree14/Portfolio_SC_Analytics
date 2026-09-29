@@ -30,6 +30,16 @@
 
 The Tableau screenshot set is the only intentionally pending layer. It will be added from a native-tool visual reference rather than fabricated.
 
+## Visual evidence
+
+![SC-15 project visual](examples/visuals/result.svg)
+
+This visual documents the analytical/model structure. The native BI screenshot layer remains pending until the real tool reference is supplied.
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
+
 ## Technical review
 
 - [Architecture](docs/ARCHITECTURE.md)
