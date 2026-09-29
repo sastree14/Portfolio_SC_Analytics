@@ -1,48 +1,38 @@
 # Technical implementation
 
-This is the code-level entry point for **SC-09 · ETL / ELT & Data Quality Pipeline**.
+## Main execution path
 
-## Main responsibilities
+**Start here → [`run_project.py`](run_project.py)**
 
-- dbt owns transformation lineage and SQL model tests.
-- Pandera validates dataframe contracts before SQL transformations.
-- DuckDB keeps the public example runnable locally without weakening the warehouse pattern.
+This is the principal public execution file for **SC-09 · ETL / ELT & Data Quality Pipeline**. It deliberately shows the complete high-level path in one place: **input → validation/context → core logic → business output**.
 
-## Technical map
+The supporting folders contain the deeper implementation used by that flow; they are not separate disconnected demos.
 
-- `README.md/` — project implementation asset
-- `data/` — project implementation asset
-- `dbt/` — project implementation asset
-- `infra/` — project implementation asset
-- `requirements.txt/` — project implementation asset
-- `scripts/` — project implementation asset
-- `sql/` — project implementation asset
-- `src/` — project implementation asset
-- `tests/` — project implementation asset
+## Supporting implementation
 
-## Technology
+- `dbt/`
+- `src/validation.py`
+- `src/`
+- `sql/`
+- `tests/`
 
+## Stack
+
+- Python
 - dbt
 - DuckDB
-- Python
 - Pandera
-- Parquet
-- Apache Airflow
-- SQL
-- Docker
-- GitHub Actions
+- Airflow
 
 ## Validation
 
-See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+See [VALIDATION.md](VALIDATION.md) for the checks applied to this project.
 
-## Local execution
+## How to review the project
 
-Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
+1. Read the project-level README for the business problem.
+2. Read the principal execution file above.
+3. Inspect the supporting modules only where you want implementation detail.
+4. Review SQL, integrations, tests and public outputs.
 
-## Read next
-
-- [Architecture](../docs/ARCHITECTURE.md)
-- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
-- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
+The principal file is intentionally the fastest way to understand how the project actually runs.
