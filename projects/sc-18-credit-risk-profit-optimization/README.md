@@ -1,41 +1,58 @@
 # SC-18 · Credit Risk & Profit Optimization Engine
 
-**A lending decision engine that combines probability of default, expected loss, pricing and constrained profit optimization.**
+**A lending decision engine combining default risk, expected loss, pricing and constrained contribution optimization.**
 
-Designed for **Banks · lenders · fintech · credit teams · risk analytics**.
+**Designed for:** Banks · lenders · fintech · credit teams
 
-## Business impact
+## Why this project matters
 
-- Move beyond a probability-of-default score to a complete lending decision
-- Balance expected revenue against expected loss
-- Make approval thresholds and risk appetite explicit
-- Explain important risk drivers for each application
+- Move beyond a probability score to a lending decision
+- Balance revenue against expected loss
+- Make risk appetite explicit
+- Explain material risk drivers
 
-[Business impact in detail →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-For each application the engine estimates default risk, expected loss and expected contribution, then recommends approve, decline or review under a defined risk appetite.
+```text
+Application
+    ↓\n    Feature validation
+        ↓\n        PD model
+            ↓\n            Calibration + explainability
+                ↓\n                Expected loss
+                    ↓\n                    Contribution model
+                        ↓\n                        Approve / review / decline
+```
 
 ## Technology at a glance
 
 **Python · XGBoost · SHAP · Scikit-learn · Optuna · FastAPI · PostgreSQL · Plotly**
 
-## What a reviewer can inspect
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
+## What is included
+
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-See [technical/README.md](technical/README.md) for the project-specific execution path.
+Representative applicant features, outcomes, risk scores, explanations, expected-loss calculations and decision outputs.
 
-## Technology and business are separated deliberately
+The repository does not contain client credentials or confidential records.
 
-A non-technical reviewer can understand the decision and impact from this page. A technical reviewer can enter the implementation, SQL, model logic, tests and environment configuration directly.
+## Local review
+
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
+
+[Open the technical implementation →](technical/README.md)

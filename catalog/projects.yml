@@ -1,7 +1,6 @@
 projects:
   - id: SC-01
     title: "Long-Running AI Agent Platform"
-    family: "AI Agents & Intelligent Automation"
     path: projects/sc-01-long-running-agent-platform
     technologies:
       - "Python"
@@ -15,7 +14,6 @@ projects:
       - "SQL"
   - id: SC-02
     title: "Multi-Agent Operations Orchestrator"
-    family: "AI Agents & Intelligent Automation"
     path: projects/sc-02-multi-agent-operations-orchestrator
     technologies:
       - "Python"
@@ -29,7 +27,6 @@ projects:
       - "Pydantic"
   - id: SC-03
     title: "AI Sales & CRM Automation System"
-    family: "AI Agents & Intelligent Automation"
     path: projects/sc-03-ai-sales-crm-automation
     technologies:
       - "Python"
@@ -43,7 +40,6 @@ projects:
       - "SQL"
   - id: SC-04
     title: "AI Receptionist & Lead Qualification"
-    family: "AI Agents & Intelligent Automation"
     path: projects/sc-04-ai-receptionist-lead-qualification
     technologies:
       - "TypeScript"
@@ -57,12 +53,12 @@ projects:
       - "Webhooks"
   - id: SC-05
     title: "Document Intelligence & Due Diligence Agent"
-    family: "AI Agents & Intelligent Automation"
     path: projects/sc-05-document-intelligence-due-diligence-agent
     technologies:
       - "Python"
       - "FastAPI"
       - "Qdrant"
+      - "pgvector"
       - "PostgreSQL"
       - "PyMuPDF"
       - "OpenAI"
@@ -71,7 +67,6 @@ projects:
       - "Pydantic"
   - id: SC-06
     title: "AI Workflow Automation Hub"
-    family: "AI Agents & Intelligent Automation"
     path: projects/sc-06-ai-workflow-automation-hub
     technologies:
       - "n8n"
@@ -80,12 +75,11 @@ projects:
       - "PostgreSQL"
       - "Redis"
       - "Webhooks"
-      - "Zapier Webhooks"
-      - "Make Webhooks"
+      - "Zapier"
+      - "Make"
       - "Docker"
   - id: SC-07
     title: "Full-Stack LLM Business Copilot"
-    family: "AI Agents & Intelligent Automation"
     path: projects/sc-07-full-stack-llm-business-copilot
     technologies:
       - "Next.js"
@@ -99,7 +93,6 @@ projects:
       - "Tailwind CSS"
   - id: SC-08
     title: "Enterprise Data Integration & API Platform"
-    family: "Data Engineering & Platforms"
     path: projects/sc-08-enterprise-data-integration-api-platform
     technologies:
       - "Python"
@@ -109,11 +102,16 @@ projects:
       - "ClickHouse"
       - "AWS S3"
       - "Azure Blob Storage"
+      - "Snowflake"
+      - "BigQuery"
+      - "Databricks SQL"
+      - "SQL Server"
+      - "Oracle Database"
+      - "Terraform"
       - "Docker"
       - "SQL"
   - id: SC-09
     title: "ETL / ELT & Data Quality Pipeline"
-    family: "Data Engineering & Platforms"
     path: projects/sc-09-etl-elt-data-quality-pipeline
     technologies:
       - "dbt"
@@ -127,7 +125,6 @@ projects:
       - "GitHub Actions"
   - id: SC-10
     title: "Real-Time Analytics & Monitoring Platform"
-    family: "Data Engineering & Platforms"
     path: projects/sc-10-real-time-analytics-platform
     technologies:
       - "Redpanda / Kafka"
@@ -136,11 +133,12 @@ projects:
       - "FastAPI"
       - "WebSockets"
       - "Grafana"
+      - "Kubernetes"
+      - "OpenTelemetry"
       - "Docker"
       - "SQL"
   - id: SC-11
     title: "ML / AI Evaluation & Monitoring Platform"
-    family: "Data Engineering & Platforms"
     path: projects/sc-11-mlops-evaluation-monitoring
     technologies:
       - "Python"
@@ -148,12 +146,12 @@ projects:
       - "Evidently"
       - "FastAPI"
       - "PostgreSQL"
+      - "Prometheus"
+      - "Kubernetes"
       - "Docker"
       - "GitHub Actions"
-      - "Prometheus"
   - id: SC-12
     title: "Multi-Horizon Demand Forecasting & Inventory Planning"
-    family: "Forecasting & Planning"
     path: projects/sc-12-multi-horizon-demand-forecasting
     technologies:
       - "Python"
@@ -164,9 +162,9 @@ projects:
       - "Plotly"
       - "FastAPI"
       - "PostgreSQL"
+      - "Prefect"
   - id: SC-13
     title: "R Shiny Forecasting & Scenario Planning Application"
-    family: "Forecasting & Planning"
     path: projects/sc-13-r-shiny-forecasting-scenario-planning
     technologies:
       - "R"
@@ -179,7 +177,6 @@ projects:
       - "PostgreSQL"
   - id: SC-14
     title: "Power BI Executive Decision System"
-    family: "BI & Decision Interfaces"
     path: projects/sc-14-power-bi-executive-decision-system
     technologies:
       - "Power BI"
@@ -191,7 +188,6 @@ projects:
       - "Excel"
   - id: SC-15
     title: "Tableau Commercial Analytics & Drill-Down"
-    family: "BI & Decision Interfaces"
     path: projects/sc-15-tableau-commercial-analytics
     technologies:
       - "Tableau"
@@ -202,7 +198,6 @@ projects:
       - "LOD Expressions"
   - id: SC-16
     title: "Recommendation, Search & Ranking Engine"
-    family: "Machine Learning & Customer Analytics"
     path: projects/sc-16-recommendation-search-ranking-engine
     technologies:
       - "Python"
@@ -215,7 +210,6 @@ projects:
       - "Redis"
   - id: SC-17
     title: "Customer Intelligence: Churn, CLV & Segmentation"
-    family: "Machine Learning & Customer Analytics"
     path: projects/sc-17-customer-intelligence-churn-clv
     technologies:
       - "Python"
@@ -228,7 +222,6 @@ projects:
       - "PostgreSQL"
   - id: SC-18
     title: "Credit Risk & Profit Optimization Engine"
-    family: "Machine Learning & Risk"
     path: projects/sc-18-credit-risk-profit-optimization
     technologies:
       - "Python"
@@ -239,9 +232,9 @@ projects:
       - "FastAPI"
       - "PostgreSQL"
       - "Plotly"
+      - "Streamlit"
   - id: SC-19
     title: "Fraud Detection & Explainability System"
-    family: "Machine Learning & Risk"
     path: projects/sc-19-fraud-detection-explainability
     technologies:
       - "Python"
@@ -254,7 +247,6 @@ projects:
       - "Plotly"
   - id: SC-20
     title: "Supply Chain & Marketplace Optimization"
-    family: "Optimization & Operations"
     path: projects/sc-20-supply-chain-optimization
     technologies:
       - "Python"
@@ -267,7 +259,6 @@ projects:
       - "Docker"
   - id: SC-21
     title: "Pricing & Revenue Optimization Engine"
-    family: "Optimization & Operations"
     path: projects/sc-21-pricing-revenue-optimization
     technologies:
       - "Python"
@@ -281,7 +272,6 @@ projects:
       - "Plotly"
   - id: SC-22
     title: "Resource, Capacity & Scheduling Optimization"
-    family: "Optimization & Operations"
     path: projects/sc-22-resource-capacity-scheduling-optimization
     technologies:
       - "Python"
@@ -294,7 +284,6 @@ projects:
       - "Plotly"
   - id: SC-23
     title: "Operations Simulation & What-If Engine"
-    family: "Optimization & Operations"
     path: projects/sc-23-operations-simulation-what-if
     technologies:
       - "Python"
@@ -307,7 +296,6 @@ projects:
       - "Docker"
   - id: SC-24
     title: "Financial Modelling & Scenario Engine"
-    family: "Finance & Quantitative Systems"
     path: projects/sc-24-financial-modelling-scenario-engine
     technologies:
       - "Python"
@@ -320,7 +308,6 @@ projects:
       - "Excel"
   - id: SC-25
     title: "Debt, Cash Flow & Investment Model"
-    family: "Finance & Quantitative Systems"
     path: projects/sc-25-debt-cashflow-investment-model
     technologies:
       - "Python"
@@ -333,7 +320,6 @@ projects:
       - "Excel"
   - id: SC-26
     title: "Portfolio Risk & Capital Allocation Engine"
-    family: "Finance & Quantitative Systems"
     path: projects/sc-26-portfolio-risk-capital-allocation
     technologies:
       - "Python"
@@ -346,11 +332,11 @@ projects:
       - "FastAPI"
   - id: SC-27
     title: "Quantitative Trading & Market Microstructure System"
-    family: "Finance & Quantitative Systems"
     path: projects/sc-27-quant-trading-market-microstructure
     technologies:
       - "Python"
       - "TypeScript"
+      - "Vite"
       - "WebSockets"
       - "ClickHouse"
       - "Redis"
@@ -360,7 +346,6 @@ projects:
       - "Docker"
   - id: SC-28
     title: "AI Property Development Feasibility & Operations System"
-    family: "Specialized Business Systems"
     path: projects/sc-28-ai-property-development-feasibility
     technologies:
       - "Python"
@@ -374,7 +359,6 @@ projects:
       - "Plotly"
   - id: SC-29
     title: "Commercial Due Diligence & Market Intelligence System"
-    family: "Specialized Business Systems"
     path: projects/sc-29-commercial-due-diligence-market-intelligence
     technologies:
       - "Python"

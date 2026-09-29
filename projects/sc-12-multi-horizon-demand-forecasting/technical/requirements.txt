@@ -4,3 +4,6 @@ statsmodels>=0.14,<1
 xgboost>=2,<4
 lightgbm>=4,<5
 plotly>=5,<7
+fastapi>=0.115,<1
+sqlalchemy>=2,<3
+prefect>=3,<4

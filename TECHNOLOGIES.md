@@ -1,6 +1,6 @@
 # Technology index
 
-Use this index when the first question is technical: *where is a particular tool actually used?*
+This index answers one practical question: **where can I inspect evidence of a specific technology?**
 
 ## Anthropic
 
@@ -24,6 +24,10 @@ Use this index when the first question is technical: *where is a particular tool
 
 - [SC-29 · Commercial Due Diligence & Market Intelligence System](projects/sc-29-commercial-due-diligence-market-intelligence/README.md)
 
+## BigQuery
+
+- [SC-08 · Enterprise Data Integration & API Platform](projects/sc-08-enterprise-data-integration-api-platform/README.md)
+
 ## Calendly
 
 - [SC-04 · AI Receptionist & Lead Qualification](projects/sc-04-ai-receptionist-lead-qualification/README.md)
@@ -45,6 +49,10 @@ Use this index when the first question is technical: *where is a particular tool
 ## CVXPY
 
 - [SC-26 · Portfolio Risk & Capital Allocation Engine](projects/sc-26-portfolio-risk-capital-allocation/README.md)
+
+## Databricks SQL
+
+- [SC-08 · Enterprise Data Integration & API Platform](projects/sc-08-enterprise-data-integration-api-platform/README.md)
 
 ## DAX
 
@@ -160,6 +168,11 @@ Use this index when the first question is technical: *where is a particular tool
 
 - [SC-19 · Fraud Detection & Explainability System](projects/sc-19-fraud-detection-explainability/README.md)
 
+## Kubernetes
+
+- [SC-10 · Real-Time Analytics & Monitoring Platform](projects/sc-10-real-time-analytics-platform/README.md)
+- [SC-11 · ML / AI Evaluation & Monitoring Platform](projects/sc-11-mlops-evaluation-monitoring/README.md)
+
 ## LangGraph
 
 - [SC-02 · Multi-Agent Operations Orchestrator](projects/sc-02-multi-agent-operations-orchestrator/README.md)
@@ -177,7 +190,7 @@ Use this index when the first question is technical: *where is a particular tool
 
 - [SC-15 · Tableau Commercial Analytics & Drill-Down](projects/sc-15-tableau-commercial-analytics/README.md)
 
-## Make Webhooks
+## Make
 
 - [SC-06 · AI Workflow Automation Hub](projects/sc-06-ai-workflow-automation-hub/README.md)
 
@@ -230,6 +243,10 @@ Use this index when the first question is technical: *where is a particular tool
 - [SC-24 · Financial Modelling & Scenario Engine](projects/sc-24-financial-modelling-scenario-engine/README.md)
 - [SC-25 · Debt, Cash Flow & Investment Model](projects/sc-25-debt-cashflow-investment-model/README.md)
 
+## OpenTelemetry
+
+- [SC-10 · Real-Time Analytics & Monitoring Platform](projects/sc-10-real-time-analytics-platform/README.md)
+
 ## Optuna
 
 - [SC-18 · Credit Risk & Profit Optimization Engine](projects/sc-18-credit-risk-profit-optimization/README.md)
@@ -239,6 +256,10 @@ Use this index when the first question is technical: *where is a particular tool
 
 - [SC-20 · Supply Chain & Marketplace Optimization](projects/sc-20-supply-chain-optimization/README.md)
 - [SC-22 · Resource, Capacity & Scheduling Optimization](projects/sc-22-resource-capacity-scheduling-optimization/README.md)
+
+## Oracle Database
+
+- [SC-08 · Enterprise Data Integration & API Platform](projects/sc-08-enterprise-data-integration-api-platform/README.md)
 
 ## Pandas
 
@@ -262,6 +283,10 @@ Use this index when the first question is technical: *where is a particular tool
 ## Parquet
 
 - [SC-09 · ETL / ELT & Data Quality Pipeline](projects/sc-09-etl-elt-data-quality-pipeline/README.md)
+
+## pgvector
+
+- [SC-05 · Document Intelligence & Due Diligence Agent](projects/sc-05-document-intelligence-due-diligence-agent/README.md)
 
 ## Playwright
 
@@ -316,6 +341,10 @@ Use this index when the first question is technical: *where is a particular tool
 ## Power Query
 
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
+
+## Prefect
+
+- [SC-12 · Multi-Horizon Demand Forecasting & Inventory Planning](projects/sc-12-multi-horizon-demand-forecasting/README.md)
 
 ## Prometheus
 
@@ -419,6 +448,10 @@ Use this index when the first question is technical: *where is a particular tool
 
 - [SC-23 · Operations Simulation & What-If Engine](projects/sc-23-operations-simulation-what-if/README.md)
 
+## Snowflake
+
+- [SC-08 · Enterprise Data Integration & API Platform](projects/sc-08-enterprise-data-integration-api-platform/README.md)
+
 ## SQL
 
 - [SC-01 · Long-Running AI Agent Platform](projects/sc-01-long-running-agent-platform/README.md)
@@ -429,6 +462,10 @@ Use this index when the first question is technical: *where is a particular tool
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
 - [SC-15 · Tableau Commercial Analytics & Drill-Down](projects/sc-15-tableau-commercial-analytics/README.md)
 
+## SQL Server
+
+- [SC-08 · Enterprise Data Integration & API Platform](projects/sc-08-enterprise-data-integration-api-platform/README.md)
+
 ## Star Schema
 
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
@@ -437,6 +474,10 @@ Use this index when the first question is technical: *where is a particular tool
 
 - [SC-12 · Multi-Horizon Demand Forecasting & Inventory Planning](projects/sc-12-multi-horizon-demand-forecasting/README.md)
 - [SC-21 · Pricing & Revenue Optimization Engine](projects/sc-21-pricing-revenue-optimization/README.md)
+
+## Streamlit
+
+- [SC-18 · Credit Risk & Profit Optimization Engine](projects/sc-18-credit-risk-profit-optimization/README.md)
 
 ## Supabase
 
@@ -454,6 +495,10 @@ Use this index when the first question is technical: *where is a particular tool
 
 - [SC-07 · Full-Stack LLM Business Copilot](projects/sc-07-full-stack-llm-business-copilot/README.md)
 
+## Terraform
+
+- [SC-08 · Enterprise Data Integration & API Platform](projects/sc-08-enterprise-data-integration-api-platform/README.md)
+
 ## Twilio
 
 - [SC-04 · AI Receptionist & Lead Qualification](projects/sc-04-ai-receptionist-lead-qualification/README.md)
@@ -467,6 +512,10 @@ Use this index when the first question is technical: *where is a particular tool
 ## Vercel
 
 - [SC-07 · Full-Stack LLM Business Copilot](projects/sc-07-full-stack-llm-business-copilot/README.md)
+
+## Vite
+
+- [SC-27 · Quantitative Trading & Market Microstructure System](projects/sc-27-quant-trading-market-microstructure/README.md)
 
 ## Webhooks
 
@@ -491,7 +540,7 @@ Use this index when the first question is technical: *where is a particular tool
 
 - [SC-25 · Debt, Cash Flow & Investment Model](projects/sc-25-debt-cashflow-investment-model/README.md)
 
-## Zapier Webhooks
+## Zapier
 
 - [SC-06 · AI Workflow Automation Hub](projects/sc-06-ai-workflow-automation-hub/README.md)
 

@@ -1,54 +1,46 @@
 # Technical implementation
 
-This section contains the implementation behind SC-01.
+This is the code-level entry point for **SC-01 · Long-Running AI Agent Platform**.
 
-The executive README at the project root explains the business problem and operating impact. This directory is intended for engineers who want to inspect how the platform is built.
+## Main responsibilities
 
-## Repository map
+- PostgreSQL is the source of truth; Redis is transport, not business state.
+- Provider adapters keep orchestration independent from one model vendor.
+- Human approval is a first-class state transition rather than a prompt instruction.
 
-- `src/app/` — API, persistence, orchestration and provider adapters
-- `sql/` — schema, indexes, operational queries and monitoring queries
-- `tests/` — unit and integration tests
-- `infra/` — Docker image and local multi-service environment
-- `scripts/` — utilities used to reproduce public examples
+## Technical map
 
-## Execution model
+- `README.md/` — project implementation asset
+- `infra/` — project implementation asset
+- `requirements.txt/` — project implementation asset
+- `scripts/` — project implementation asset
+- `sql/` — project implementation asset
+- `src/` — project implementation asset
+- `tests/` — project implementation asset
 
-The platform separates durable business state from task delivery.
+## Technology
 
-PostgreSQL stores the authoritative run and audit trail. Redis/Celery handles asynchronous task delivery in the Docker environment. A synchronous `inline` backend exists for deterministic local tests and example generation.
+- Python
+- FastAPI
+- PostgreSQL
+- Redis
+- Celery
+- Docker
+- OpenAI
+- Anthropic
+- SQL
 
-## Run tests
+## Validation
 
-From `technical/`:
+See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
 
-```bash
-PYTHONPATH=src pytest -q
-```
+## Local execution
 
-The test suite covers:
+Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
 
-- API health
-- complete approval flow
-- event ordering
-- invalid re-approval
-- provider behaviour
+## Read next
 
-## Generate public examples
-
-```bash
-python scripts/generate_examples.py
-```
-
-The script runs the actual application using the mock provider and writes inspectable JSON outputs and an execution log under `examples/`.
-
-## Docker environment
-
-From the project root:
-
-```bash
-cp .env.example .env
-docker compose -f technical/infra/docker-compose.yml up --build
-```
-
-The Docker environment switches `TASK_BACKEND` to `celery` and starts API, worker, PostgreSQL and Redis as separate services.
+- [Architecture](../docs/ARCHITECTURE.md)
+- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
+- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
+- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)

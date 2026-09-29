@@ -2,23 +2,16 @@ id: SC-11
 title: ML / AI Evaluation & Monitoring Platform
 status: completed
 project_type: implementation
-family: Data Engineering & Platforms
-summary: >
-  A production-oriented layer for model evaluation, version tracking, drift checks and release gates.
 technologies:
   - Python
   - MLflow
   - Evidently
   - FastAPI
   - PostgreSQL
+  - Prometheus
+  - Kubernetes
   - Docker
   - GitHub Actions
-  - Prometheus
-impact_areas:
-  - Make model changes reviewable before release
-  - Track model versions, datasets and evaluation results together
-  - Detect data or prediction drift before it becomes a business issue
-  - Separate experimentation from production release decisions
 paths:
   project: projects/sc-11-mlops-evaluation-monitoring
   readme: projects/sc-11-mlops-evaluation-monitoring/README.md

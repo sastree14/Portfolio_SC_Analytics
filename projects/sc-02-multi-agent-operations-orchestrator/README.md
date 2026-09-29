@@ -2,73 +2,57 @@
 
 **A controlled multi-agent system that separates planning, specialist work, review and execution.**
 
-Designed for **Operations · internal tooling · complex multi-step workflows · cross-functional automation**.
+**Designed for:** Operations · internal tooling · cross-functional workflows
 
-## What changes for the business
+## Why this project matters
 
-- Break large workflows into accountable specialist steps
-- Keep agent responsibilities explicit instead of relying on one opaque prompt
-- Insert review and approval before material actions
-- Create a traceable record of delegation, hand-offs and final decisions
+- Break complex work into accountable specialist stages
+- Keep delegation and hand-offs visible
+- Insert independent review before material actions
+- Persist workflow state across agent boundaries
 
-[Business impact →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-Coordinate a customer escalation that requires account context, policy review, a proposed resolution and manager approval.
+```text
+Business request
+    ↓\n    Planner
+        ↓\n        Specialist agents
+            ↓\n            Reviewer
+                ↓\n                Approval
+                    ↓\n                    Executor
+                        ↓\n                        Audit
+```
 
 ## Technology at a glance
 
 **Python · FastAPI · LangGraph · PostgreSQL · Redis · Docker · OpenAI · Anthropic · Pydantic**
 
-The technology is visible here for fast technical screening. The business explanation does not depend on understanding the stack.
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
-## How the system works
+## What is included
 
-```text
-Business event / request
-        ↓
-Validation + context
-        ↓
-Core decision / orchestration layer
-        ↓
-Controlled integration boundary
-        ↓
-Result, action or analytical output
-        ↓
-Audit / monitoring
-```
-
-For implementation details, tests, SQL and infrastructure, use the [technical entry point](technical/README.md).
-
-## Evidence
-
-- [Business impact](docs/BUSINESS_IMPACT.md)
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example input](examples/inputs/example.json)
-- [Example output](examples/outputs/result.json)
-- [Example execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-```bash
-cd technical
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python src/main.py
-pytest -q
-```
+Workflow state, agent messages, review outcomes and execution events for representative operational tasks.
 
-The included example is deterministic and does not require external credentials. Real integrations are activated through environment configuration.
+The repository does not contain client credentials or confidential records.
 
-## Credentials
+## Local review
 
-No credentials are committed. Integration boundaries and expected environment variables are documented explicitly.
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
 
-[Credentials and integrations →](docs/CREDENTIALS_AND_INTEGRATIONS.md)
+[Open the technical implementation →](technical/README.md)

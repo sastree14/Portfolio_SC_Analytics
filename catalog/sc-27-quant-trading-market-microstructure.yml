@@ -2,12 +2,10 @@ id: SC-27
 title: Quantitative Trading & Market Microstructure System
 status: completed
 project_type: implementation
-family: Finance & Quantitative Systems
-summary: >
-  A research and monitoring stack for order-book events, backtesting, market microstructure signals and strategy evaluation.
 technologies:
   - Python
   - TypeScript
+  - Vite
   - WebSockets
   - ClickHouse
   - Redis
@@ -15,11 +13,6 @@ technologies:
   - NumPy
   - Plotly
   - Docker
-impact_areas:
-  - Separate raw market events from derived trading signals
-  - Backtest strategy logic against reproducible historical data
-  - Inspect order-book imbalance, delta and execution conditions
-  - Keep research, signal generation and visualization in one traceable stack
 paths:
   project: projects/sc-27-quant-trading-market-microstructure
   readme: projects/sc-27-quant-trading-market-microstructure/README.md

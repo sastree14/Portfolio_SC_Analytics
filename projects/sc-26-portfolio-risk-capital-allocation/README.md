@@ -1,38 +1,58 @@
 # SC-26 · Portfolio Risk & Capital Allocation Engine
 
-**A portfolio analytics engine for expected return, covariance, stress testing and constrained capital allocation.**
+**A portfolio engine for expected return, covariance, stress testing and constrained capital allocation.**
 
-Designed for **Investment teams · treasury · wealth analytics · quantitative research · risk management**.
+**Designed for:** Investment · treasury · wealth analytics · quantitative risk
 
-## Business impact
+## Why this project matters
 
-- Measure portfolio risk using more than standalone asset volatility
-- Compare allocation choices under explicit constraints
-- Stress the portfolio under adverse return scenarios
-- Translate risk appetite into a reproducible allocation problem
+- Measure portfolio-level risk
+- Compare constrained allocations
+- Stress adverse scenarios
+- Translate risk appetite into allocation limits
 
-## Example use case
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-A portfolio must satisfy asset-class limits and a maximum risk budget. The engine estimates covariance, runs stress scenarios and produces feasible allocations for different risk targets.
+## Example operating flow
+
+```text
+Market returns
+    ↓\n    Risk estimation
+        ↓\n        Covariance
+            ↓\n            Stress scenarios
+                ↓\n                Optimization constraints
+                    ↓\n                    Allocation
+                        ↓\n                        Risk report
+```
 
 ## Technology at a glance
 
 **Python · NumPy · Pandas · SciPy · CVXPY · Plotly · Monte Carlo · FastAPI**
 
-## Evidence
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
-- [Business impact](docs/BUSINESS_IMPACT.md)
+## What is included
+
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-The technical README contains the exact environment and execution path.
+Representative asset returns, covariance estimates, constraints, scenario shocks and optimized weights.
 
-The public example is deterministic and does not require production credentials.
+The repository does not contain client credentials or confidential records.
+
+## Local review
+
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
+
+[Open the technical implementation →](technical/README.md)

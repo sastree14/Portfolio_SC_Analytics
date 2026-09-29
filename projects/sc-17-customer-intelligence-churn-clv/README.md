@@ -2,40 +2,57 @@
 
 **A customer analytics system combining churn probability, lifetime value, segmentation and time-to-event analysis.**
 
-Designed for **Subscription businesses · SaaS · telecom · retail · customer success**.
+**Designed for:** Subscription · SaaS · telecom · retail · customer success
 
-## Business impact
+## Why this project matters
 
-- Prioritize retention effort using both risk and customer value
-- Separate who may churn from when churn is likely
-- Create interpretable customer segments for commercial action
-- Combine model outputs into one next-best-action layer
+- Prioritize retention using risk and value together
+- Estimate when churn may happen, not only whether
+- Create interpretable segments
+- Produce a usable next-action layer
 
-[Business impact in detail →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-A customer-success team receives a prioritized list that combines churn risk, expected value and predicted time-to-event instead of treating every high-risk customer equally.
+```text
+Customer history
+    ↓\n    Feature layer
+        ↓\n        Churn model
+            ↓\n            Survival model
+                ↓\n                CLV
+                    ↓\n                    Segmentation
+                        ↓\n                        Priority / action
+```
 
 ## Technology at a glance
 
 **Python · Scikit-learn · XGBoost · Lifelines · SHAP · Pandas · FastAPI · PostgreSQL**
 
-## What a reviewer can inspect
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
+## What is included
+
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-See [technical/README.md](technical/README.md) for the project-specific execution path.
+Representative customer activity, billing, tenure, event labels, CLV estimates, survival outputs and segment assignments.
 
-## Technology and business are separated deliberately
+The repository does not contain client credentials or confidential records.
 
-A non-technical reviewer can understand the decision and impact from this page. A technical reviewer can enter the implementation, SQL, model logic, tests and environment configuration directly.
+## Local review
+
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
+
+[Open the technical implementation →](technical/README.md)

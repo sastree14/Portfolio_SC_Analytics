@@ -2,9 +2,6 @@ id: SC-18
 title: Credit Risk & Profit Optimization Engine
 status: completed
 project_type: implementation
-family: Machine Learning & Risk
-summary: >
-  A lending decision engine that combines probability of default, expected loss, pricing and constrained profit optimization.
 technologies:
   - Python
   - XGBoost
@@ -14,11 +11,7 @@ technologies:
   - FastAPI
   - PostgreSQL
   - Plotly
-impact_areas:
-  - Move beyond a probability-of-default score to a complete lending decision
-  - Balance expected revenue against expected loss
-  - Make approval thresholds and risk appetite explicit
-  - Explain important risk drivers for each application
+  - Streamlit
 paths:
   project: projects/sc-18-credit-risk-profit-optimization
   readme: projects/sc-18-credit-risk-profit-optimization/README.md

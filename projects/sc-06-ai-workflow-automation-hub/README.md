@@ -1,74 +1,58 @@
 # SC-06 · AI Workflow Automation Hub
 
-**An event-driven automation layer that combines deterministic workflows with AI steps where interpretation is actually useful.**
+**An event-driven automation layer that combines deterministic workflows with AI steps only where interpretation is useful.**
 
-Designed for **Operations · finance · sales · reporting · internal automation**.
+**Designed for:** Operations · finance · sales · internal automation
 
-## What changes for the business
+## Why this project matters
 
-- Automate repetitive cross-system workflows without turning every step into an AI decision
-- Use model calls only where classification, extraction or drafting adds value
-- Keep retries, approvals and failure handling visible
-- Reduce manual movement of data between SaaS tools
+- Automate repetitive cross-system work
+- Keep deterministic steps deterministic
+- Use AI selectively for extraction, classification or drafting
+- Make retries and exceptions visible
 
-[Business impact →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-A signed commercial form triggers validation, CRM update, document generation, internal notification and an AI-written summary for review.
+```text
+Webhook / event
+    ↓\n    Validation
+        ↓\n        Rules
+            ↓\n            AI step when required
+                ↓\n                Approval
+                    ↓\n                    External systems
+                        ↓\n                        Outcome log
+```
 
 ## Technology at a glance
 
 **n8n · Python · FastAPI · PostgreSQL · Redis · Webhooks · Zapier Webhooks · Make Webhooks · Docker**
 
-The technology is visible here for fast technical screening. The business explanation does not depend on understanding the stack.
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
-## How the system works
+## What is included
 
-```text
-Business event / request
-        ↓
-Validation + context
-        ↓
-Core decision / orchestration layer
-        ↓
-Controlled integration boundary
-        ↓
-Result, action or analytical output
-        ↓
-Audit / monitoring
-```
-
-For implementation details, tests, SQL and infrastructure, use the [technical entry point](technical/README.md).
-
-## Evidence
-
-- [Business impact](docs/BUSINESS_IMPACT.md)
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example input](examples/inputs/example.json)
-- [Example output](examples/outputs/result.json)
-- [Example execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-```bash
-cd technical
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python src/main.py
-pytest -q
-```
+Representative workflow events, payload hashes, AI outputs, approval state and downstream responses.
 
-The included example is deterministic and does not require external credentials. Real integrations are activated through environment configuration.
+The repository does not contain client credentials or confidential records.
 
-## Credentials
+## Local review
 
-No credentials are committed. Integration boundaries and expected environment variables are documented explicitly.
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
 
-[Credentials and integrations →](docs/CREDENTIALS_AND_INTEGRATIONS.md)
+[Open the technical implementation →](technical/README.md)

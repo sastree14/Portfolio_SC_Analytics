@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sc10-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sc10-api
+  template:
+    metadata:
+      labels:
+        app: sc10-api
+    spec:
+      containers:
+        - name: api
+          image: scanalytics/sc10-api:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: CLICKHOUSE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: sc10-secrets
+                  key: clickhouse-url
+            - name: KAFKA_BROKERS
+              valueFrom:
+                configMapKeyRef:
+                  name: sc10-config
+                  key: kafka-brokers
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10

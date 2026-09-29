@@ -1,41 +1,58 @@
 # SC-13 · R Shiny Forecasting & Scenario Planning Application
 
-**An interactive R application for time-series decomposition, forecasting and business what-if scenarios.**
+**An interactive R application for decomposition, forecasting and business what-if scenarios.**
 
-Designed for **Finance · planning · sales operations · analysts who work in R**.
+**Designed for:** Finance · planning · sales operations · R analytics teams
 
-## Business impact
+## Why this project matters
 
-- Let users inspect trend, seasonality and uncertainty interactively
-- Compare statistical forecasting methods without editing code
-- Translate forecast assumptions into scenario outputs
+- Inspect trend and seasonality interactively
+- Compare statistical forecasts without editing code
+- Turn assumptions into scenario outputs
 - Keep analytical logic reproducible in R
 
-[Business impact in detail →](docs/BUSINESS_IMPACT.md)
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-## Example use case
+## Example operating flow
 
-A planning team changes expected growth, promotional uplift and cost assumptions in the Shiny application and immediately sees the forecast and scenario effect.
+```text
+Historical series
+    ↓\n    R transformation
+        ↓\n        Forecast model
+            ↓\n            Scenario assumptions
+                ↓\n                Shiny reactive layer
+                    ↓\n                    ggplot output
+                        ↓\n                        Decision
+```
 
 ## Technology at a glance
 
 **R · Shiny · forecast · fable · ggplot2 · dplyr · DBI · PostgreSQL**
 
-## What a reviewer can inspect
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
+## What is included
+
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
 - [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)
 - [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
-- [Generated analytical visual](examples/visuals/result.svg)
-- [Technical implementation](technical/README.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-## Run locally
+## What the example data represents
 
-See [technical/README.md](technical/README.md) for the project-specific execution path.
+Representative time series, fitted statistical models, forecast intervals, scenario inputs and Shiny reactive outputs.
 
-## Technology and business are separated deliberately
+The repository does not contain client credentials or confidential records.
 
-A non-technical reviewer can understand the decision and impact from this page. A technical reviewer can enter the implementation, SQL, model logic, tests and environment configuration directly.
+## Local review
+
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
+
+[Open the technical implementation →](technical/README.md)

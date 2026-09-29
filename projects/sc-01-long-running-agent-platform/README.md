@@ -1,111 +1,58 @@
 # SC-01 · Long-Running AI Agent Platform
 
-**Reliable AI agents for business processes that cannot be completed safely inside a single prompt.**
+**Durable execution for AI workflows that must pause, resume, call external systems and preserve an audit trail.**
 
-Designed for **operations, sales, internal tools, document workflows and approval-based automation**.
+**Designed for:** Operations · sales · internal tools · approval-based automation
 
-## What changes for the business
+## Why this project matters
 
-A normal AI interaction ends when the response is returned. Many real processes do not.
+- Keep workflow state independent from a single LLM request
+- Require explicit approval before sensitive external actions
+- Recover from transient failures without losing the business process
+- Preserve an inspectable execution history
 
-They wait for a person, call another system, fail temporarily, resume later and still need a clear record of what happened. SC-01 is designed around that operating reality.
+A business reviewer can stay on this page. A technical reviewer can move directly to the [technical implementation](technical/README.md).
 
-| Business need | SC-01 response |
-|---|---|
-| Keep work alive after the initial request | Persistent run state |
-| Pause before a sensitive action | Human approval gate |
-| Continue work outside the API request | Background execution |
-| Recover from temporary integration failures | Retry-capable worker architecture |
-| Understand what happened later | Persisted audit events |
-| Connect to existing systems | Authenticated API/webhook boundary |
-
-[See the business impact in detail](docs/BUSINESS_IMPACT.md)
-
-## Example use case
-
-A qualified lead asks for a pricing call.
-
-Instead of asking an LLM to "handle it" in one opaque step, the platform can:
-
-1. receive the objective
-2. prepare the intended CRM action
-3. persist the plan
-4. stop for approval
-5. resume when a person approves it
-6. call the configured business-system endpoint
-7. store the result and execution history
-
-The same pattern applies to document review, internal operations, customer support, research and other workflows where an AI system prepares or executes multi-step work.
-
-## Impact
-
-SC-01 is intended to improve **control, continuity and reliability** rather than simply generate better text.
-
-The platform makes several operational KPIs measurable: completion rate, failure rate, approval time, retry count, end-to-end execution time and external-action success rate.
-
-## Technology at a glance
-
-**Python · FastAPI · PostgreSQL · Redis · Celery · Docker · REST APIs · Webhooks · OpenAI adapter · Anthropic adapter · SQL**
-
-The technology is visible here for quick screening. The main project explanation does not require knowledge of these tools.
-
-## How the system works
+## Example operating flow
 
 ```text
 Request
-   ↓
-Persistent run
-   ↓
-Background execution
-   ↓
-Model plan
-   ↓
-Approval when required
-   ↓
-External business-system action
-   ↓
-Persisted result + audit trail
+    ↓\n    Persist run
+        ↓\n        Background worker
+            ↓\n            Model plan
+                ↓\n                Approval gate
+                    ↓\n                    External action
+                        ↓\n                        Audit + result
 ```
 
-For implementation detail, SQL, tests and infrastructure, go to the [technical implementation](technical/README.md).
+## Technology at a glance
 
-## Evidence in the repository
+**Python · FastAPI · PostgreSQL · Redis · Celery · Docker · OpenAI · Anthropic · SQL**
 
-You can inspect the project without running it:
+The stack is shown early because technical fit matters. The project is still explained in business terms first.
 
-- [generated API outputs](examples/outputs/)
-- [execution log](examples/logs/approval-flow.log)
-- [architecture](docs/ARCHITECTURE.md)
-- [business impact](docs/BUSINESS_IMPACT.md)
-- [credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [environments](docs/ENVIRONMENTS.md)
-- [limitations](docs/LIMITATIONS.md)
-- [SQL](technical/sql/)
-- [tests](technical/tests/)
+## What is included
 
-## Run locally
+- [Business impact and KPIs](docs/BUSINESS_IMPACT.md)
+- [Example results and how to read them](docs/RESULTS.md)
+- [Architecture](docs/ARCHITECTURE.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Data and public sample structure](docs/DATA.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
+- [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
+- [Environments](docs/ENVIRONMENTS.md)
+- [Limitations](docs/LIMITATIONS.md)
+- [Example inputs, outputs and logs](examples/README.md)
+- [Technical implementation, SQL and tests](technical/README.md)
 
-For deterministic inspection without external AI credentials:
+## What the example data represents
 
-```bash
-cd technical
-PYTHONPATH=src pytest -q
-python scripts/generate_examples.py
-```
+Run state, model plan, approval events and external-action results. Public examples use deterministic mock execution.
 
-For the multi-service environment:
+The repository does not contain client credentials or confidential records.
 
-```bash
-cp .env.example .env
-docker compose -f technical/infra/docker-compose.yml up --build
-```
+## Local review
 
-The default example uses the mock provider. OpenAI and Anthropic adapters are available when their corresponding environment variables are configured.
+The public implementation is designed so that the core example can be inspected locally without production credentials. Tool-specific connectors are configured through environment variables and are documented separately.
 
-## Credentials
-
-No credentials are stored in the repository.
-
-The project documents each credential boundary, which service uses it, what data crosses the integration and what changes in a production environment.
-
-[Credentials and integrations →](docs/CREDENTIALS_AND_INTEGRATIONS.md)
+[Open the technical implementation →](technical/README.md)
