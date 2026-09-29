@@ -16,7 +16,7 @@ EXAMPLES = ROOT.parent / "examples"
 
 import csv
 
-DATA = ROOT / "data"
+DATA = TECHNICAL / "data"
 
 def read_csv(name: str) -> list[dict]:
     with (DATA / name).open(encoding="utf-8") as fh:

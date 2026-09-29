@@ -17,7 +17,7 @@ EXAMPLES = ROOT.parent / "examples"
 import csv
 from collections import defaultdict
 
-DATA = ROOT / "data"
+DATA = TECHNICAL / "data"
 
 def load_commercial() -> list[dict]:
     with (DATA / "commercial.csv").open(encoding="utf-8") as fh:
