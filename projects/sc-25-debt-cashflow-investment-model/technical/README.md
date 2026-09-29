@@ -1,44 +1,36 @@
 # Technical implementation
 
-This is the code-level entry point for **SC-25 · Debt, Cash Flow & Investment Model**.
+## Main execution path
 
-## Main responsibilities
+**Start here → [`run_project.py`](run_project.py)**
 
-- Debt schedules are generated explicitly rather than approximated as a single financing cost.
-- Irregular cash-flow return calculations use dated cash flows.
-- Excel exports remain reviewable while the calculation engine stays version-controlled.
+This is the principal public execution file for **SC-25 · Debt, Cash Flow & Investment Model**. It shows the complete high-level execution path in one place: **input → validation/context → core logic → business output**.
 
-## Technical map
+The supporting implementation below exists to make the main path deeper and replaceable, not to fragment the project.
 
-- `README.md/` — project implementation asset
-- `data/` — project implementation asset
-- `requirements.txt/` — project implementation asset
-- `sql/` — project implementation asset
-- `src/` — project implementation asset
-- `tests/` — project implementation asset
+## Supporting implementation
 
-## Technology
+- `src/debt_schedule.py`
+- `src/xirr.py`
+- `src/export_excel.py`
+- `sql/`
+- `tests/`
+
+## Stack
 
 - Python
-- Pandas
-- NumPy
 - OpenPyXL
-- Plotly
 - XIRR
 - PostgreSQL
 - Excel
 
 ## Validation
 
-See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+See [VALIDATION.md](VALIDATION.md).
 
-## Local execution
+## Review order
 
-Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
-
-## Read next
-
-- [Architecture](../docs/ARCHITECTURE.md)
-- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
-- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
+1. Project README
+2. Principal execution file
+3. Supporting modules
+4. SQL / integrations / tests / outputs
