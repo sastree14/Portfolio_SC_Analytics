@@ -1,0 +1,23 @@
+{
+  "title": "SC-10 Real-Time Operations",
+  "panels": [
+    {
+      "type": "timeseries",
+      "title": "Event throughput",
+      "targets": [
+        {
+          "refId": "A"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "title": "Consumer lag",
+      "targets": [
+        {
+          "refId": "B"
+        }
+      ]
+    }
+  ]
+}

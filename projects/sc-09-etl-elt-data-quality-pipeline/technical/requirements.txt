@@ -1,4 +1,7 @@
 pytest>=8,<9
 pandas>=2.2,<3
-sqlalchemy>=2,<3
+duckdb>=1.1,<2
+dbt-duckdb>=1.8,<2
+pandera>=0.20,<1
 pyarrow>=17,<20
+apache-airflow>=2.10,<3

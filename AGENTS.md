@@ -1,43 +1,30 @@
 # Repository guide
 
-This repository is the public technical portfolio of SC-Analytics.
-
-## Purpose
-
-Help a reviewer understand completed projects, inspect their architecture and code, and locate evidence relevant to a specific business problem or technology.
+This is the public technical portfolio of SC-Analytics.
 
 ## Navigation
 
-- `README.md`: portfolio entry point
-- `PROJECTS.md`: index of completed public projects
-- `catalog/`: structured metadata for completed projects
-- `docs/`: portfolio-wide methodology and standards
-- `templates/`: documentation templates used across projects
-- `projects/`: completed project implementations when added
+- `README.md` — portfolio entry point
+- `PROJECTS.md` — all 29 projects by business problem
+- `TECHNOLOGIES.md` — project evidence by tool or technology
+- `catalog/projects.yml` — structured project catalogue
+- `projects/<project>/README.md` — business-first project entry
+- `projects/<project>/technical/README.md` — code-level entry point
 
-## Reading a project
+## How to inspect a project
 
-Start with the project's `README.md`.
+1. Read the project README for the business problem and impact.
+2. Open the technical README for implementation detail.
+3. Inspect credentials, integrations and environment documentation.
+4. Review example inputs, outputs, logs and analytical visuals.
+5. Run the local example and tests when available.
 
-For deeper technical review, inspect the project's architecture, implementation, environment, tests, data notes and technical decisions.
+## Useful questions for a coding agent
 
-## Confidentiality
-
-Never interpret synthetic public records as original client data.
-
-Public datasets may reproduce the relevant schema, relationships and data types of a real workflow while replacing all confidential business values.
-
-## Technical claims
-
-Treat technologies as project-specific evidence. Do not infer that a tool was used in production unless the project documentation states that explicitly.
-
-## Useful questions
-
-Examples:
-
-- Which completed projects involve optimization?
-- Which projects use FastAPI and why?
-- Explain a project for a business stakeholder.
-- Explain the same project for a technical reviewer.
-- Which projects contain human approval before an automated action?
-- Which systems use cloud infrastructure, orchestration or analytical databases?
+- Which projects use FastAPI and what responsibility does it have in each one?
+- Which projects demonstrate agents rather than simple LLM calls?
+- Find all projects involving optimization.
+- Compare the data architecture of SC-08, SC-09 and SC-10.
+- Explain SC-18 first for a credit-risk manager and then for an ML engineer.
+- Which projects show AWS, Azure, Airflow, dbt, n8n, ClickHouse, R or BI tooling?
+- Which systems include approval before an external action?

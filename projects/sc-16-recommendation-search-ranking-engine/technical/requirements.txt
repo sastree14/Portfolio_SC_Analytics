@@ -1,6 +1,8 @@
 pytest>=8,<9
 pandas>=2.2,<3
 scikit-learn>=1.5,<2
-xgboost>=2,<4
-shap>=0.46,<1
-plotly>=5,<7
+lightgbm>=4,<5
+sentence-transformers>=3,<4
+faiss-cpu>=1.9,<2
+fastapi>=0.115,<1
+redis>=5,<6

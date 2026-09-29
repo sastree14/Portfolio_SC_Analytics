@@ -1,40 +1,32 @@
 # SC-Analytics Portfolio
 
-This repository contains selected systems and projects developed by SC-Analytics.
+This repository contains **29 completed projects** developed by SC-Analytics across AI agents, data engineering, forecasting, business intelligence, machine learning, risk, optimization, finance and quantitative systems.
 
-The objective is simple: show how we approach business problems, how the underlying systems are designed, and how analytical work is translated into decisions that can be used in practice.
+The portfolio is designed for two audiences at the same time:
 
-## How to use this repository
+- a business stakeholder can understand the problem, impact and operating use case without reading code
+- a technical reviewer can inspect the architecture, technologies, credentials, SQL, tests, example outputs and local execution path
 
-The portfolio is organized around business problems and technical capabilities rather than around individual tools.
+## Start here
 
-Each completed project is documented at two levels:
+- [Browse all 29 projects](PROJECTS.md)
+- [Browse by technology](TECHNOLOGIES.md)
+- [SC-Analytics methodology](docs/methodology.md)
+- [Data confidentiality](docs/data-confidentiality.md)
+- [Explore the repository with a coding agent](docs/ai-exploration.md)
 
-- an executive layer explaining the problem, approach and business impact
-- a technical layer covering architecture, data, implementation, integrations, environments, validation and limitations
+## What the portfolio covers
 
-A business stakeholder should be able to understand why the project matters without reading code. A technical reviewer should be able to go deeper and inspect how the system works.
+**AI & automation** — long-running agents, multi-agent workflows, CRM automation, AI reception, document intelligence, workflow automation and full-stack LLM applications.
 
-## Public data and confidentiality
+**Data engineering** — Airflow, dbt, data quality, APIs, ClickHouse, streaming, MLOps, cloud storage and real-time analytics.
 
-Client names, credentials, production connections and confidential records are not published.
+**Forecasting & decision interfaces** — multi-horizon forecasting, R Shiny, Power BI and Tableau.
 
-When a project requires representative public data, the repository preserves the structure needed to reproduce the workflow while using safe synthetic values.
+**Machine learning & risk** — recommendation, churn, CLV, survival analysis, credit risk, fraud and explainability.
 
-See [Data confidentiality](docs/data-confidentiality.md).
+**Optimization & operations** — supply chain, pricing, scheduling and simulation.
 
-## Methodology
+**Finance & quant** — financial modelling, debt, portfolio risk, capital allocation and market microstructure.
 
-SC-Analytics follows a problem-first approach. Technology is selected after the business process, decision, constraints and available data are understood.
-
-See [Methodology](docs/methodology.md).
-
-## Projects
-
-Completed projects are indexed in [PROJECTS.md](PROJECTS.md).
-
-## Repository exploration
-
-The repository is designed to be readable directly on GitHub and to be explored locally with development tools or coding agents.
-
-See [AI-assisted repository exploration](docs/ai-exploration.md).
+Every project has a business-first README and a deeper technical path.
