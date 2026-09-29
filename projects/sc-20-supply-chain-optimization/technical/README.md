@@ -1,44 +1,38 @@
 # Technical implementation
 
-This is the code-level entry point for **SC-20 · Supply Chain & Marketplace Optimization**.
+## Main execution path
 
-## Main responsibilities
+**Start here → [`run_project.py`](run_project.py)**
 
-- The mathematical model makes constraints explicit rather than hiding them in procedural code.
-- A heuristic baseline is retained to quantify the value of optimization.
-- ERP write-back is treated as a controlled integration after the solution is reviewed.
+This is the principal public execution file for **SC-20 · Supply Chain & Marketplace Optimization**. It shows the end-to-end path in one place: **input → validation/context → core logic → business output**.
 
-## Technical map
+The files below are supporting implementation details used by that main path.
 
-- `README.md/` — project implementation asset
-- `data/` — project implementation asset
-- `requirements.txt/` — project implementation asset
-- `sql/` — project implementation asset
-- `src/` — project implementation asset
-- `tests/` — project implementation asset
+## Supporting implementation
 
-## Technology
+- `src/model_ortools.py`
+- `src/`
+- `sql/`
+- `tests/`
+- `data/`
+
+## Stack
 
 - Python
 - OR-Tools
-- Pandas
-- NumPy
 - FastAPI
 - PostgreSQL
 - Plotly
-- Docker
 
 ## Validation
 
-See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+See [VALIDATION.md](VALIDATION.md).
 
-## Local execution
+## Review order
 
-Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
+1. Project README
+2. Principal execution file
+3. Supporting modules
+4. SQL / integrations / tests / outputs
 
-## Read next
-
-- [Architecture](../docs/ARCHITECTURE.md)
-- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
-- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
+The principal execution file is intentionally the fastest technical route through the project.
