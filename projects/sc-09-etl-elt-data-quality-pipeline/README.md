@@ -17,11 +17,16 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Raw files
-    ↓\n    Schema validation
-        ↓\n        dbt staging
-            ↓\n            Business tests
-                ↓\n                Mart build
-                    ↓\n                    Publish
+    ↓
+    Schema validation
+        ↓
+        dbt staging
+            ↓
+            Business tests
+                ↓
+                Mart build
+                    ↓
+                    Publish
 ```
 
 ## Technology at a glance
@@ -49,6 +54,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative Parquet/CSV inputs, validated staging data, dbt models, test outcomes and curated marts.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-09 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

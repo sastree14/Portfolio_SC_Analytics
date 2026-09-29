@@ -1,44 +1,39 @@
 # Technical implementation
 
-This is the code-level entry point for **SC-18 · Credit Risk & Profit Optimization Engine**.
+## Main execution path
 
-## Main responsibilities
+**Start here → [`run_project.py`](run_project.py)**
 
-- Risk prediction and economic decision logic are separated so policy can change without retraining the model.
-- Calibration matters because probabilities feed expected-loss calculations.
-- Optimization is constrained by risk appetite rather than maximizing approvals.
+This is the principal public execution file for **SC-18 · Credit Risk & Profit Optimization Engine**. It shows the end-to-end path in one place: **input → validation/context → core logic → business output**.
 
-## Technical map
+The files below are supporting implementation details used by that main path.
 
-- `README.md/` — project implementation asset
-- `data/` — project implementation asset
-- `requirements.txt/` — project implementation asset
-- `sql/` — project implementation asset
-- `src/` — project implementation asset
-- `tests/` — project implementation asset
+## Supporting implementation
 
-## Technology
+- `src/model.py`
+- `src/explain.py`
+- `src/decision.py`
+- `ui/app.py`
+- `tests/`
+
+## Stack
 
 - Python
 - XGBoost
 - SHAP
-- Scikit-learn
 - Optuna
 - FastAPI
-- PostgreSQL
-- Plotly
+- Streamlit
 
 ## Validation
 
-See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+See [VALIDATION.md](VALIDATION.md).
 
-## Local execution
+## Review order
 
-Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
+1. Project README
+2. Principal execution file
+3. Supporting modules
+4. SQL / integrations / tests / outputs
 
-## Read next
-
-- [Architecture](../docs/ARCHITECTURE.md)
-- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
-- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
+The principal execution file is intentionally the fastest technical route through the project.

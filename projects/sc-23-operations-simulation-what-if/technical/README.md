@@ -1,44 +1,36 @@
 # Technical implementation
 
-This is the code-level entry point for **SC-23 · Operations Simulation & What-If Engine**.
+## Main execution path
 
-## Main responsibilities
+**Start here → [`run_project.py`](run_project.py)**
 
-- SimPy models event timing directly instead of approximating queues with static averages.
-- Monte Carlo replications quantify outcome distributions.
-- P95 and utilization metrics are retained alongside mean values to expose operational risk.
+This is the principal public execution file for **SC-23 · Operations Simulation & What-If Engine**. It shows the complete high-level execution path in one place: **input → validation/context → core logic → business output**.
 
-## Technical map
+The supporting implementation below exists to make the main path deeper and replaceable, not to fragment the project.
 
-- `README.md/` — project implementation asset
-- `data/` — project implementation asset
-- `requirements.txt/` — project implementation asset
-- `sql/` — project implementation asset
-- `src/` — project implementation asset
-- `tests/` — project implementation asset
+## Supporting implementation
 
-## Technology
+- `src/simpy_model.py`
+- `src/`
+- `tests/`
+- `data/`
+- `sql/`
+
+## Stack
 
 - Python
 - SimPy
 - NumPy
 - Pandas
-- Monte Carlo
 - Plotly
-- FastAPI
-- Docker
 
 ## Validation
 
-See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+See [VALIDATION.md](VALIDATION.md).
 
-## Local execution
+## Review order
 
-Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
-
-## Read next
-
-- [Architecture](../docs/ARCHITECTURE.md)
-- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
-- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
+1. Project README
+2. Principal execution file
+3. Supporting modules
+4. SQL / integrations / tests / outputs

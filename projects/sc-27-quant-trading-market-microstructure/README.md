@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 WebSocket feed
-    ↓\n    Event normalization
-        ↓\n        ClickHouse
-            ↓\n            Live Redis state
-                ↓\n                Signal engine
-                    ↓\n                    Backtest
-                        ↓\n                        Research UI
+    ↓
+    Event normalization
+        ↓
+        ClickHouse
+            ↓
+            Live Redis state
+                ↓
+                Signal engine
+                    ↓
+                    Backtest
+                        ↓
+                        Research UI
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative L1/L2-style events, normalized trades/quotes, microstructure features, backtest results and live-state payloads.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-27 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

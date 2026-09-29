@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Customer history
-    ↓\n    Feature layer
-        ↓\n        Churn model
-            ↓\n            Survival model
-                ↓\n                CLV
-                    ↓\n                    Segmentation
-                        ↓\n                        Priority / action
+    ↓
+    Feature layer
+        ↓
+        Churn model
+            ↓
+            Survival model
+                ↓
+                CLV
+                    ↓
+                    Segmentation
+                        ↓
+                        Priority / action
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative customer activity, billing, tenure, event labels, CLV estimates, survival outputs and segment assignments.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-17 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

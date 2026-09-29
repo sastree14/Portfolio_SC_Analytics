@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Site + deal inputs
-    ↓\n    Document extraction
-        ↓\n        Cost / revenue model
-            ↓\n            Finance
-                ↓\n                Scenario analysis
-                    ↓\n                    Investment gate
-                        ↓\n                        Workflow
+    ↓
+    Document extraction
+        ↓
+        Cost / revenue model
+            ↓
+            Finance
+                ↓
+                Scenario analysis
+                    ↓
+                    Investment gate
+                        ↓
+                        Workflow
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative site coordinates, acquisition terms, build costs, financing assumptions, document-extracted terms and scenario outputs.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-28 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

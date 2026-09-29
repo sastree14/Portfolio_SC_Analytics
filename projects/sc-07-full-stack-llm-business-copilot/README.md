@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 User question
-    ↓\n    Context retrieval
-        ↓\n        LLM reasoning
-            ↓\n            Structured tool call
-                ↓\n                Business API
-                    ↓\n                    Result
-                        ↓\n                        Persistent conversation
+    ↓
+    Context retrieval
+        ↓
+        LLM reasoning
+            ↓
+            Structured tool call
+                ↓
+                Business API
+                    ↓
+                    Result
+                        ↓
+                        Persistent conversation
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative conversation history, structured tool inputs, tool results and user-visible response state.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-07 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.ts`](technical/run_project.ts).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

@@ -17,11 +17,16 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Inbound message
-    ↓\n    Conversation context
-        ↓\n        Structured extraction
-            ↓\n            Qualification
-                ↓\n                Routing
-                    ↓\n                    Scheduling / human hand-off
+    ↓
+    Conversation context
+        ↓
+        Structured extraction
+            ↓
+            Qualification
+                ↓
+                Routing
+                    ↓
+                    Scheduling / human hand-off
 ```
 
 ## Technology at a glance
@@ -49,6 +54,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative enquiry messages, qualification fields, routing decisions and scheduling hand-off state.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-04 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.ts`](technical/run_project.ts).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

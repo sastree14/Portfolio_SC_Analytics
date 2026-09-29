@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Producer
-    ↓\n    Kafka / Redpanda
-        ↓\n        Consumer
-            ↓\n            ClickHouse
-                ↓\n                FastAPI / WebSocket
-                    ↓\n                    Grafana
-                        ↓\n                        Alerting
+    ↓
+    Kafka / Redpanda
+        ↓
+        Consumer
+            ↓
+            ClickHouse
+                ↓
+                FastAPI / WebSocket
+                    ↓
+                    Grafana
+                        ↓
+                        Alerting
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative event messages, stream-consumer outputs, ClickHouse schema, live API payloads and monitoring configuration.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-10 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

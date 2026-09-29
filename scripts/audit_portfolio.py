@@ -21,15 +21,19 @@ REQUIRED = [
     "docs/ENVIRONMENTS.md",
     "docs/LIMITATIONS.md",
     "examples/README.md",
+    "examples/visuals/result.svg",
     "technical/README.md",
     "technical/VALIDATION.md",
 ]
 
-BI_VISUAL_EXCEPTIONS = {
-    "sc-14-power-bi-executive-decision-system",
-    "sc-15-tableau-commercial-analytics",
+ENTRYPOINTS = {
+    "sc-04-ai-receptionist-lead-qualification": "technical/run_project.ts",
+    "sc-07-full-stack-llm-business-copilot": "technical/run_project.ts",
+    "sc-13-r-shiny-forecasting-scenario-planning": "technical/run_project.R",
 }
 
+LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
+FONT_RE = re.compile(r'font-size="([0-9.]+)"')
 SECRET_PATTERNS = [
     re.compile(r"sk-[A-Za-z0-9]{20,}"),
     re.compile(r"ghp_[A-Za-z0-9]{20,}"),
@@ -37,11 +41,14 @@ SECRET_PATTERNS = [
     re.compile(r"-----BEGIN (RSA |EC |OPENSSH )?PRIVATE KEY-----"),
 ]
 
-LINK_RE = re.compile(r"\[[^\]]*\]\(([^)]+)\)")
-
 
 def fail(errors: list[str], message: str) -> None:
     errors.append(message)
+
+
+def entrypoint(project: Path) -> Path:
+    rel = ENTRYPOINTS.get(project.name, "technical/run_project.py")
+    return project / rel
 
 
 def validate_structure(errors: list[str]) -> list[Path]:
@@ -49,17 +56,40 @@ def validate_structure(errors: list[str]) -> list[Path]:
     if len(dirs) != 29:
         fail(errors, f"expected 29 project directories, found {len(dirs)}")
 
-    for p in dirs:
+    for project in dirs:
         for rel in REQUIRED:
-            if not (p / rel).exists():
-                fail(errors, f"{p.name}: missing {rel}")
+            if not (project / rel).exists():
+                fail(errors, f"{project.name}: missing {rel}")
 
-        if p.name not in BI_VISUAL_EXCEPTIONS:
-            visual_dir = p / "examples" / "visuals"
-            if not visual_dir.exists() or not any(x.is_file() for x in visual_dir.iterdir()):
-                fail(errors, f"{p.name}: missing analytical visual evidence")
+        ep = entrypoint(project)
+        if not ep.exists():
+            fail(errors, f"{project.name}: missing principal entrypoint {ep.relative_to(project)}")
+
+        project_readme = (project / "README.md").read_text(encoding="utf-8")
+        tech_readme = (project / "technical" / "README.md").read_text(encoding="utf-8")
+        if ep.name not in project_readme:
+            fail(errors, f"{project.name}: project README does not expose {ep.name}")
+        if ep.name not in tech_readme:
+            fail(errors, f"{project.name}: technical README does not expose {ep.name}")
+        if "↓\\n" in project_readme:
+            fail(errors, f"{project.name}: README contains literal escaped newline in flow diagram")
 
     return dirs
+
+
+def validate_visuals(errors: list[str], dirs: list[Path]) -> None:
+    for project in dirs:
+        path = project / "examples" / "visuals" / "result.svg"
+        text = path.read_text(encoding="utf-8")
+        if "<svg" not in text:
+            fail(errors, f"{project.name}: visual is not SVG")
+        if 'width="1200"' not in text or 'height="720"' not in text:
+            fail(errors, f"{project.name}: visual should use 1200x720 technical canvas")
+        sizes = [float(x) for x in FONT_RE.findall(text)]
+        if sizes and max(sizes) > 28:
+            fail(errors, f"{project.name}: oversized visual typography ({max(sizes)}px)")
+        if len(text) < 1500:
+            fail(errors, f"{project.name}: visual appears too sparse to be useful")
 
 
 def validate_json(errors: list[str]) -> None:
@@ -85,8 +115,7 @@ def validate_links(errors: list[str]) -> None:
             target = target.strip().split("#", 1)[0]
             if not target or target.startswith(("http://", "https://", "mailto:", "#")):
                 continue
-            target = target.split("?", 1)[0]
-            resolved = (path.parent / target).resolve()
+            resolved = (path.parent / target.split("?", 1)[0]).resolve()
             try:
                 resolved.relative_to(ROOT.resolve())
             except ValueError:
@@ -114,59 +143,52 @@ def validate_secrets(errors: list[str]) -> None:
                 fail(errors, f"secret-like token found in {path.relative_to(ROOT)}")
 
 
-def validate_catalog(errors: list[str], dirs: list[Path]) -> None:
+def validate_indexes(errors: list[str], dirs: list[Path]) -> None:
     projects_md = (ROOT / "PROJECTS.md").read_text(encoding="utf-8")
-    tech_md = (ROOT / "TECHNOLOGIES.md").read_text(encoding="utf-8")
-    for p in dirs:
-        project_id = p.name.split("-", 2)[:2]
-        project_id = "-".join(project_id).upper()
-        if project_id not in projects_md:
-            fail(errors, f"{project_id} missing from PROJECTS.md")
-        if not (ROOT / "catalog" / f"{p.name}.yml").exists():
-            fail(errors, f"{p.name}: missing individual catalog entry")
-    if "# Technology index" not in tech_md:
-        fail(errors, "TECHNOLOGIES.md missing expected heading")
+    visuals_md = (ROOT / "VISUALS.md").read_text(encoding="utf-8")
+    execution_md = (ROOT / "EXECUTION.md").read_text(encoding="utf-8")
+
+    for project in dirs:
+        project_id = "-".join(project.name.split("-", 2)[:2]).upper()
+        for name, text in [("PROJECTS.md", projects_md), ("VISUALS.md", visuals_md), ("EXECUTION.md", execution_md)]:
+            if project_id not in text:
+                fail(errors, f"{project_id} missing from {name}")
+
+    for heading in range(1, 10):
+        if f"## {heading}." not in projects_md:
+            fail(errors, f"PROJECTS.md missing numbered group {heading}")
 
 
-def run_stdlib_examples(errors: list[str], dirs: list[Path]) -> None:
-    for p in dirs:
-        main = p / "technical" / "src" / "main.py"
-        if not main.exists():
-            continue
+def run_command(errors: list[str], project: Path, command: list[str]) -> None:
+    try:
+        subprocess.run(command, cwd=project / "technical", check=True, capture_output=True, text=True, timeout=30)
+    except subprocess.CalledProcessError as exc:
+        fail(errors, f"{project.name}: entrypoint failed: {exc.stderr[-800:] or exc.stdout[-800:]}")
+    except Exception as exc:
+        fail(errors, f"{project.name}: entrypoint failed: {exc}")
 
-        source = main.read_text(encoding="utf-8")
-        third_party_markers = [
-            "import pandas", "from pandas", "import numpy", "from numpy",
-            "import fastapi", "from fastapi", "import sklearn", "from sklearn",
-            "import xgboost", "from xgboost", "import shap", "from shap",
-            "import streamlit", "from streamlit", "import cvxpy", "from cvxpy",
-            "import ortools", "from ortools", "import simpy", "from simpy",
-        ]
-        if any(marker in source for marker in third_party_markers):
-            continue
 
-        try:
-            subprocess.run(
-                [sys.executable, str(main)],
-                cwd=p / "technical",
-                check=True,
-                capture_output=True,
-                text=True,
-                timeout=20,
-            )
-        except Exception as exc:
-            fail(errors, f"{p.name}: deterministic main.py failed: {exc}")
+def validate_entrypoints(errors: list[str], dirs: list[Path]) -> None:
+    for project in dirs:
+        ep = entrypoint(project)
+        if ep.suffix == ".py":
+            run_command(errors, project, [sys.executable, ep.name])
+        elif ep.suffix == ".ts":
+            run_command(errors, project, ["node", "--experimental-strip-types", ep.name])
+        elif ep.suffix == ".R":
+            run_command(errors, project, ["Rscript", ep.name])
 
 
 def main() -> int:
     errors: list[str] = []
     dirs = validate_structure(errors)
+    validate_visuals(errors, dirs)
     validate_json(errors)
     validate_python(errors)
     validate_links(errors)
     validate_secrets(errors)
-    validate_catalog(errors, dirs)
-    run_stdlib_examples(errors, dirs)
+    validate_indexes(errors, dirs)
+    validate_entrypoints(errors, dirs)
 
     if errors:
         print("PORTFOLIO AUDIT FAILED")
@@ -175,7 +197,8 @@ def main() -> int:
         return 1
 
     print(f"Portfolio audit passed: {len(dirs)} projects")
-    print("Power BI and Tableau are allowed to omit native visual evidence until supplied.")
+    print("29/29 principal execution files executed successfully.")
+    print("29/29 technical visuals passed structure and typography checks.")
     return 0
 
 

@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Orders + inventory
-    ↓\n    Feature engineering
-        ↓\n        Baseline models
-            ↓\n            ML candidates
-                ↓\n                Backtesting by horizon
-                    ↓\n                    Forecast selection
-                        ↓\n                        Planning output
+    ↓
+    Feature engineering
+        ↓
+        Baseline models
+            ↓
+            ML candidates
+                ↓
+                Backtesting by horizon
+                    ↓
+                    Forecast selection
+                        ↓
+                        Planning output
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative SKU history, calendar features, backtest folds, horizon-level metrics, forecasts and prediction intervals.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-12 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

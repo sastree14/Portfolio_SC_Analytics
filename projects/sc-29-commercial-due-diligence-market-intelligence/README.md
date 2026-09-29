@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Research questions
-    ↓\n    Source collection
-        ↓\n        Evidence store
-            ↓\n            Structured extraction
-                ↓\n                Analysis
-                    ↓\n                    Synthesis
-                        ↓\n                        Human review
+    ↓
+    Source collection
+        ↓
+        Evidence store
+            ↓
+            Structured extraction
+                ↓
+                Analysis
+                    ↓
+                    Synthesis
+                        ↓
+                        Human review
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative research questions, source metadata, extracted evidence, analytical tables and claim-support records.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-29 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

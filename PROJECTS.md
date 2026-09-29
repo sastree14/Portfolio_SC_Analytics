@@ -1,138 +1,225 @@
 # Projects
 
-SC-Analytics currently publishes **29 completed projects** in this portfolio. The projects are organized by business problem; technologies are indexed separately in [TECHNOLOGIES.md](TECHNOLOGIES.md).
+SC-Analytics currently publishes **29 completed projects**. The index is intentionally business-first: choose the problem area, then open the project. If your first question is technical, use [TECHNOLOGIES.md](TECHNOLOGIES.md).
 
-## AI Agents & Intelligent Automation
+## 1. AI Agents & Intelligent Automation
 
-### SC-01 · Long-Running AI Agent Platform
+### 1.1 SC-01 · Long-Running AI Agent Platform
 
-[Open project](projects/sc-01-long-running-agent-platform/README.md) · **Technology:** Python · FastAPI · PostgreSQL · Redis · Celery · Docker · OpenAI · Anthropic · SQL
+Durable agents with persistent state, approval gates and recoverable execution.
 
-### SC-02 · Multi-Agent Operations Orchestrator
+- [Open project](projects/sc-01-long-running-agent-platform/README.md)
+- *Stack:* Python · FastAPI · PostgreSQL · Redis · Celery · Docker · OpenAI · Anthropic · SQL
 
-[Open project](projects/sc-02-multi-agent-operations-orchestrator/README.md) · **Technology:** Python · FastAPI · LangGraph · PostgreSQL · Redis · Docker · OpenAI · Anthropic · Pydantic
+### 1.2 SC-02 · Multi-Agent Operations Orchestrator
 
-### SC-03 · AI Sales & CRM Automation System
+Planner, specialist, reviewer and executor agents with explicit hand-offs.
 
-[Open project](projects/sc-03-ai-sales-crm-automation/README.md) · **Technology:** Python · FastAPI · PostgreSQL · n8n · HubSpot API · Webhooks · OpenAI · Docker · SQL
+- [Open project](projects/sc-02-multi-agent-operations-orchestrator/README.md)
+- *Stack:* Python · FastAPI · LangGraph · PostgreSQL · Redis · OpenAI · Anthropic
 
-### SC-04 · AI Receptionist & Lead Qualification
+### 1.3 SC-03 · AI Sales & CRM Automation System
 
-[Open project](projects/sc-04-ai-receptionist-lead-qualification/README.md) · **Technology:** TypeScript · Node.js · Fastify · Twilio · Calendly · OpenAI · PostgreSQL · Docker · Webhooks
+Lead scoring, next-action preparation and controlled CRM automation.
 
-### SC-05 · Document Intelligence & Due Diligence Agent
+- [Open project](projects/sc-03-ai-sales-crm-automation/README.md)
+- *Stack:* Python · FastAPI · PostgreSQL · n8n · HubSpot API · OpenAI
 
-[Open project](projects/sc-05-document-intelligence-due-diligence-agent/README.md) · **Technology:** Python · FastAPI · Qdrant · PostgreSQL · PyMuPDF · OpenAI · S3 / MinIO · Docker · Pydantic
+### 1.4 SC-04 · AI Receptionist & Lead Qualification
 
-### SC-06 · AI Workflow Automation Hub
+Conversational intake, structured qualification and scheduling hand-off.
 
-[Open project](projects/sc-06-ai-workflow-automation-hub/README.md) · **Technology:** n8n · Python · FastAPI · PostgreSQL · Redis · Webhooks · Zapier Webhooks · Make Webhooks · Docker
+- [Open project](projects/sc-04-ai-receptionist-lead-qualification/README.md)
+- *Stack:* TypeScript · Fastify · Twilio · Calendly · OpenAI · PostgreSQL
 
-### SC-07 · Full-Stack LLM Business Copilot
+### 1.5 SC-05 · Document Intelligence & Due Diligence Agent
 
-[Open project](projects/sc-07-full-stack-llm-business-copilot/README.md) · **Technology:** Next.js · TypeScript · React · PostgreSQL · Supabase · OpenAI · Vercel · Zod · Tailwind CSS
+Evidence-linked document extraction, retrieval and structured findings.
 
-## Data Engineering & Platforms
+- [Open project](projects/sc-05-document-intelligence-due-diligence-agent/README.md)
+- *Stack:* Python · Qdrant · pgvector · PyMuPDF · OpenAI · PostgreSQL
 
-### SC-08 · Enterprise Data Integration & API Platform
+### 1.6 SC-06 · AI Workflow Automation Hub
 
-[Open project](projects/sc-08-enterprise-data-integration-api-platform/README.md) · **Technology:** Python · FastAPI · Apache Airflow · PostgreSQL · ClickHouse · AWS S3 · Azure Blob Storage · Docker · SQL
+Event-driven workflows combining deterministic automation and selective AI steps.
 
-### SC-09 · ETL / ELT & Data Quality Pipeline
+- [Open project](projects/sc-06-ai-workflow-automation-hub/README.md)
+- *Stack:* n8n · Python · FastAPI · Zapier · Make · PostgreSQL · Redis
 
-[Open project](projects/sc-09-etl-elt-data-quality-pipeline/README.md) · **Technology:** dbt · DuckDB · Python · Pandera · Parquet · Apache Airflow · SQL · Docker · GitHub Actions
+### 1.7 SC-07 · Full-Stack LLM Business Copilot
 
-### SC-10 · Real-Time Analytics & Monitoring Platform
+A full-stack copilot with structured tools, persistent context and business actions.
 
-[Open project](projects/sc-10-real-time-analytics-platform/README.md) · **Technology:** Redpanda / Kafka · ClickHouse · Python · FastAPI · WebSockets · Grafana · Docker · SQL
+- [Open project](projects/sc-07-full-stack-llm-business-copilot/README.md)
+- *Stack:* Next.js · TypeScript · React · Supabase · OpenAI · Vercel
 
-### SC-11 · ML / AI Evaluation & Monitoring Platform
+## 2. Data Engineering & Platforms
 
-[Open project](projects/sc-11-mlops-evaluation-monitoring/README.md) · **Technology:** Python · MLflow · Evidently · FastAPI · PostgreSQL · Docker · GitHub Actions · Prometheus
+### 2.1 SC-08 · Enterprise Data Integration & API Platform
 
-## Forecasting & Planning
+Governed ingestion, cloud storage, analytical serving and enterprise connectors.
 
-### SC-12 · Multi-Horizon Demand Forecasting & Inventory Planning
+- [Open project](projects/sc-08-enterprise-data-integration-api-platform/README.md)
+- *Stack:* Airflow · FastAPI · PostgreSQL · ClickHouse · AWS · Azure · Snowflake · BigQuery · Databricks · Terraform
 
-[Open project](projects/sc-12-multi-horizon-demand-forecasting/README.md) · **Technology:** Python · Pandas · Statsmodels · XGBoost · LightGBM · Plotly · FastAPI · PostgreSQL
+### 2.2 SC-09 · ETL / ELT & Data Quality Pipeline
 
-### SC-13 · R Shiny Forecasting & Scenario Planning Application
+Tested analytics transformations with explicit raw, staging and mart layers.
 
-[Open project](projects/sc-13-r-shiny-forecasting-scenario-planning/README.md) · **Technology:** R · Shiny · forecast · fable · ggplot2 · dplyr · DBI · PostgreSQL
+- [Open project](projects/sc-09-etl-elt-data-quality-pipeline/README.md)
+- *Stack:* dbt · DuckDB · Pandera · Parquet · Airflow · GitHub Actions
 
-## BI & Decision Interfaces
+### 2.3 SC-10 · Real-Time Analytics & Monitoring Platform
 
-### SC-14 · Power BI Executive Decision System
+Streaming events into low-latency analytical storage and live monitoring.
 
-[Open project](projects/sc-14-power-bi-executive-decision-system/README.md) · **Technology:** Power BI · DAX · Power Query · SQL · Star Schema · PostgreSQL · Excel
+- [Open project](projects/sc-10-real-time-analytics-platform/README.md)
+- *Stack:* Kafka / Redpanda · ClickHouse · FastAPI · WebSockets · Grafana · Kubernetes · OpenTelemetry
 
-### SC-15 · Tableau Commercial Analytics & Drill-Down
+### 2.4 SC-11 · ML / AI Evaluation & Monitoring Platform
 
-[Open project](projects/sc-15-tableau-commercial-analytics/README.md) · **Technology:** Tableau · Tableau Calculated Fields · SQL · PostgreSQL · CSV · LOD Expressions
+Model evaluation, drift monitoring, experiment lineage and release gates.
 
-## Machine Learning & Customer Analytics
+- [Open project](projects/sc-11-mlops-evaluation-monitoring/README.md)
+- *Stack:* MLflow · Evidently · FastAPI · Prometheus · Kubernetes · GitHub Actions
 
-### SC-16 · Recommendation, Search & Ranking Engine
+## 3. Forecasting & Planning
 
-[Open project](projects/sc-16-recommendation-search-ranking-engine/README.md) · **Technology:** Python · Scikit-learn · LightGBM · Sentence Transformers · FAISS · FastAPI · PostgreSQL · Redis
+### 3.1 SC-12 · Multi-Horizon Demand Forecasting & Inventory Planning
 
-### SC-17 · Customer Intelligence: Churn, CLV & Segmentation
+Backtested forecasting across multiple planning horizons with inventory outputs.
 
-[Open project](projects/sc-17-customer-intelligence-churn-clv/README.md) · **Technology:** Python · Scikit-learn · XGBoost · Lifelines · SHAP · Pandas · FastAPI · PostgreSQL
+- [Open project](projects/sc-12-multi-horizon-demand-forecasting/README.md)
+- *Stack:* Python · Statsmodels · XGBoost · LightGBM · Plotly · Prefect
 
-## Machine Learning & Risk
+### 3.2 SC-13 · R Shiny Forecasting & Scenario Planning Application
 
-### SC-18 · Credit Risk & Profit Optimization Engine
+Interactive forecasting and scenario planning built natively in R.
 
-[Open project](projects/sc-18-credit-risk-profit-optimization/README.md) · **Technology:** Python · XGBoost · SHAP · Scikit-learn · Optuna · FastAPI · PostgreSQL · Plotly
+- [Open project](projects/sc-13-r-shiny-forecasting-scenario-planning/README.md)
+- *Stack:* R · Shiny · forecast · fable · ggplot2 · dplyr · PostgreSQL
 
-### SC-19 · Fraud Detection & Explainability System
+## 4. BI & Decision Interfaces
 
-[Open project](projects/sc-19-fraud-detection-explainability/README.md) · **Technology:** Python · XGBoost · SHAP · Scikit-learn · Imbalanced-learn · FastAPI · PostgreSQL · Plotly
+### 4.1 SC-14 · Power BI Executive Decision System
 
-## Optimization & Operations
+Executive semantic model for revenue, margin, pipeline and plan variance.
 
-### SC-20 · Supply Chain & Marketplace Optimization
+- [Open project](projects/sc-14-power-bi-executive-decision-system/README.md)
+- *Stack:* Power BI · DAX · Power Query · SQL · PostgreSQL · Excel
 
-[Open project](projects/sc-20-supply-chain-optimization/README.md) · **Technology:** Python · OR-Tools · Pandas · NumPy · FastAPI · PostgreSQL · Plotly · Docker
+### 4.2 SC-15 · Tableau Commercial Analytics & Drill-Down
 
-### SC-21 · Pricing & Revenue Optimization Engine
+Commercial exploration, cohorts and account-level drill-down.
 
-[Open project](projects/sc-21-pricing-revenue-optimization/README.md) · **Technology:** Python · Pandas · NumPy · SciPy · Statsmodels · XGBoost · Optuna · FastAPI · Plotly
+- [Open project](projects/sc-15-tableau-commercial-analytics/README.md)
+- *Stack:* Tableau · LOD Expressions · SQL · PostgreSQL · CSV
 
-### SC-22 · Resource, Capacity & Scheduling Optimization
+## 5. Machine Learning & Customer Analytics
 
-[Open project](projects/sc-22-resource-capacity-scheduling-optimization/README.md) · **Technology:** Python · OR-Tools · Pyomo · Pandas · FastAPI · PostgreSQL · Docker · Plotly
+### 5.1 SC-16 · Recommendation, Search & Ranking Engine
 
-### SC-23 · Operations Simulation & What-If Engine
+Hybrid candidate retrieval and ranking using behaviour, semantics and business rules.
 
-[Open project](projects/sc-23-operations-simulation-what-if/README.md) · **Technology:** Python · SimPy · NumPy · Pandas · Monte Carlo · Plotly · FastAPI · Docker
+- [Open project](projects/sc-16-recommendation-search-ranking-engine/README.md)
+- *Stack:* LightGBM · Sentence Transformers · FAISS · FastAPI · Redis
 
-## Finance & Quantitative Systems
+### 5.2 SC-17 · Customer Intelligence: Churn, CLV & Segmentation
 
-### SC-24 · Financial Modelling & Scenario Engine
+Churn, survival, CLV and segmentation combined into customer prioritization.
 
-[Open project](projects/sc-24-financial-modelling-scenario-engine/README.md) · **Technology:** Python · Pandas · NumPy · OpenPyXL · Plotly · FastAPI · PostgreSQL · Excel
+- [Open project](projects/sc-17-customer-intelligence-churn-clv/README.md)
+- *Stack:* XGBoost · Lifelines · SHAP · Scikit-learn · FastAPI
 
-### SC-25 · Debt, Cash Flow & Investment Model
+## 6. Machine Learning & Risk
 
-[Open project](projects/sc-25-debt-cashflow-investment-model/README.md) · **Technology:** Python · Pandas · NumPy · OpenPyXL · Plotly · XIRR · PostgreSQL · Excel
+### 6.1 SC-18 · Credit Risk & Profit Optimization Engine
 
-### SC-26 · Portfolio Risk & Capital Allocation Engine
+Default risk, expected loss, explainability and economic decision optimization.
 
-[Open project](projects/sc-26-portfolio-risk-capital-allocation/README.md) · **Technology:** Python · NumPy · Pandas · SciPy · CVXPY · Plotly · Monte Carlo · FastAPI
+- [Open project](projects/sc-18-credit-risk-profit-optimization/README.md)
+- *Stack:* XGBoost · SHAP · Optuna · FastAPI · Streamlit · PostgreSQL
 
-### SC-27 · Quantitative Trading & Market Microstructure System
+### 6.2 SC-19 · Fraud Detection & Explainability System
 
-[Open project](projects/sc-27-quant-trading-market-microstructure/README.md) · **Technology:** Python · TypeScript · WebSockets · ClickHouse · Redis · Pandas · NumPy · Plotly · Docker
+Cost-sensitive fraud scoring with threshold optimization and investigator explanations.
 
-## Specialized Business Systems
+- [Open project](projects/sc-19-fraud-detection-explainability/README.md)
+- *Stack:* XGBoost · SHAP · Imbalanced-learn · FastAPI · PostgreSQL
 
-### SC-28 · AI Property Development Feasibility & Operations System
+## 7. Optimization & Operations
 
-[Open project](projects/sc-28-ai-property-development-feasibility/README.md) · **Technology:** Python · FastAPI · PostgreSQL · Pandas · GeoPandas · OpenAI · n8n · Docker · Plotly
+### 7.1 SC-20 · Supply Chain & Marketplace Optimization
 
-### SC-29 · Commercial Due Diligence & Market Intelligence System
+Inventory allocation and service-level optimization under operational constraints.
 
-[Open project](projects/sc-29-commercial-due-diligence-market-intelligence/README.md) · **Technology:** Python · Pandas · DuckDB · FastAPI · Playwright · BeautifulSoup · OpenAI · PostgreSQL · Plotly
+- [Open project](projects/sc-20-supply-chain-optimization/README.md)
+- *Stack:* OR-Tools · Python · FastAPI · PostgreSQL · Plotly
+
+### 7.2 SC-21 · Pricing & Revenue Optimization Engine
+
+Price-demand response, contribution optimization and commercial constraints.
+
+- [Open project](projects/sc-21-pricing-revenue-optimization/README.md)
+- *Stack:* SciPy · Statsmodels · XGBoost · Optuna · FastAPI
+
+### 7.3 SC-22 · Resource, Capacity & Scheduling Optimization
+
+Skill-aware scheduling and capacity allocation under deadlines and constraints.
+
+- [Open project](projects/sc-22-resource-capacity-scheduling-optimization/README.md)
+- *Stack:* OR-Tools · Pyomo · FastAPI · PostgreSQL
+
+### 7.4 SC-23 · Operations Simulation & What-If Engine
+
+Discrete-event and Monte Carlo simulation for capacity and process decisions.
+
+- [Open project](projects/sc-23-operations-simulation-what-if/README.md)
+- *Stack:* SimPy · NumPy · Pandas · Plotly · FastAPI
+
+## 8. Finance & Quantitative Systems
+
+### 8.1 SC-24 · Financial Modelling & Scenario Engine
+
+Driver-based P&L, cash flow and scenario modelling.
+
+- [Open project](projects/sc-24-financial-modelling-scenario-engine/README.md)
+- *Stack:* Python · Pandas · OpenPyXL · FastAPI · Excel
+
+### 8.2 SC-25 · Debt, Cash Flow & Investment Model
+
+Debt schedules, covenant headroom, cash flows and investment returns.
+
+- [Open project](projects/sc-25-debt-cashflow-investment-model/README.md)
+- *Stack:* Python · OpenPyXL · XIRR · PostgreSQL · Excel
+
+### 8.3 SC-26 · Portfolio Risk & Capital Allocation Engine
+
+Portfolio risk, stress testing and constrained capital allocation.
+
+- [Open project](projects/sc-26-portfolio-risk-capital-allocation/README.md)
+- *Stack:* CVXPY · SciPy · Monte Carlo · FastAPI · Plotly
+
+### 8.4 SC-27 · Quantitative Trading & Market Microstructure System
+
+Market event processing, microstructure features, backtesting and research UI.
+
+- [Open project](projects/sc-27-quant-trading-market-microstructure/README.md)
+- *Stack:* Python · TypeScript · WebSockets · ClickHouse · Redis · Plotly
+
+## 9. Specialized Business Systems
+
+### 9.1 SC-28 · AI Property Development Feasibility & Operations System
+
+Feasibility, geospatial context, document extraction and investment-gate workflows.
+
+- [Open project](projects/sc-28-ai-property-development-feasibility/README.md)
+- *Stack:* GeoPandas · OpenAI · n8n · FastAPI · PostgreSQL
+
+### 9.2 SC-29 · Commercial Due Diligence & Market Intelligence System
+
+Evidence-backed market research, competitor analysis and investment questions.
+
+- [Open project](projects/sc-29-commercial-due-diligence-market-intelligence/README.md)
+- *Stack:* Playwright · BeautifulSoup · DuckDB · OpenAI · PostgreSQL
 

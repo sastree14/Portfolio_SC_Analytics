@@ -1,24 +1,38 @@
 # Technical implementation
 
-## Structure
+## Main execution path
 
-- `src/` — core analytical logic
-- `tests/` — deterministic smoke tests
-- `sql/` — persistence and reporting queries
-- `data/` — compact representative data
-- `scripts/` — output-generation utilities
-- `powerbi/` — DAX, Power Query and semantic-model specification
+**Start here → [`run_project.py`](run_project.py)**
 
-## Technology
+This is the principal public execution file for **SC-14 · Power BI Executive Decision System**. It shows the end-to-end path in one place: **input → validation/context → core logic → business output**.
+
+The files below are supporting implementation details used by that main path.
+
+## Supporting implementation
+
+- `powerbi/measures.dax`
+- `powerbi/source.m`
+- `powerbi/model.md`
+- `scripts/prepare_data.py`
+- `tests/`
+
+## Stack
 
 - Power BI
 - DAX
 - Power Query
 - SQL
-- Star Schema
 - PostgreSQL
-- Excel
 
-## Run
+## Validation
 
-The data preparation and SQL assets are runnable locally. The native BI workbook/report is documented in the tool-specific folder.
+See [VALIDATION.md](VALIDATION.md).
+
+## Review order
+
+1. Project README
+2. Principal execution file
+3. Supporting modules
+4. SQL / integrations / tests / outputs
+
+The principal execution file is intentionally the fastest technical route through the project.

@@ -1,45 +1,38 @@
 # Technical implementation
 
-This is the code-level entry point for **SC-11 · ML / AI Evaluation & Monitoring Platform**.
+## Main execution path
 
-## Main responsibilities
+**Start here → [`run_project.py`](run_project.py)**
 
-- MLflow records experiment lineage and artefacts.
-- Evidently handles explicit data/prediction monitoring reports.
-- Promotion is a gated decision rather than an automatic consequence of training completion.
+This is the principal public execution file for **SC-11 · ML / AI Evaluation & Monitoring Platform**. It shows the end-to-end path in one place: **input → validation/context → core logic → business output**.
 
-## Technical map
+The files below are supporting implementation details used by that main path.
 
-- `.github/` — project implementation asset
-- `README.md/` — project implementation asset
-- `data/` — project implementation asset
-- `requirements.txt/` — project implementation asset
-- `sql/` — project implementation asset
-- `src/` — project implementation asset
-- `tests/` — project implementation asset
+## Supporting implementation
 
-## Technology
+- `src/tracking.py`
+- `src/drift.py`
+- `src/metrics.py`
+- `monitoring/`
+- `infra/k8s/`
+
+## Stack
 
 - Python
 - MLflow
 - Evidently
-- FastAPI
-- PostgreSQL
-- Docker
-- GitHub Actions
 - Prometheus
+- Kubernetes
 
 ## Validation
 
-See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+See [VALIDATION.md](VALIDATION.md).
 
-## Local execution
+## Review order
 
-Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
+1. Project README
+2. Principal execution file
+3. Supporting modules
+4. SQL / integrations / tests / outputs
 
-## Read next
-
-- [Architecture](../docs/ARCHITECTURE.md)
-- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
-- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
+The principal execution file is intentionally the fastest technical route through the project.

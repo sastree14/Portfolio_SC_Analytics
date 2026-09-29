@@ -1,44 +1,38 @@
 # Technical implementation
 
-This is the code-level entry point for **SC-17 · Customer Intelligence: Churn, CLV & Segmentation**.
+## Main execution path
 
-## Main responsibilities
+**Start here → [`run_project.py`](run_project.py)**
 
-- Classification and survival models answer different operational questions and remain separate.
-- CLV is combined with risk only after each component is validated.
-- SHAP explanations support review but do not replace business rules or fairness checks.
+This is the principal public execution file for **SC-17 · Customer Intelligence: Churn, CLV & Segmentation**. It shows the end-to-end path in one place: **input → validation/context → core logic → business output**.
 
-## Technical map
+The files below are supporting implementation details used by that main path.
 
-- `README.md/` — project implementation asset
-- `data/` — project implementation asset
-- `requirements.txt/` — project implementation asset
-- `sql/` — project implementation asset
-- `src/` — project implementation asset
-- `tests/` — project implementation asset
+## Supporting implementation
 
-## Technology
+- `src/survival.py`
+- `src/`
+- `sql/`
+- `tests/`
+- `data/`
+
+## Stack
 
 - Python
-- Scikit-learn
 - XGBoost
 - Lifelines
 - SHAP
-- Pandas
 - FastAPI
-- PostgreSQL
 
 ## Validation
 
-See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+See [VALIDATION.md](VALIDATION.md).
 
-## Local execution
+## Review order
 
-Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
+1. Project README
+2. Principal execution file
+3. Supporting modules
+4. SQL / integrations / tests / outputs
 
-## Read next
-
-- [Architecture](../docs/ARCHITECTURE.md)
-- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
-- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
+The principal execution file is intentionally the fastest technical route through the project.

@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Document ingest
-    ↓\n    Text extraction
-        ↓\n        Chunking + embeddings
-            ↓\n            Vector retrieval
-                ↓\n                Structured analysis
-                    ↓\n                    Finding register
-                        ↓\n                        Review
+    ↓
+    Text extraction
+        ↓
+        Chunking + embeddings
+            ↓
+            Vector retrieval
+                ↓
+                Structured analysis
+                    ↓
+                    Finding register
+                        ↓
+                        Review
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative documents, extracted chunks, metadata, retrieval hits and evidence-linked findings.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-05 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

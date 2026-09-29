@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Historical series
-    ↓\n    R transformation
-        ↓\n        Forecast model
-            ↓\n            Scenario assumptions
-                ↓\n                Shiny reactive layer
-                    ↓\n                    ggplot output
-                        ↓\n                        Decision
+    ↓
+    R transformation
+        ↓
+        Forecast model
+            ↓
+            Scenario assumptions
+                ↓
+                Shiny reactive layer
+                    ↓
+                    ggplot output
+                        ↓
+                        Decision
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative time series, fitted statistical models, forecast intervals, scenario inputs and Shiny reactive outputs.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-13 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.R`](technical/run_project.R).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

@@ -1,46 +1,36 @@
 # Technical implementation
 
-This is the code-level entry point for **SC-28 · AI Property Development Feasibility & Operations System**.
+## Main execution path
 
-## Main responsibilities
+**Start here → [`run_project.py`](run_project.py)**
 
-- Financial feasibility remains deterministic even when AI extracts inputs from documents.
-- GeoPandas handles spatial context without making geospatial enrichment a hidden black box.
-- n8n coordinates review steps while the financial model remains version-controlled code.
+This is the principal public execution file for **SC-28 · AI Property Development Feasibility & Operations System**. It shows the complete high-level execution path in one place: **input → validation/context → core logic → business output**.
 
-## Technical map
+The supporting implementation below exists to make the main path deeper and replaceable, not to fragment the project.
 
-- `README.md/` — project implementation asset
-- `data/` — project implementation asset
-- `requirements.txt/` — project implementation asset
-- `sql/` — project implementation asset
-- `src/` — project implementation asset
-- `tests/` — project implementation asset
-- `workflows/` — project implementation asset
+## Supporting implementation
 
-## Technology
+- `src/geospatial.py`
+- `src/document_extract.py`
+- `workflows/`
+- `src/api.py`
+- `tests/`
+
+## Stack
 
 - Python
-- FastAPI
-- PostgreSQL
-- Pandas
 - GeoPandas
 - OpenAI
 - n8n
-- Docker
-- Plotly
+- FastAPI
 
 ## Validation
 
-See [VALIDATION.md](VALIDATION.md) for the checks included with this project.
+See [VALIDATION.md](VALIDATION.md).
 
-## Local execution
+## Review order
 
-Use the project-specific dependency file, environment example and scripts in this directory. External credentials are not required for the deterministic public path unless the project documentation explicitly says otherwise.
-
-## Read next
-
-- [Architecture](../docs/ARCHITECTURE.md)
-- [Technical decisions](../docs/TECHNICAL_DECISIONS.md)
-- [Credentials and integrations](../docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Security and permissions](../docs/SECURITY_AND_PERMISSIONS.md)
+1. Project README
+2. Principal execution file
+3. Supporting modules
+4. SQL / integrations / tests / outputs

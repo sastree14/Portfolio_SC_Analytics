@@ -11,6 +11,8 @@ The portfolio is designed for two audiences at the same time:
 
 - [Browse all 29 projects](PROJECTS.md)
 - [Browse by technology](TECHNOLOGIES.md)
+- [Browse all project visuals](VISUALS.md)
+- [Open the principal code entrypoints](EXECUTION.md)
 - [SC-Analytics methodology](docs/methodology.md)
 - [Data confidentiality](docs/data-confidentiality.md)
 - [Explore the repository with a coding agent](docs/ai-exploration.md)

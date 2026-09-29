@@ -17,11 +17,16 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 User / query
-    ↓\n    Candidate generation
-        ↓\n        Embeddings / similarity
-            ↓\n            Ranking model
-                ↓\n                Business rules
-                    ↓\n                    Top-K response
+    ↓
+    Candidate generation
+        ↓
+        Embeddings / similarity
+            ↓
+            Ranking model
+                ↓
+                Business rules
+                    ↓
+                    Top-K response
 ```
 
 ## Technology at a glance
@@ -49,6 +54,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative users, items, interactions, text embeddings, candidate sets and ranked outputs.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-16 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 

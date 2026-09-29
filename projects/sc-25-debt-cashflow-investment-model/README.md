@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Investment assumptions
-    ↓\n    Debt terms
-        ↓\n        Drawdown / amortization
-            ↓\n            Operating cash flow
-                ↓\n                Debt service
-                    ↓\n                    Covenants
-                        ↓\n                        IRR / NPV
+    ↓
+    Debt terms
+        ↓
+        Drawdown / amortization
+            ↓
+            Operating cash flow
+                ↓
+                Debt service
+                    ↓
+                    Covenants
+                        ↓
+                        IRR / NPV
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative debt terms, drawdowns, repayment schedules, operating cash flow and investor distributions.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-25 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 
