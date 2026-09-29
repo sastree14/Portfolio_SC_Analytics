@@ -1,0 +1,23 @@
+# Schema used when a completed project is added to the public catalog.
+
+id: SC-XX
+title: Project title
+status: completed
+project_type: public-reference-implementation
+
+summary: Short description of the business problem and system.
+
+business_problems: []
+capabilities: []
+industries: []
+business_functions: []
+
+technologies: []
+integrations: []
+environments: []
+
+impact_areas: []
+
+paths:
+  project: projects/path-to-project
+  readme: projects/path-to-project/README.md
