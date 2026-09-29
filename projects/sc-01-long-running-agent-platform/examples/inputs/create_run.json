@@ -1,0 +1,6 @@
+{
+  "goal": "Prepare a CRM follow-up action for a qualified lead that requested a pricing call.",
+  "provider": "mock",
+  "requires_approval": true,
+  "tool_url": null
+}

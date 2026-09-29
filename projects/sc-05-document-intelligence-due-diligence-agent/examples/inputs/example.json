@@ -1,0 +1,4 @@
+{
+  "project": "SC-05",
+  "scenario": "A data room contains supplier contracts, commercial agreements and financial notes. The system extracts clauses, retrieves evidence for predefined questions and produces a finding register with source references."
+}

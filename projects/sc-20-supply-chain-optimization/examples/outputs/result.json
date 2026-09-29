@@ -1,0 +1,17 @@
+{
+  "project": "SC-20",
+  "status": "completed",
+  "example_series": [
+    128,
+    117,
+    103,
+    94
+  ],
+  "metrics": [
+    "total cost",
+    "service level",
+    "stockout units",
+    "inventory utilization",
+    "solver gap"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "project": "SC-18",
+  "scenario": "For each application the engine estimates default risk, expected loss and expected contribution, then recommends approve, decline or review under a defined risk appetite."
+}

@@ -1,0 +1,6 @@
+Revenue := SUM(FactSales[Revenue])
+Gross Margin := SUM(FactSales[Revenue]) - SUM(FactSales[Cost])
+Gross Margin % := DIVIDE([Gross Margin],[Revenue])
+Pipeline Coverage := DIVIDE(SUM(FactPipeline[WeightedValue]),SUM(FactTargets[TargetRevenue]))
+Variance to Plan := [Revenue] - SUM(FactTargets[TargetRevenue])
+Conversion Rate := DIVIDE(CALCULATE(COUNTROWS(FactPipeline),FactPipeline[Stage]="Won"),COUNTROWS(FactPipeline))

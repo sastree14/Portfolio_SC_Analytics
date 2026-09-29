@@ -1,0 +1,62 @@
+id: SC-01
+title: Long-Running AI Agent Platform
+status: completed
+project_type: implementation
+
+summary: >
+  Durable agent execution platform with persistent state, background workers,
+  model-provider abstraction, human approval and an authenticated external-action boundary.
+
+business_problems:
+  - long-running-ai-workflows
+  - approval-based-automation
+  - reliable-agent-execution
+
+capabilities:
+  - ai-agents
+  - workflow-orchestration
+  - human-in-the-loop
+  - api-engineering
+  - persistent-state
+  - auditability
+
+industries:
+  - cross-industry
+
+business_functions:
+  - operations
+  - sales
+  - internal-tools
+
+technologies:
+  - Python
+  - FastAPI
+  - PostgreSQL
+  - Redis
+  - Celery
+  - Docker
+  - OpenAI
+  - Anthropic
+  - HTTPX
+  - SQL
+
+integrations:
+  - REST API
+  - authenticated webhook
+
+environments:
+  - local
+  - development
+  - testing
+  - staging
+  - production-considerations
+
+impact_areas:
+  - process-reliability
+  - operational-control
+  - automation
+  - auditability
+
+paths:
+  project: projects/sc-01-long-running-agent-platform
+  readme: projects/sc-01-long-running-agent-platform/README.md

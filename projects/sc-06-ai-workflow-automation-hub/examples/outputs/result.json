@@ -1,0 +1,17 @@
+{
+  "project": "SC-06",
+  "status": "completed",
+  "stages": {
+    "Manual": 14,
+    "Rules": 33,
+    "AI step": 58,
+    "Automated": 76
+  },
+  "monitored_kpis": [
+    "automated runs",
+    "manual exceptions",
+    "retry rate",
+    "average processing time",
+    "systems touched per workflow"
+  ]
+}

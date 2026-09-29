@@ -1,0 +1,4 @@
+{
+  "project": "SC-06",
+  "scenario": "A signed commercial form triggers validation, CRM update, document generation, internal notification and an AI-written summary for review."
+}

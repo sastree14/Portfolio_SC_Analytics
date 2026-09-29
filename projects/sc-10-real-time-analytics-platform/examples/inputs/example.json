@@ -1,0 +1,4 @@
+{
+  "project": "SC-10",
+  "scenario": "Order events are published to the event bus, consumed into ClickHouse, aggregated continuously and exposed through an API/WebSocket layer for live operational monitoring."
+}

@@ -1,0 +1,10 @@
+version: 2
+models:
+  - name: stg_commercial
+    columns:
+      - name: record_id
+        tests: [not_null, unique]
+      - name: priority
+        tests:
+          - accepted_values:
+              values: ['low','medium','high']

@@ -1,0 +1,24 @@
+id: SC-22
+title: Resource, Capacity & Scheduling Optimization
+status: completed
+project_type: implementation
+family: Optimization & Operations
+summary: >
+  A constrained scheduling engine that assigns work to limited resources while respecting skills, capacity and service targets.
+technologies:
+  - Python
+  - OR-Tools
+  - Pyomo
+  - Pandas
+  - FastAPI
+  - PostgreSQL
+  - Docker
+  - Plotly
+impact_areas:
+  - Allocate constrained resources consistently
+  - Expose capacity bottlenecks before they become delays
+  - Balance utilization against service-level commitments
+  - Compare feasible schedules instead of relying on manual planning
+paths:
+  project: projects/sc-22-resource-capacity-scheduling-optimization
+  readme: projects/sc-22-resource-capacity-scheduling-optimization/README.md

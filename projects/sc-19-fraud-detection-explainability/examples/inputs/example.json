@@ -1,0 +1,4 @@
+{
+  "project": "SC-19",
+  "scenario": "A transaction receives a fraud probability and explanation. The threshold is selected based on review capacity and expected loss, then high-priority cases are sent to investigation."
+}

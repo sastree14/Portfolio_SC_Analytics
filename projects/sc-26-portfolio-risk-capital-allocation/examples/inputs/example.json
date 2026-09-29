@@ -1,0 +1,4 @@
+{
+  "project": "SC-26",
+  "scenario": "A portfolio must satisfy asset-class limits and a maximum risk budget. The engine estimates covariance, runs stress scenarios and produces feasible allocations for different risk targets."
+}

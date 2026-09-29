@@ -1,0 +1,17 @@
+{
+  "project": "SC-14",
+  "status": "completed",
+  "example_series": [
+    72,
+    81,
+    89,
+    93
+  ],
+  "metrics": [
+    "revenue",
+    "gross margin",
+    "pipeline coverage",
+    "conversion rate",
+    "variance to plan"
+  ]
+}

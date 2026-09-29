@@ -1,0 +1,4 @@
+{
+  "project": "SC-22",
+  "scenario": "A service team has jobs with deadlines, required skills and estimated durations. The engine assigns work to available people while minimizing lateness and excessive utilization."
+}

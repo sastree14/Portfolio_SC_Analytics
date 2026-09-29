@@ -1,0 +1,5 @@
+record_id,scenario,value_a,value_b
+1,base,100,82
+2,upside,112,88
+3,downside,91,75
+4,stress,84,69

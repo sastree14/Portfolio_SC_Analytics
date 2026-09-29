@@ -1,0 +1,4 @@
+{
+  "project": "SC-08",
+  "scenario": "Orders and inventory are extracted from PostgreSQL, validated, written to object storage, transformed into ClickHouse tables and served to downstream decision applications."
+}

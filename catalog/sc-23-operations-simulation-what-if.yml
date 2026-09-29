@@ -1,0 +1,24 @@
+id: SC-23
+title: Operations Simulation & What-If Engine
+status: completed
+project_type: implementation
+family: Optimization & Operations
+summary: >
+  A discrete-event and Monte Carlo simulation environment for testing operational changes before implementation.
+technologies:
+  - Python
+  - SimPy
+  - NumPy
+  - Pandas
+  - Monte Carlo
+  - Plotly
+  - FastAPI
+  - Docker
+impact_areas:
+  - Test operational changes without disrupting live processes
+  - Quantify waiting time, utilization and bottleneck risk
+  - Compare staffing and demand scenarios under uncertainty
+  - Separate average outcomes from tail-risk behaviour
+paths:
+  project: projects/sc-23-operations-simulation-what-if
+  readme: projects/sc-23-operations-simulation-what-if/README.md

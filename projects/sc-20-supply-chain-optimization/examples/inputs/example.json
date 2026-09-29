@@ -1,0 +1,4 @@
+{
+  "project": "SC-20",
+  "scenario": "Available inventory must be allocated across locations with different demand, margin and service targets. The optimizer produces the highest-value feasible allocation and reports the trade-offs."
+}

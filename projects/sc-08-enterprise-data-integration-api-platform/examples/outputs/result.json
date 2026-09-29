@@ -1,0 +1,17 @@
+{
+  "project": "SC-08",
+  "status": "completed",
+  "stages": {
+    "Extract": 28,
+    "Validate": 51,
+    "Load": 77,
+    "Serve": 94
+  },
+  "monitored_kpis": [
+    "pipeline freshness",
+    "rows processed",
+    "failed loads",
+    "data-quality failures",
+    "API response time"
+  ]
+}

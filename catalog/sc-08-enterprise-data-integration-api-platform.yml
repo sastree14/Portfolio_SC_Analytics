@@ -1,0 +1,25 @@
+id: SC-08
+title: Enterprise Data Integration & API Platform
+status: completed
+project_type: implementation
+family: Data Engineering & Platforms
+summary: >
+  A governed data-integration layer that moves operational data into analytical storage and exposes controlled downstream APIs.
+capabilities:
+  - Python
+  - FastAPI
+  - Apache Airflow
+  - PostgreSQL
+  - ClickHouse
+  - AWS S3
+  - Azure Blob Storage
+  - Docker
+  - SQL
+impact_areas:
+  - Reduce point-to-point integrations
+  - Create one monitored path for operational data movement
+  - Separate ingestion, transformation and serving responsibilities
+  - Make data quality and downstream API contracts explicit
+paths:
+  project: projects/sc-08-enterprise-data-integration-api-platform
+  readme: projects/sc-08-enterprise-data-integration-api-platform/README.md

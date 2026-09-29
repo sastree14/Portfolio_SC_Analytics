@@ -1,0 +1,25 @@
+id: SC-09
+title: ETL / ELT & Data Quality Pipeline
+status: completed
+project_type: implementation
+family: Data Engineering & Platforms
+summary: >
+  A reproducible analytics-engineering pipeline with tests, lineage-friendly transformations and explicit data-quality gates.
+capabilities:
+  - dbt
+  - DuckDB
+  - Python
+  - Pandera
+  - Parquet
+  - Apache Airflow
+  - SQL
+  - Docker
+  - GitHub Actions
+impact_areas:
+  - Catch broken data before it reaches reports or models
+  - Make transformations reviewable in SQL
+  - Separate raw, staging and business-ready layers
+  - Create repeatable build and test steps for analytics
+paths:
+  project: projects/sc-09-etl-elt-data-quality-pipeline
+  readme: projects/sc-09-etl-elt-data-quality-pipeline/README.md

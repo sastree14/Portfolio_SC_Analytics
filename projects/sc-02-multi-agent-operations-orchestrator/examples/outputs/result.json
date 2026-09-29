@@ -1,0 +1,17 @@
+{
+  "project": "SC-02",
+  "status": "completed",
+  "stages": {
+    "Single prompt": 31,
+    "Specialists": 54,
+    "Review gate": 72,
+    "Traceable flow": 88
+  },
+  "monitored_kpis": [
+    "workflow completion rate",
+    "human interventions per workflow",
+    "agent hand-offs",
+    "review rejection rate",
+    "execution time"
+  ]
+}

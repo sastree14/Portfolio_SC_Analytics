@@ -1,0 +1,32 @@
+{
+  "name": "SC-28 Feasibility Review",
+  "nodes": [
+    {
+      "name": "Feasibility Ready",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Investment Gate",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        250,
+        0
+      ]
+    },
+    {
+      "name": "Create Review Task",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        500,
+        0
+      ]
+    }
+  ]
+}

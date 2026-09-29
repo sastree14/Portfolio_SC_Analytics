@@ -1,0 +1,25 @@
+id: SC-07
+title: Full-Stack LLM Business Copilot
+status: completed
+project_type: implementation
+family: AI Agents & Intelligent Automation
+summary: >
+  A full-stack web application that combines conversational analysis, structured tools and persistent business context.
+capabilities:
+  - Next.js
+  - TypeScript
+  - React
+  - PostgreSQL
+  - Supabase
+  - OpenAI
+  - Vercel
+  - Zod
+  - Tailwind CSS
+impact_areas:
+  - Give users one interface for asking questions and taking structured actions
+  - Keep business tools separate from free-form model output
+  - Persist conversations and tool results for later review
+  - Support a product experience rather than a standalone prompt
+paths:
+  project: projects/sc-07-full-stack-llm-business-copilot
+  readme: projects/sc-07-full-stack-llm-business-copilot/README.md

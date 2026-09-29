@@ -1,0 +1,25 @@
+id: SC-28
+title: AI Property Development Feasibility & Operations System
+status: completed
+project_type: implementation
+family: Specialized Business Systems
+summary: >
+  A property-development decision system combining feasibility modelling, document analysis, scenario review and workflow automation.
+technologies:
+  - Python
+  - FastAPI
+  - PostgreSQL
+  - Pandas
+  - GeoPandas
+  - OpenAI
+  - n8n
+  - Docker
+  - Plotly
+impact_areas:
+  - Bring acquisition assumptions, development costs and financing into one feasibility view
+  - Use structured document extraction to reduce manual review
+  - Compare downside and upside cases before committing capital
+  - Track approval and due-diligence steps through one workflow
+paths:
+  project: projects/sc-28-ai-property-development-feasibility
+  readme: projects/sc-28-ai-property-development-feasibility/README.md

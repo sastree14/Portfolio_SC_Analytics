@@ -1,0 +1,17 @@
+{
+  "project": "SC-29",
+  "status": "completed",
+  "series": [
+    38,
+    57,
+    76,
+    89
+  ],
+  "metrics": [
+    "questions answered",
+    "evidence items per claim",
+    "source recency",
+    "review exceptions",
+    "confidence coverage"
+  ]
+}

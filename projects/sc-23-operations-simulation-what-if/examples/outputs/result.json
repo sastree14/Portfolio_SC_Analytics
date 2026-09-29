@@ -1,0 +1,17 @@
+{
+  "project": "SC-23",
+  "status": "completed",
+  "series": [
+    18,
+    14,
+    9,
+    6
+  ],
+  "metrics": [
+    "average wait",
+    "P95 wait",
+    "resource utilization",
+    "throughput",
+    "queue length"
+  ]
+}

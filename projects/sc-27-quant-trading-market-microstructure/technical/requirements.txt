@@ -1,0 +1,6 @@
+pytest>=8,<9
+pandas>=2.2,<3
+plotly>=5,<7
+numpy>=2,<3
+clickhouse-connect>=0.8,<1
+redis>=5,<6

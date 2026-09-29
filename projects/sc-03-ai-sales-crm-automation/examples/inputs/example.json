@@ -1,0 +1,4 @@
+{
+  "project": "SC-03",
+  "scenario": "An inbound lead requests pricing. The system enriches CRM context, calculates priority, drafts the next action and waits for salesperson approval before updating the deal."
+}

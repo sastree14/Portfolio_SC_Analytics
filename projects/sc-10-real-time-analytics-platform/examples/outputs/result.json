@@ -1,0 +1,17 @@
+{
+  "project": "SC-10",
+  "status": "completed",
+  "stages": {
+    "Ingest/s": 140,
+    "Persist/s": 310,
+    "Query/s": 620,
+    "Peak/s": 980
+  },
+  "monitored_kpis": [
+    "event-to-query latency",
+    "events per second",
+    "consumer lag",
+    "failed events",
+    "dashboard freshness"
+  ]
+}

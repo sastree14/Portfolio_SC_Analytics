@@ -1,0 +1,25 @@
+id: SC-05
+title: Document Intelligence & Due Diligence Agent
+status: completed
+project_type: implementation
+family: AI Agents & Intelligent Automation
+summary: >
+  A document-analysis system that extracts evidence, retrieves supporting passages and produces reviewable findings.
+capabilities:
+  - Python
+  - FastAPI
+  - Qdrant
+  - PostgreSQL
+  - PyMuPDF
+  - OpenAI
+  - S3 / MinIO
+  - Docker
+  - Pydantic
+impact_areas:
+  - Reduce time spent searching long document sets
+  - Keep findings linked to the source evidence used to produce them
+  - Separate extracted facts from model interpretation
+  - Create repeatable review workflows across many documents
+paths:
+  project: projects/sc-05-document-intelligence-due-diligence-agent
+  readme: projects/sc-05-document-intelligence-due-diligence-agent/README.md

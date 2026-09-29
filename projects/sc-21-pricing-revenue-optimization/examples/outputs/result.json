@@ -1,0 +1,17 @@
+{
+  "project": "SC-21",
+  "status": "completed",
+  "series": [
+    72,
+    81,
+    88,
+    91
+  ],
+  "metrics": [
+    "contribution margin",
+    "expected demand",
+    "price elasticity",
+    "revenue",
+    "constraint violations"
+  ]
+}

@@ -1,0 +1,24 @@
+id: SC-17
+title: Customer Intelligence: Churn, CLV & Segmentation
+status: completed
+project_type: implementation
+family: Machine Learning & Customer Analytics
+summary: >
+  A customer analytics system combining churn probability, lifetime value, segmentation and time-to-event analysis.
+technologies:
+  - Python
+  - Scikit-learn
+  - XGBoost
+  - Lifelines
+  - SHAP
+  - Pandas
+  - FastAPI
+  - PostgreSQL
+impact_areas:
+  - Prioritize retention effort using both risk and customer value
+  - Separate who may churn from when churn is likely
+  - Create interpretable customer segments for commercial action
+  - Combine model outputs into one next-best-action layer
+paths:
+  project: projects/sc-17-customer-intelligence-churn-clv
+  readme: projects/sc-17-customer-intelligence-churn-clv/README.md

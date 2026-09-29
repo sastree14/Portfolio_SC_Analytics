@@ -1,0 +1,17 @@
+{
+  "project": "SC-11",
+  "status": "completed",
+  "example_series": [
+    72,
+    84,
+    91,
+    96
+  ],
+  "metrics": [
+    "evaluation pass rate",
+    "drift alerts",
+    "model versions promoted",
+    "prediction latency",
+    "failed release gates"
+  ]
+}

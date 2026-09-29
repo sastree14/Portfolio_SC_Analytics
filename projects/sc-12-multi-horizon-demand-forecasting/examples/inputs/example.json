@@ -1,0 +1,4 @@
+{
+  "project": "SC-12",
+  "scenario": "Daily SKU demand is forecast at H1, H3, H6 and H9. The system backtests each horizon, compares baseline and ML approaches, then exposes the selected forecast with prediction intervals."
+}

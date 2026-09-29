@@ -1,0 +1,41 @@
+{
+  "name": "SC-03 Lead Flow",
+  "nodes": [
+    {
+      "name": "Inbound Lead",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "name": "Score Lead",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        250,
+        0
+      ]
+    },
+    {
+      "name": "Approval",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "name": "Update CRM",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        750,
+        0
+      ]
+    }
+  ]
+}

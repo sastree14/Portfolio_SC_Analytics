@@ -1,0 +1,17 @@
+{
+  "project": "SC-05",
+  "status": "completed",
+  "stages": {
+    "Ingest": 12,
+    "Extract": 37,
+    "Retrieve": 71,
+    "Evidence": 92
+  },
+  "monitored_kpis": [
+    "documents processed per hour",
+    "retrieval hit rate",
+    "findings with source evidence",
+    "manual review time",
+    "extraction exceptions"
+  ]
+}
