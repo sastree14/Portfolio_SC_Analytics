@@ -1,6 +1,6 @@
 # SC-Analytics Portfolio
 
-This repository contains selected public implementations, anonymized case studies and technical systems developed by SC-Analytics.
+This repository contains selected systems and projects developed by SC-Analytics.
 
 The objective is simple: show how we approach business problems, how the underlying systems are designed, and how analytical work is translated into decisions that can be used in practice.
 
@@ -13,13 +13,15 @@ Each completed project is documented at two levels:
 - an executive layer explaining the problem, approach and business impact
 - a technical layer covering architecture, data, implementation, integrations, environments, validation and limitations
 
-The same project may therefore be useful to both a business stakeholder and a technical reviewer.
+A business stakeholder should be able to understand why the project matters without reading code. A technical reviewer should be able to go deeper and inspect how the system works.
 
 ## Public data and confidentiality
 
 Client names, credentials, production connections and confidential records are not published.
 
-When a public project is derived from confidential work, the accompanying data preserves the relevant structure, relationships and data types while replacing business values with synthetic data. See [Data confidentiality](docs/data-confidentiality.md).
+When a project requires representative public data, the repository preserves the structure needed to reproduce the workflow while using safe synthetic values.
+
+See [Data confidentiality](docs/data-confidentiality.md).
 
 ## Methodology
 
@@ -29,7 +31,7 @@ See [Methodology](docs/methodology.md).
 
 ## Projects
 
-Completed public projects are indexed in [PROJECTS.md](PROJECTS.md).
+Completed projects are indexed in [PROJECTS.md](PROJECTS.md).
 
 ## Repository exploration
 

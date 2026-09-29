@@ -1,0 +1,22 @@
+{
+  "id": "7e63b224-81a5-4af6-bdc0-82684bbb7808",
+  "goal": "Prepare a CRM follow-up action for a qualified lead that requested a pricing call.",
+  "provider": "mock",
+  "tool_url": null,
+  "requires_approval": true,
+  "status": "WAITING_APPROVAL",
+  "plan": {
+    "provider": "mock",
+    "text": "1. Validate the requested objective and required inputs.\n2. Prepare the external action without executing it.\n3. Request approval when the workflow requires it.\n4. Execute the approved action for: Prepare a CRM follow-up action for a qualified lead that requested a pricing call.\n5. Persist the result and any exception."
+  },
+  "result": null,
+  "error": null,
+  "created_at": "2026-09-29T11:18:32.632613",
+  "updated_at": "2026-09-29T11:18:32.640744",
+  "events": [
+    {"event_type":"run_created","detail":{"provider":"mock"},"created_at":"2026-09-29T11:18:32.634148"},
+    {"event_type":"worker_started","detail":null,"created_at":"2026-09-29T11:18:32.639788"},
+    {"event_type":"plan_generated","detail":{"provider":"mock"},"created_at":"2026-09-29T11:18:32.641373"},
+    {"event_type":"approval_required","detail":null,"created_at":"2026-09-29T11:18:32.641380"}
+  ]
+}

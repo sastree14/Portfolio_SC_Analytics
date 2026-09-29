@@ -1,7 +1,7 @@
 id: SC-01
 title: Long-Running AI Agent Platform
 status: completed
-project_type: public-reference-implementation
+project_type: implementation
 
 summary: >
   Durable agent execution platform with persistent state, background workers,
@@ -18,6 +18,7 @@ capabilities:
   - human-in-the-loop
   - api-engineering
   - persistent-state
+  - auditability
 
 industries:
   - cross-industry
@@ -37,6 +38,7 @@ technologies:
   - OpenAI
   - Anthropic
   - HTTPX
+  - SQL
 
 integrations:
   - REST API
@@ -53,7 +55,8 @@ impact_areas:
   - process-reliability
   - operational-control
   - automation
+  - auditability
 
 paths:
-  project: projects/ai-agents/sc-01-long-running-agent-platform
-  readme: projects/ai-agents/sc-01-long-running-agent-platform/README.md
+  project: projects/sc-01-long-running-agent-platform
+  readme: projects/sc-01-long-running-agent-platform/README.md

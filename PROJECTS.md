@@ -10,14 +10,16 @@ Projects are organized by business problem and capability. Each project includes
 
 Durable agent execution with persistent state, background processing, human approval and external-system integration.
 
-**Relevant for:** long-running agents, approval-based automation, agent reliability, internal operations systems.
+**Business value:** continuity across long workflows, controlled external actions, recoverable execution and an auditable run history.
 
-**Stack:** Python · FastAPI · PostgreSQL · Redis · Celery · Docker · OpenAI / Anthropic adapters.
+**Relevant for:** long-running agents, approval-based automation, internal operations systems and business workflows that interact with external tools.
 
-[View project](projects/ai-agents/sc-01-long-running-agent-platform/README.md)
+**Technology:** Python · FastAPI · PostgreSQL · Redis · Celery · Docker · OpenAI / Anthropic adapters · REST APIs · Webhooks.
+
+[View project](projects/sc-01-long-running-agent-platform/README.md)
 
 ---
 
 As additional projects are completed, this index will expand by business problem, capability, industry and technology.
 
-The structured metadata for completed projects lives under `catalog/`.
+Structured metadata lives under `catalog/`.
