@@ -1,13 +1,16 @@
-name: portfolio-structure
+name: portfolio-quality
+
 on:
   push:
   pull_request:
+
 jobs:
-  validate:
+  audit:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - run: python scripts/validate_portfolio.py
+      - name: Audit portfolio structure, code and evidence
+        run: python scripts/audit_portfolio.py

@@ -2,23 +2,17 @@ id: SC-10
 title: Real-Time Analytics & Monitoring Platform
 status: completed
 project_type: implementation
-family: Data Engineering & Platforms
-summary: >
-  A streaming architecture for ingesting events, updating analytical state and exposing low-latency operational views.
-capabilities:
+technologies:
   - Redpanda / Kafka
   - ClickHouse
   - Python
   - FastAPI
   - WebSockets
   - Grafana
+  - Kubernetes
+  - OpenTelemetry
   - Docker
   - SQL
-impact_areas:
-  - Reduce the delay between an operational event and analytical visibility
-  - Separate event ingestion from analytical querying
-  - Provide a scalable path for dashboards and downstream alerts
-  - Retain event history for replay and investigation
 paths:
   project: projects/sc-10-real-time-analytics-platform
   readme: projects/sc-10-real-time-analytics-platform/README.md
