@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Inbound signal
-    ↓\n    CRM context
-        ↓\n        Lead score
-            ↓\n            Next-action draft
-                ↓\n                Approval
-                    ↓\n                    CRM update
-                        ↓\n                        Audit
+    ↓
+    CRM context
+        ↓
+        Lead score
+            ↓
+            Next-action draft
+                ↓
+                Approval
+                    ↓
+                    CRM update
+                        ↓
+                        Audit
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative contacts, deal state, engagement signals, scores, proposed actions and CRM update events.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-03 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 
