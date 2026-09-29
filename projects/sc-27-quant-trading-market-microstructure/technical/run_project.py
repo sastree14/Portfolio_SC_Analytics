@@ -11,8 +11,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-EXAMPLES = ROOT.parent / "examples"
+TECHNICAL = Path(__file__).resolve().parent
+PROJECT = TECHNICAL.parent
+EXAMPLES = PROJECT / "examples"
 
 EVENTS = [
     {"bid": 99.9, "ask": 100.1, "bid_size": 420, "ask_size": 310, "trade": 100.1, "size": 85},
