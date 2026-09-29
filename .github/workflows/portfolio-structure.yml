@@ -24,3 +24,27 @@ jobs:
 
       - name: Audit structure, principal code, links and visuals
         run: python scripts/audit_portfolio.py
+
+  visual-previews:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install preview renderer
+        run: pip install cairosvg pillow
+
+      - name: Render PNG previews
+        run: python scripts/render_visual_previews.py
+
+      - name: Upload visual preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: portfolio-visual-previews
+          path: visual-previews/
+          if-no-files-found: error
+          retention-days: 7
