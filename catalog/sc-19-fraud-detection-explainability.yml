@@ -1,0 +1,24 @@
+id: SC-19
+title: Fraud Detection & Explainability System
+status: completed
+project_type: implementation
+family: Machine Learning & Risk
+summary: >
+  A cost-sensitive fraud scoring system with threshold optimization, explainability and investigation prioritization.
+technologies:
+  - Python
+  - XGBoost
+  - SHAP
+  - Scikit-learn
+  - Imbalanced-learn
+  - FastAPI
+  - PostgreSQL
+  - Plotly
+impact_areas:
+  - Prioritize the transactions most worth reviewing
+  - Balance fraud capture against false-positive customer friction
+  - Explain why a transaction was scored as suspicious
+  - Tune decision thresholds using business cost rather than accuracy alone
+paths:
+  project: projects/sc-19-fraud-detection-explainability
+  readme: projects/sc-19-fraud-detection-explainability/README.md

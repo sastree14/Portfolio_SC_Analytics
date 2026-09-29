@@ -1,0 +1,23 @@
+id: SC-14
+title: Power BI Executive Decision System
+status: completed
+project_type: implementation
+family: BI & Decision Interfaces
+summary: >
+  A semantic-model-driven executive reporting system for revenue, margin, pipeline and operating performance.
+technologies:
+  - Power BI
+  - DAX
+  - Power Query
+  - SQL
+  - Star Schema
+  - PostgreSQL
+  - Excel
+impact_areas:
+  - Create one consistent KPI definition layer across teams
+  - Move from static reporting to drillable management questions
+  - Connect commercial and financial performance in one model
+  - Make period, segment and product comparisons repeatable
+paths:
+  project: projects/sc-14-power-bi-executive-decision-system
+  readme: projects/sc-14-power-bi-executive-decision-system/README.md

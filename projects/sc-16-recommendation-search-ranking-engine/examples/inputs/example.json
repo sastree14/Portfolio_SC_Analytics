@@ -1,0 +1,4 @@
+{
+  "project": "SC-16",
+  "scenario": "A user opens a marketplace category. The engine retrieves content-similar items, combines behavioural features, ranks candidates and applies inventory and eligibility rules before returning results."
+}

@@ -1,0 +1,24 @@
+id: SC-13
+title: R Shiny Forecasting & Scenario Planning Application
+status: completed
+project_type: implementation
+family: Forecasting & Planning
+summary: >
+  An interactive R application for time-series decomposition, forecasting and business what-if scenarios.
+technologies:
+  - R
+  - Shiny
+  - forecast
+  - fable
+  - ggplot2
+  - dplyr
+  - DBI
+  - PostgreSQL
+impact_areas:
+  - Let users inspect trend, seasonality and uncertainty interactively
+  - Compare statistical forecasting methods without editing code
+  - Translate forecast assumptions into scenario outputs
+  - Keep analytical logic reproducible in R
+paths:
+  project: projects/sc-13-r-shiny-forecasting-scenario-planning
+  readme: projects/sc-13-r-shiny-forecasting-scenario-planning/README.md

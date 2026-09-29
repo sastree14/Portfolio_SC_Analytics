@@ -1,0 +1,21 @@
+{
+  "project": "SC-12",
+  "status": "completed",
+  "example_series": [
+    100,
+    108,
+    96,
+    116,
+    123,
+    119,
+    131,
+    128
+  ],
+  "metrics": [
+    "WAPE",
+    "MAE",
+    "forecast bias",
+    "service level",
+    "inventory coverage"
+  ]
+}

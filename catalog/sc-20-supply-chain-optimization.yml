@@ -1,0 +1,24 @@
+id: SC-20
+title: Supply Chain & Marketplace Optimization
+status: completed
+project_type: implementation
+family: Optimization & Operations
+summary: >
+  A constrained optimization system for inventory allocation, replenishment and service-level trade-offs.
+technologies:
+  - Python
+  - OR-Tools
+  - Pandas
+  - NumPy
+  - FastAPI
+  - PostgreSQL
+  - Plotly
+  - Docker
+impact_areas:
+  - Allocate limited inventory where it creates the most value
+  - Respect capacity, stock and service constraints explicitly
+  - Compare optimized decisions against current or heuristic policies
+  - Turn forecasts into operational actions
+paths:
+  project: projects/sc-20-supply-chain-optimization
+  readme: projects/sc-20-supply-chain-optimization/README.md

@@ -1,0 +1,24 @@
+id: SC-16
+title: Recommendation, Search & Ranking Engine
+status: completed
+project_type: implementation
+family: Machine Learning & Customer Analytics
+summary: >
+  A hybrid recommendation and ranking system combining behavioural signals, content similarity and business rules.
+technologies:
+  - Python
+  - Scikit-learn
+  - LightGBM
+  - Sentence Transformers
+  - FAISS
+  - FastAPI
+  - PostgreSQL
+  - Redis
+impact_areas:
+  - Increase relevance beyond simple popularity sorting
+  - Combine customer behaviour with item content
+  - Keep business constraints visible in final ranking
+  - Measure ranking quality using offline evaluation
+paths:
+  project: projects/sc-16-recommendation-search-ranking-engine
+  readme: projects/sc-16-recommendation-search-ranking-engine/README.md

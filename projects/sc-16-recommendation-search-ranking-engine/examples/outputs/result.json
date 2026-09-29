@@ -1,0 +1,17 @@
+{
+  "project": "SC-16",
+  "status": "completed",
+  "example_series": [
+    0.41,
+    0.53,
+    0.61,
+    0.68
+  ],
+  "metrics": [
+    "NDCG@K",
+    "MAP@K",
+    "coverage",
+    "catalog diversity",
+    "ranking latency"
+  ]
+}

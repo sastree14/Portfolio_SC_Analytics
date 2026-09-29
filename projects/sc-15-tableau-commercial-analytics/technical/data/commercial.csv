@@ -1,0 +1,4 @@
+date,account_id,segment,owner,revenue,cost,stage
+2026-01-01,A001,Enterprise,Anna,12000,7000,Won
+2026-01-02,A002,SMB,Marc,5800,3300,Proposal
+2026-01-03,A003,Enterprise,Anna,9100,5100,Won

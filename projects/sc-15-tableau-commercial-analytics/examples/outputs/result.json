@@ -1,0 +1,17 @@
+{
+  "project": "SC-15",
+  "status": "completed",
+  "example_series": [
+    44,
+    57,
+    63,
+    71
+  ],
+  "metrics": [
+    "revenue per account",
+    "conversion rate",
+    "retention",
+    "sales cycle",
+    "segment growth"
+  ]
+}

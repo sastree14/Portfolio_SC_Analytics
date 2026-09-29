@@ -1,0 +1,22 @@
+id: SC-15
+title: Tableau Commercial Analytics & Drill-Down
+status: completed
+project_type: implementation
+family: BI & Decision Interfaces
+summary: >
+  A Tableau-oriented commercial analytics system focused on interactive exploration, cohorts and drill-down behaviour.
+technologies:
+  - Tableau
+  - Tableau Calculated Fields
+  - SQL
+  - PostgreSQL
+  - CSV
+  - LOD Expressions
+impact_areas:
+  - Let users explore performance without requesting new static reports
+  - Make cohort and segment differences visible
+  - Connect top-level KPIs to the underlying customer or account detail
+  - Support fast exploratory analysis for commercial teams
+paths:
+  project: projects/sc-15-tableau-commercial-analytics
+  readme: projects/sc-15-tableau-commercial-analytics/README.md

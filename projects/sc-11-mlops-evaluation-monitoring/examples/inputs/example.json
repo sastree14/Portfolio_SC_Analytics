@@ -1,0 +1,4 @@
+{
+  "project": "SC-11",
+  "scenario": "A challenger model is trained on a new dataset. The platform compares it with the current model, checks data drift and only marks it releasable when agreed thresholds pass."
+}

@@ -1,0 +1,24 @@
+id: SC-12
+title: Multi-Horizon Demand Forecasting & Inventory Planning
+status: completed
+project_type: implementation
+family: Forecasting & Planning
+summary: >
+  A forecasting system that compares baselines and machine-learning models across multiple planning horizons.
+technologies:
+  - Python
+  - Pandas
+  - Statsmodels
+  - XGBoost
+  - LightGBM
+  - Plotly
+  - FastAPI
+  - PostgreSQL
+impact_areas:
+  - Measure forecast quality separately by planning horizon
+  - Expose bias as well as absolute forecast error
+  - Translate forecasts into inventory and purchasing decisions
+  - Compare complex models against simple operational baselines
+paths:
+  project: projects/sc-12-multi-horizon-demand-forecasting
+  readme: projects/sc-12-multi-horizon-demand-forecasting/README.md

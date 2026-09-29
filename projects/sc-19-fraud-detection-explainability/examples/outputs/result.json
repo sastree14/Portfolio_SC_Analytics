@@ -1,0 +1,17 @@
+{
+  "project": "SC-19",
+  "status": "completed",
+  "example_series": [
+    0.22,
+    0.46,
+    0.71,
+    0.83
+  ],
+  "metrics": [
+    "PR AUC",
+    "recall at review capacity",
+    "false-positive rate",
+    "expected fraud loss",
+    "cases prioritized"
+  ]
+}

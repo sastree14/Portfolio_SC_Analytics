@@ -1,0 +1,17 @@
+{
+  "project": "SC-18",
+  "status": "completed",
+  "example_series": [
+    0.71,
+    0.78,
+    0.84,
+    0.88
+  ],
+  "metrics": [
+    "ROC AUC",
+    "PR AUC",
+    "expected loss",
+    "approval rate",
+    "risk-adjusted contribution"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "project": "SC-13",
+  "status": "completed",
+  "example_series": [
+    84,
+    88,
+    93,
+    90,
+    98,
+    104,
+    101,
+    110
+  ],
+  "metrics": [
+    "forecast error",
+    "prediction interval width",
+    "scenario delta",
+    "seasonal strength",
+    "forecast bias"
+  ]
+}
