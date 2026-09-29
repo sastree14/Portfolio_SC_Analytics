@@ -1,19 +1,23 @@
 # Portfolio quality
 
-The portfolio is checked as a product, not only as a folder of code.
+The repository is validated as a client-facing technical product.
 
-The automated audit verifies:
+The automated audit checks:
 
-- exactly 29 project directories
-- required business and technical documentation
-- analytical visual evidence for every project except the two native-BI screenshot exceptions
+- exactly 29 projects
+- the complete business and technical documentation set
+- one explicit principal execution file per project
+- that the principal file is linked from both README layers
+- execution of all 29 principal public code paths
+- Python syntax across the repository
+- TypeScript principal execution through Node's type stripping
+- R principal execution through Rscript
 - JSON validity
-- Python syntax
 - local Markdown links
 - obvious committed-secret patterns
-- project catalogue coverage
-- deterministic local example execution where the entry point has no third-party runtime dependency
+- project, visual and execution indexes
+- one 1200×720 technical visual for every project
+- visual typography limits and minimum information density
+- absence of the escaped-newline rendering issue in project flow diagrams
 
-## Native BI exception
-
-SC-14 (Power BI) and SC-15 (Tableau) are structurally complete, but native screenshots are intentionally excluded until genuine native-tool visual references are available. The audit treats this as an explicit temporary exception rather than silently accepting missing evidence.
+Power BI and Tableau already have technical visuals covering their model / interaction structure. Native report screenshots can be added later from genuine tool references without leaving either project visually empty.
