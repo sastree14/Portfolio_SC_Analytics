@@ -2,13 +2,22 @@
 
 This file is the public index of completed SC-Analytics portfolio projects.
 
-Only projects that are complete enough to be reviewed independently should be listed here. Planned work, internal roadmaps and incomplete demonstrations are intentionally excluded.
+Projects are organized by business problem and capability. Each project includes an executive explanation and a technical path for deeper review.
 
-Projects will be indexed by:
+## AI Agents & Intelligent Automation
 
-- business problem
-- capability
-- industry
-- technology
+### SC-01 · Long-Running AI Agent Platform
 
-The source metadata for completed projects will live under `catalog/`.
+Durable agent execution with persistent state, background processing, human approval and external-system integration.
+
+**Relevant for:** long-running agents, approval-based automation, agent reliability, internal operations systems.
+
+**Stack:** Python · FastAPI · PostgreSQL · Redis · Celery · Docker · OpenAI / Anthropic adapters.
+
+[View project](projects/ai-agents/sc-01-long-running-agent-platform/README.md)
+
+---
+
+As additional projects are completed, this index will expand by business problem, capability, industry and technology.
+
+The structured metadata for completed projects lives under `catalog/`.
