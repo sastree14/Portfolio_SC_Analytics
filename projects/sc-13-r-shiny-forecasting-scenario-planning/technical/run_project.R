@@ -2,36 +2,33 @@
 #
 # MAIN EXECUTION FILE
 #
-# This script is the clearest end-to-end public execution path:
-# data -> statistical forecast -> scenario adjustment -> result.
-
-suppressPackageStartupMessages({
-  library(forecast)
-  library(ggplot2)
-})
+# This base-R entrypoint is intentionally dependency-light so the complete
+# public execution path can be validated automatically. The Shiny application
+# and forecast/fable implementation remain in the supporting folders.
 
 load_series <- function() {
-  ts(c(84, 88, 93, 90, 98, 104, 101, 110, 116, 114, 121, 125), frequency = 4)
+  c(84, 88, 93, 90, 98, 104, 101, 110, 116, 114, 121, 125)
 }
 
-fit_forecast <- function(series, horizon = 4) {
-  model <- auto.arima(series)
-  forecast(model, h = horizon)
+linear_forecast <- function(series, horizon = 4) {
+  x <- seq_along(series)
+  fit <- lm(series ~ x)
+  future_x <- length(series) + seq_len(horizon)
+  as.numeric(predict(fit, newdata = data.frame(x = future_x)))
 }
 
-apply_scenario <- function(fc, growth = 0.05) {
-  values <- as.numeric(fc$mean)
+apply_scenario <- function(values, growth = 0.05) {
   values * (1 + growth)
 }
 
 main <- function() {
   series <- load_series()
-  fc <- fit_forecast(series, 4)
-  scenario <- apply_scenario(fc, 0.05)
+  baseline <- linear_forecast(series, 4)
+  scenario <- apply_scenario(baseline, 0.05)
 
   result <- data.frame(
-    horizon = seq_along(scenario),
-    baseline = round(as.numeric(fc$mean), 2),
+    horizon = seq_along(baseline),
+    baseline = round(baseline, 2),
     scenario = round(scenario, 2)
   )
 
