@@ -17,12 +17,18 @@ A business reviewer can stay on this page. A technical reviewer can move directl
 
 ```text
 Market returns
-    ↓\n    Risk estimation
-        ↓\n        Covariance
-            ↓\n            Stress scenarios
-                ↓\n                Optimization constraints
-                    ↓\n                    Allocation
-                        ↓\n                        Risk report
+    ↓
+    Risk estimation
+        ↓
+        Covariance
+            ↓
+            Stress scenarios
+                ↓
+                Optimization constraints
+                    ↓
+                    Allocation
+                        ↓
+                        Risk report
 ```
 
 ## Technology at a glance
@@ -50,6 +56,14 @@ The stack is shown early because technical fit matters. The project is still exp
 Representative asset returns, covariance estimates, constraints, scenario shocks and optimized weights.
 
 The repository does not contain client credentials or confidential records.
+
+## Visual evidence
+
+![SC-26 project visual](examples/visuals/result.svg)
+
+## Main technical execution
+
+**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
 
 ## Local review
 
