@@ -2,39 +2,40 @@
 
 **A Tableau-oriented commercial analytics system focused on interactive exploration, cohorts and drill-down behaviour.**
 
-Designed for **Sales analytics · customer analytics · commercial leadership · account management**.
+**Designed for:** Sales analytics · customer analytics · commercial leadership
 
 ## Business impact
 
 - Let users explore performance without requesting new static reports
 - Make cohort and segment differences visible
-- Connect top-level KPIs to the underlying customer or account detail
-- Support fast exploratory analysis for commercial teams
-
-[Business impact in detail →](docs/BUSINESS_IMPACT.md)
-
-## Example use case
-
-A commercial manager filters to one segment, compares cohort performance, drills into underperforming accounts and identifies where conversion is leaking.
+- Connect top-level KPIs to account-level detail
+- Support fast exploratory commercial analysis
 
 ## Technology at a glance
 
 **Tableau · Tableau Calculated Fields · SQL · PostgreSQL · CSV · LOD Expressions**
 
-## What a reviewer can inspect
+## What is complete
+
+- business context and KPI definition
+- data model and source preparation
+- SQL assets
+- credentials and integration documentation
+- environment guidance
+- tests for the public datasource
+- tool-specific calculations and model specification
+- local data preparation scripts
+
+## Native visual layer
+
+The Tableau screenshot set is the only intentionally pending layer. It will be added from a native-tool visual reference rather than fabricated.
+
+## Technical review
 
 - [Architecture](docs/ARCHITECTURE.md)
+- [Results and KPI interpretation](docs/RESULTS.md)
+- [Data](docs/DATA.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Environments](docs/ENVIRONMENTS.md)
-- [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
 - [Technical implementation](technical/README.md)
-
-## Run locally
-
-See [technical/README.md](technical/README.md) for the project-specific execution path.
-
-## Technology and business are separated deliberately
-
-A non-technical reviewer can understand the decision and impact from this page. A technical reviewer can enter the implementation, SQL, model logic, tests and environment configuration directly.

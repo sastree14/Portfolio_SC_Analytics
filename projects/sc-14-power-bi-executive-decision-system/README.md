@@ -2,39 +2,40 @@
 
 **A semantic-model-driven executive reporting system for revenue, margin, pipeline and operating performance.**
 
-Designed for **Management teams · finance · sales · operations · executive reporting**.
+**Designed for:** Management · finance · sales · operations
 
 ## Business impact
 
-- Create one consistent KPI definition layer across teams
+- Create one KPI definition layer across teams
 - Move from static reporting to drillable management questions
 - Connect commercial and financial performance in one model
-- Make period, segment and product comparisons repeatable
-
-[Business impact in detail →](docs/BUSINESS_IMPACT.md)
-
-## Example use case
-
-An executive opens one report to compare revenue, margin and pipeline against plan, then drills from company level into segment, product and owner.
+- Make period and segment comparisons repeatable
 
 ## Technology at a glance
 
 **Power BI · DAX · Power Query · SQL · Star Schema · PostgreSQL · Excel**
 
-## What a reviewer can inspect
+## What is complete
+
+- business context and KPI definition
+- data model and source preparation
+- SQL assets
+- credentials and integration documentation
+- environment guidance
+- tests for the public datasource
+- tool-specific calculations and model specification
+- local data preparation scripts
+
+## Native visual layer
+
+The Power BI screenshot set is the only intentionally pending layer. It will be added from a native-tool visual reference rather than fabricated.
+
+## Technical review
 
 - [Architecture](docs/ARCHITECTURE.md)
+- [Results and KPI interpretation](docs/RESULTS.md)
+- [Data](docs/DATA.md)
+- [Technical decisions](docs/TECHNICAL_DECISIONS.md)
+- [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
-- [Environments](docs/ENVIRONMENTS.md)
-- [Limitations](docs/LIMITATIONS.md)
-- [Example output](examples/outputs/result.json)
-- [Execution log](examples/logs/example.log)
 - [Technical implementation](technical/README.md)
-
-## Run locally
-
-See [technical/README.md](technical/README.md) for the project-specific execution path.
-
-## Technology and business are separated deliberately
-
-A non-technical reviewer can understand the decision and impact from this page. A technical reviewer can enter the implementation, SQL, model logic, tests and environment configuration directly.

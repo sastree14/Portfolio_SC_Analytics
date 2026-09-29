@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sc11-model-service
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: sc11-model-service
+  template:
+    metadata:
+      labels:
+        app: sc11-model-service
+    spec:
+      containers:
+        - name: model-service
+          image: scanalytics/sc11-model-service:latest
+          ports:
+            - containerPort: 8000
+          env:
+            - name: MLFLOW_TRACKING_URI
+              valueFrom:
+                configMapKeyRef:
+                  name: sc11-config
+                  key: mlflow-tracking-uri
