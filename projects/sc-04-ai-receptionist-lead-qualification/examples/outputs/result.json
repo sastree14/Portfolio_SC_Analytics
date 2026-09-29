@@ -1,0 +1,17 @@
+{
+  "project": "SC-04",
+  "status": "completed",
+  "stages": {
+    "Inbound": 100,
+    "Qualified": 82,
+    "Routed": 63,
+    "Booked": 39
+  },
+  "monitored_kpis": [
+    "time to first response",
+    "qualification completion rate",
+    "appointments created",
+    "human escalations",
+    "abandoned enquiries"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "project": "SC-09",
+  "status": "completed",
+  "stages": {
+    "Raw quality": 65,
+    "Staging": 78,
+    "Business tests": 91,
+    "Publish": 98
+  },
+  "monitored_kpis": [
+    "test pass rate",
+    "freshness SLA",
+    "invalid rows",
+    "build duration",
+    "models rebuilt"
+  ]
+}

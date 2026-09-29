@@ -1,0 +1,4 @@
+pytest>=8,<9
+clickhouse-connect>=0.8,<1
+confluent-kafka>=2.6,<3
+fastapi>=0.115,<1

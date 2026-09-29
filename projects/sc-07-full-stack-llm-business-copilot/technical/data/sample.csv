@@ -1,0 +1,6 @@
+record_id,signal_a,signal_b,priority
+A001,18,0.42,medium
+A002,31,0.67,high
+A003,12,0.21,low
+A004,44,0.81,high
+A005,26,0.55,medium

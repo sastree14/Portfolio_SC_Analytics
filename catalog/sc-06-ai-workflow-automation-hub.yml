@@ -1,0 +1,25 @@
+id: SC-06
+title: AI Workflow Automation Hub
+status: completed
+project_type: implementation
+family: AI Agents & Intelligent Automation
+summary: >
+  An event-driven automation layer that combines deterministic workflows with AI steps where interpretation is actually useful.
+capabilities:
+  - n8n
+  - Python
+  - FastAPI
+  - PostgreSQL
+  - Redis
+  - Webhooks
+  - Zapier Webhooks
+  - Make Webhooks
+  - Docker
+impact_areas:
+  - Automate repetitive cross-system workflows without turning every step into an AI decision
+  - Use model calls only where classification, extraction or drafting adds value
+  - Keep retries, approvals and failure handling visible
+  - Reduce manual movement of data between SaaS tools
+paths:
+  project: projects/sc-06-ai-workflow-automation-hub
+  readme: projects/sc-06-ai-workflow-automation-hub/README.md

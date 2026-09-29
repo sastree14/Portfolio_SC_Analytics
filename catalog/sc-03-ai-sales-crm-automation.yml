@@ -1,0 +1,25 @@
+id: SC-03
+title: AI Sales & CRM Automation System
+status: completed
+project_type: implementation
+family: AI Agents & Intelligent Automation
+summary: >
+  A sales-operations system that scores inbound activity, prepares follow-ups and keeps CRM actions controlled.
+capabilities:
+  - Python
+  - FastAPI
+  - PostgreSQL
+  - n8n
+  - HubSpot API
+  - Webhooks
+  - OpenAI
+  - Docker
+  - SQL
+impact_areas:
+  - Prioritize leads using consistent scoring rules and model signals
+  - Reduce manual CRM updates and follow-up preparation
+  - Keep the salesperson in control before high-impact customer communication
+  - Create a measurable path from inbound signal to next action
+paths:
+  project: projects/sc-03-ai-sales-crm-automation
+  readme: projects/sc-03-ai-sales-crm-automation/README.md

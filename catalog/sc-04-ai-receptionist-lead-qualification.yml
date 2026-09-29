@@ -1,0 +1,25 @@
+id: SC-04
+title: AI Receptionist & Lead Qualification
+status: completed
+project_type: implementation
+family: AI Agents & Intelligent Automation
+summary: >
+  A conversational intake layer that qualifies enquiries, captures structured requirements and routes the next action.
+capabilities:
+  - TypeScript
+  - Node.js
+  - Fastify
+  - Twilio
+  - Calendly
+  - OpenAI
+  - PostgreSQL
+  - Docker
+  - Webhooks
+impact_areas:
+  - Respond consistently to inbound enquiries
+  - Capture structured qualification data instead of free-form notes
+  - Route high-value requests to the right person or scheduling path
+  - Reduce repetitive intake work while preserving human escalation
+paths:
+  project: projects/sc-04-ai-receptionist-lead-qualification
+  readme: projects/sc-04-ai-receptionist-lead-qualification/README.md

@@ -1,0 +1,5 @@
+name: sc09_analytics
+version: '1.0'
+config-version: 2
+profile: sc09
+model-paths: ["models"]

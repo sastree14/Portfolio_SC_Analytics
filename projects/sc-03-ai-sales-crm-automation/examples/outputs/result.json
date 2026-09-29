@@ -1,0 +1,17 @@
+{
+  "project": "SC-03",
+  "status": "completed",
+  "stages": {
+    "Raw leads": 18,
+    "Scored": 42,
+    "Prioritized": 67,
+    "Action ready": 81
+  },
+  "monitored_kpis": [
+    "qualified lead response time",
+    "manual touches per lead",
+    "follow-up completion rate",
+    "salesperson approval rate",
+    "pipeline coverage"
+  ]
+}

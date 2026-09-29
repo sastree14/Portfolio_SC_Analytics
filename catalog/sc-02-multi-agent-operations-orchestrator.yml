@@ -1,0 +1,25 @@
+id: SC-02
+title: Multi-Agent Operations Orchestrator
+status: completed
+project_type: implementation
+family: AI Agents & Intelligent Automation
+summary: >
+  A controlled multi-agent system that separates planning, specialist work, review and execution.
+capabilities:
+  - Python
+  - FastAPI
+  - LangGraph
+  - PostgreSQL
+  - Redis
+  - Docker
+  - OpenAI
+  - Anthropic
+  - Pydantic
+impact_areas:
+  - Break large workflows into accountable specialist steps
+  - Keep agent responsibilities explicit instead of relying on one opaque prompt
+  - Insert review and approval before material actions
+  - Create a traceable record of delegation, hand-offs and final decisions
+paths:
+  project: projects/sc-02-multi-agent-operations-orchestrator
+  readme: projects/sc-02-multi-agent-operations-orchestrator/README.md

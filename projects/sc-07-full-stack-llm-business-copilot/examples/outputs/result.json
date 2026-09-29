@@ -1,0 +1,17 @@
+{
+  "project": "SC-07",
+  "status": "completed",
+  "stages": {
+    "Question": 22,
+    "Context": 49,
+    "Tool use": 73,
+    "Action": 91
+  },
+  "monitored_kpis": [
+    "task completion rate",
+    "tool-use success rate",
+    "time to answer",
+    "user corrections",
+    "actions completed from the copilot"
+  ]
+}

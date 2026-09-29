@@ -1,0 +1,4 @@
+{
+  "project": "SC-09",
+  "scenario": "Daily commercial data lands as Parquet, passes schema and rule checks, builds staging models and then produces finance-ready revenue and margin marts."
+}
