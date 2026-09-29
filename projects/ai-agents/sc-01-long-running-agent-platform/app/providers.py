@@ -30,8 +30,10 @@ class MockProvider(Provider):
 class OpenAIProvider(Provider):
     def __init__(self) -> None:
         settings = get_settings()
-        if not settings.openai_api_key:
-            raise ValueError("OPENAI_API_KEY is required when provider=openai")
+        if not settings.openai_api_key or not settings.openai_model:
+            raise ValueError(
+                "OPENAI_API_KEY and OPENAI_MODEL are required when provider=openai"
+            )
 
         from openai import OpenAI
 
@@ -50,8 +52,10 @@ class OpenAIProvider(Provider):
 class AnthropicProvider(Provider):
     def __init__(self) -> None:
         settings = get_settings()
-        if not settings.anthropic_api_key:
-            raise ValueError("ANTHROPIC_API_KEY is required when provider=anthropic")
+        if not settings.anthropic_api_key or not settings.anthropic_model:
+            raise ValueError(
+                "ANTHROPIC_API_KEY and ANTHROPIC_MODEL are required when provider=anthropic"
+            )
 
         from anthropic import Anthropic
 

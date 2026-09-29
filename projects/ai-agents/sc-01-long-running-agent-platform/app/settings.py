@@ -15,9 +15,9 @@ class Settings(BaseSettings):
 
     llm_provider: str = "mock"
     openai_api_key: str | None = None
-    openai_model: str = "gpt-5-mini"
+    openai_model: str | None = None
     anthropic_api_key: str | None = None
-    anthropic_model: str = "claude-sonnet-4-5"
+    anthropic_model: str | None = None
 
     outbound_webhook_token: str | None = None
 

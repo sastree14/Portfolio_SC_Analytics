@@ -1,3 +1,4 @@
+import httpx
 from celery import Celery
 from sqlalchemy import select
 
@@ -14,15 +15,6 @@ celery_app = Celery(
     broker=settings.celery_broker_url,
     backend=settings.celery_result_backend,
 )
-
-
-def _load_run(run_id: str) -> AgentRun:
-    with SessionLocal() as session:
-        run = session.scalar(select(AgentRun).where(AgentRun.id == run_id))
-        if run is None:
-            raise ValueError(f"Run not found: {run_id}")
-        session.expunge(run)
-        return run
 
 
 def _execute_external_action(run: AgentRun) -> dict:
