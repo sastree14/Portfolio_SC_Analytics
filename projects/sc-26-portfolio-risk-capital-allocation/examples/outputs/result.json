@@ -1,0 +1,17 @@
+{
+  "project": "SC-26",
+  "status": "completed",
+  "series": [
+    8.1,
+    7.4,
+    6.8,
+    6.2
+  ],
+  "metrics": [
+    "expected return",
+    "volatility",
+    "VaR",
+    "CVaR",
+    "Sharpe ratio"
+  ]
+}

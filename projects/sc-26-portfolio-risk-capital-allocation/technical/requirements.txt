@@ -1,0 +1,6 @@
+pytest>=8,<9
+pandas>=2.2,<3
+plotly>=5,<7
+scipy>=1.14,<2
+numpy>=2,<3
+cvxpy>=1.5,<2

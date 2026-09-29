@@ -1,0 +1,32 @@
+# Technical implementation
+
+## Map
+
+- `src/` — project-specific analytical logic
+- `tests/` — deterministic smoke test
+- `sql/` — storage / monitoring queries
+- `data/` — representative input
+- `infra/` — local container notes
+- `ui/` — TypeScript/WebSocket visualization stub
+
+## Run
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python src/main.py
+pytest -q
+```
+
+## Stack
+
+- Python
+- TypeScript
+- WebSockets
+- ClickHouse
+- Redis
+- Pandas
+- NumPy
+- Plotly
+- Docker

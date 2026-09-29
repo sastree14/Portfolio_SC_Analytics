@@ -1,0 +1,4 @@
+{
+  "project": "SC-25",
+  "scenario": "An investment has construction drawdowns, amortizing debt and operating cash flows. The model projects debt service, covenant headroom and investor returns across scenarios."
+}

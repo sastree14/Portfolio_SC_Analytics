@@ -1,0 +1,25 @@
+id: SC-29
+title: Commercial Due Diligence & Market Intelligence System
+status: completed
+project_type: implementation
+family: Specialized Business Systems
+summary: >
+  A structured research system for market sizing, competitor evidence, company signals and investment-question tracking.
+technologies:
+  - Python
+  - Pandas
+  - DuckDB
+  - FastAPI
+  - Playwright
+  - BeautifulSoup
+  - OpenAI
+  - PostgreSQL
+  - Plotly
+impact_areas:
+  - Turn an open-ended research process into explicit evidence questions
+  - Separate source evidence from analyst interpretation
+  - Combine market, company and financial signals in one review structure
+  - Make assumptions and confidence levels visible
+paths:
+  project: projects/sc-29-commercial-due-diligence-market-intelligence
+  readme: projects/sc-29-commercial-due-diligence-market-intelligence/README.md

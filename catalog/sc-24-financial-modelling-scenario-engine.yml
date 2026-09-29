@@ -1,0 +1,24 @@
+id: SC-24
+title: Financial Modelling & Scenario Engine
+status: completed
+project_type: implementation
+family: Finance & Quantitative Systems
+summary: >
+  A driver-based financial model that links revenue, margin, operating costs and cash flow to explicit business assumptions.
+technologies:
+  - Python
+  - Pandas
+  - NumPy
+  - OpenPyXL
+  - Plotly
+  - FastAPI
+  - PostgreSQL
+  - Excel
+impact_areas:
+  - Make financial assumptions explicit and editable
+  - Connect operational drivers to P&L and cash flow
+  - Compare base, downside and upside scenarios consistently
+  - Identify the variables that matter most to cash runway and profitability
+paths:
+  project: projects/sc-24-financial-modelling-scenario-engine
+  readme: projects/sc-24-financial-modelling-scenario-engine/README.md

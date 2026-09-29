@@ -1,0 +1,17 @@
+{
+  "project": "SC-22",
+  "status": "completed",
+  "series": [
+    61,
+    74,
+    86,
+    93
+  ],
+  "metrics": [
+    "utilization",
+    "unassigned work",
+    "late jobs",
+    "overtime hours",
+    "solver objective"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "project": "SC-21",
+  "scenario": "A product has declining conversion and a margin floor. The engine estimates response to price changes and chooses the highest expected contribution within commercial constraints."
+}

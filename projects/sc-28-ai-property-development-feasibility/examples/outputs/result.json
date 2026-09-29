@@ -1,0 +1,17 @@
+{
+  "project": "SC-28",
+  "status": "completed",
+  "series": [
+    14,
+    19,
+    23,
+    17
+  ],
+  "metrics": [
+    "project IRR",
+    "development margin",
+    "cost variance",
+    "approval cycle time",
+    "scenario downside"
+  ]
+}

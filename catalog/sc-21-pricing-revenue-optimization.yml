@@ -1,0 +1,25 @@
+id: SC-21
+title: Pricing & Revenue Optimization Engine
+status: completed
+project_type: implementation
+family: Optimization & Operations
+summary: >
+  A pricing system that combines demand response, margin economics and constrained scenario optimization.
+technologies:
+  - Python
+  - Pandas
+  - NumPy
+  - SciPy
+  - Statsmodels
+  - XGBoost
+  - Optuna
+  - FastAPI
+  - Plotly
+impact_areas:
+  - Quantify the trade-off between price, demand and contribution margin
+  - Compare pricing scenarios before rollout
+  - Respect floor prices, margin targets and commercial constraints
+  - Turn historical response into a repeatable pricing decision process
+paths:
+  project: projects/sc-21-pricing-revenue-optimization
+  readme: projects/sc-21-pricing-revenue-optimization/README.md

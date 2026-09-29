@@ -1,0 +1,17 @@
+{
+  "project": "SC-24",
+  "status": "completed",
+  "series": [
+    12,
+    18,
+    27,
+    39
+  ],
+  "metrics": [
+    "revenue",
+    "EBITDA",
+    "cash balance",
+    "runway",
+    "free cash flow"
+  ]
+}

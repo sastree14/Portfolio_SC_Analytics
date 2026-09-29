@@ -1,0 +1,19 @@
+{
+  "project": "SC-27",
+  "status": "completed",
+  "series": [
+    0.2,
+    0.7,
+    0.4,
+    1.1,
+    0.8,
+    1.4
+  ],
+  "metrics": [
+    "fill-adjusted PnL",
+    "max drawdown",
+    "hit rate",
+    "latency",
+    "signal turnover"
+  ]
+}

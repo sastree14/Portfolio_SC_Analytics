@@ -1,0 +1,17 @@
+{
+  "project": "SC-25",
+  "status": "completed",
+  "series": [
+    1.18,
+    1.29,
+    1.41,
+    1.53
+  ],
+  "metrics": [
+    "DSCR",
+    "IRR",
+    "NPV",
+    "debt balance",
+    "covenant headroom"
+  ]
+}
