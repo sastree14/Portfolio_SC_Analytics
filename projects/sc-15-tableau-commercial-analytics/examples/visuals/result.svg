@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+ <rect width="1200" height="720" fill="#f8fafc"/>
+ <text x="48" y="48" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="700" fill="#0f172a">SC-15 · Tableau commercial analytics</text>
+ <text x="48" y="73" font-family="Inter,Arial,sans-serif" font-size="13" fill="#64748b">Datasource + interaction blueprint · native workbook screenshots pending</text><rect x="48" y="104" width="650" height="560" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+ <text x="66" y="132" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="650" fill="#0f172a">Model / data flow</text><rect x="78" y="158" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="158" y="183" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Commercial fact</text>
+   <text x="158" y="202" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">account grain</text><line x1="238" y1="189" x2="264" y2="189" stroke="#e2e8f0" stroke-width="2"/><rect x="274" y="158" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="354" y="183" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Segment</text>
+   <text x="354" y="202" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">filter</text><line x1="434" y1="189" x2="460" y2="189" stroke="#e2e8f0" stroke-width="2"/><rect x="470" y="158" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="550" y="183" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Owner</text>
+   <text x="550" y="202" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">filter</text><rect x="78" y="278" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="158" y="303" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Revenue</text>
+   <text x="158" y="322" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">measure</text><line x1="238" y1="309" x2="264" y2="309" stroke="#e2e8f0" stroke-width="2"/><rect x="274" y="278" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="354" y="303" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Margin</text>
+   <text x="354" y="322" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">calculated</text><line x1="434" y1="309" x2="460" y2="309" stroke="#e2e8f0" stroke-width="2"/><rect x="470" y="278" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="550" y="303" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Cohort</text>
+   <text x="550" y="322" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">derived</text><rect x="78" y="398" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="158" y="423" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Executive view</text>
+   <text x="158" y="442" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">overview</text><line x1="238" y1="429" x2="264" y2="429" stroke="#e2e8f0" stroke-width="2"/><rect x="274" y="398" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="354" y="423" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Cohort view</text>
+   <text x="354" y="442" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">retention</text><line x1="434" y1="429" x2="460" y2="429" stroke="#e2e8f0" stroke-width="2"/><rect x="470" y="398" width="160" height="62" rx="8" fill="#fff" stroke="#e2e8f0"/>
+   <text x="550" y="423" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="11" font-weight="650" fill="#0f172a">Account drill</text>
+   <text x="550" y="442" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="9.5" fill="#64748b">detail</text><rect x="726" y="104" width="426" height="560" rx="10" fill="#ffffff" stroke="#e2e8f0"/>
+ <text x="744" y="132" font-family="Inter,Arial,sans-serif" font-size="15" font-weight="650" fill="#0f172a">Key measures / checks</text><rect x="748" y="150" width="382" height="28" fill="#f8fafc"/>
+   <text x="758" y="168" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="#0f172a">Revenue / account</text>
+   <text x="1120" y="168" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">Calculated</text><rect x="748" y="178" width="382" height="28" fill="#ffffff"/>
+   <text x="758" y="196" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="#0f172a">Gross Margin %</text>
+   <text x="1120" y="196" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">Calculated</text><rect x="748" y="206" width="382" height="28" fill="#f8fafc"/>
+   <text x="758" y="224" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="#0f172a">Account Revenue</text>
+   <text x="1120" y="224" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">FIXED LOD</text><rect x="748" y="234" width="382" height="28" fill="#ffffff"/>
+   <text x="758" y="252" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="#0f172a">Cohort retention</text>
+   <text x="1120" y="252" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">Derived</text><rect x="748" y="262" width="382" height="28" fill="#f8fafc"/>
+   <text x="758" y="280" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="#0f172a">Global filters</text>
+   <text x="1120" y="280" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">Period + segment</text><rect x="748" y="290" width="382" height="28" fill="#ffffff"/>
+   <text x="758" y="308" font-family="Inter,Arial,sans-serif" font-size="10.5" fill="#0f172a">Native screenshot</text>
+   <text x="1120" y="308" text-anchor="end" font-family="Inter,Arial,sans-serif" font-size="10.5" font-weight="600" fill="#0f172a">Pending</text></svg>
