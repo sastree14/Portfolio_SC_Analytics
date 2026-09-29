@@ -11,8 +11,9 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-EXAMPLES = ROOT.parent / "examples"
+TECHNICAL = Path(__file__).resolve().parent
+PROJECT = TECHNICAL.parent
+EXAMPLES = PROJECT / "examples"
 
 REFERENCE = {"quality": 0.81, "drift": 0.08, "latency_ms": 48}
 CANDIDATES = [
