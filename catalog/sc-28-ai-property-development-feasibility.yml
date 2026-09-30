@@ -1,25 +1,59 @@
+schema_version: 2
 id: SC-28
-title: AI Property Development Feasibility & Operations System
+title: "AI Property Development Feasibility & Operations System"
 status: completed
-project_type: implementation
-family: Specialized Business Systems
-summary: >
-  A property-development decision system combining feasibility modelling, document analysis, scenario review and workflow automation.
+project_type: public-portfolio-implementation
+family: "Specialized Business Systems"
+
+summary: "A property-development decision system combining feasibility modelling, documents, scenarios and workflow automation."
+
+designed_for:
+  - "Property development"
+  - "investment"
+  - "development finance"
+
+why_it_matters:
+  - "Unify acquisition and development assumptions"
+  - "Reduce document-review effort"
+  - "Compare downside and upside cases"
+  - "Move projects through explicit review gates"
+
 technologies:
-  - Python
-  - FastAPI
-  - PostgreSQL
-  - Pandas
-  - GeoPandas
-  - OpenAI
-  - n8n
-  - Docker
-  - Plotly
-impact_areas:
-  - Bring acquisition assumptions, development costs and financing into one feasibility view
-  - Use structured document extraction to reduce manual review
-  - Compare downside and upside cases before committing capital
-  - Track approval and due-diligence steps through one workflow
+  - "Python"
+  - "FastAPI"
+  - "PostgreSQL"
+  - "Pandas"
+  - "GeoPandas"
+  - "OpenAI"
+  - "n8n"
+  - "Docker"
+  - "Plotly"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-28-ai-property-development-feasibility/docs/BUSINESS_IMPACT.md
+  results: projects/sc-28-ai-property-development-feasibility/docs/RESULTS.md
+  architecture: projects/sc-28-ai-property-development-feasibility/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-28-ai-property-development-feasibility/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-28-ai-property-development-feasibility/docs/DATA.md
+  security_permissions: projects/sc-28-ai-property-development-feasibility/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-28-ai-property-development-feasibility/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-28-ai-property-development-feasibility/docs/ENVIRONMENTS.md
+  limitations: projects/sc-28-ai-property-development-feasibility/docs/LIMITATIONS.md
+  examples: projects/sc-28-ai-property-development-feasibility/examples/README.md
+  technical: projects/sc-28-ai-property-development-feasibility/technical/README.md
+
+visuals:
+  primary: projects/sc-28-ai-property-development-feasibility/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-28-ai-property-development-feasibility/technical/run_project.py
+
 paths:
   project: projects/sc-28-ai-property-development-feasibility
   readme: projects/sc-28-ai-property-development-feasibility/README.md
