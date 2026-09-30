@@ -1,25 +1,60 @@
+schema_version: 2
 id: SC-29
-title: Commercial Due Diligence & Market Intelligence System
+title: "Commercial Due Diligence & Market Intelligence System"
 status: completed
-project_type: implementation
-family: Specialized Business Systems
-summary: >
-  A structured research system for market sizing, competitor evidence, company signals and investment-question tracking.
+project_type: public-portfolio-implementation
+family: "Specialized Business Systems"
+
+summary: "A structured research system for market sizing, competitors, company signals and evidence-backed investment questions."
+
+designed_for:
+  - "Private equity"
+  - "corporate development"
+  - "strategy"
+  - "consulting"
+
+why_it_matters:
+  - "Turn open-ended research into explicit questions"
+  - "Separate source evidence from interpretation"
+  - "Combine market and company signals"
+  - "Expose unsupported assumptions"
+
 technologies:
-  - Python
-  - Pandas
-  - DuckDB
-  - FastAPI
-  - Playwright
-  - BeautifulSoup
-  - OpenAI
-  - PostgreSQL
-  - Plotly
-impact_areas:
-  - Turn an open-ended research process into explicit evidence questions
-  - Separate source evidence from analyst interpretation
-  - Combine market, company and financial signals in one review structure
-  - Make assumptions and confidence levels visible
+  - "Python"
+  - "Pandas"
+  - "DuckDB"
+  - "FastAPI"
+  - "Playwright"
+  - "BeautifulSoup"
+  - "OpenAI"
+  - "PostgreSQL"
+  - "Plotly"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-29-commercial-due-diligence-market-intelligence/docs/BUSINESS_IMPACT.md
+  results: projects/sc-29-commercial-due-diligence-market-intelligence/docs/RESULTS.md
+  architecture: projects/sc-29-commercial-due-diligence-market-intelligence/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-29-commercial-due-diligence-market-intelligence/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-29-commercial-due-diligence-market-intelligence/docs/DATA.md
+  security_permissions: projects/sc-29-commercial-due-diligence-market-intelligence/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-29-commercial-due-diligence-market-intelligence/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-29-commercial-due-diligence-market-intelligence/docs/ENVIRONMENTS.md
+  limitations: projects/sc-29-commercial-due-diligence-market-intelligence/docs/LIMITATIONS.md
+  examples: projects/sc-29-commercial-due-diligence-market-intelligence/examples/README.md
+  technical: projects/sc-29-commercial-due-diligence-market-intelligence/technical/README.md
+
+visuals:
+  primary: projects/sc-29-commercial-due-diligence-market-intelligence/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-29-commercial-due-diligence-market-intelligence/technical/run_project.py
+
 paths:
   project: projects/sc-29-commercial-due-diligence-market-intelligence
   readme: projects/sc-29-commercial-due-diligence-market-intelligence/README.md
