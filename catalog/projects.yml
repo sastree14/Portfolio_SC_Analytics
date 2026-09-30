@@ -2,6 +2,7 @@ projects:
   - id: SC-01
     title: "Long-Running AI Agent Platform"
     path: projects/sc-01-long-running-agent-platform
+    manifest: catalog/sc-01-long-running-agent-platform.yml
     technologies:
       - "Python"
       - "FastAPI"
@@ -15,6 +16,7 @@ projects:
   - id: SC-02
     title: "Multi-Agent Operations Orchestrator"
     path: projects/sc-02-multi-agent-operations-orchestrator
+    manifest: catalog/sc-02-multi-agent-operations-orchestrator.yml
     technologies:
       - "Python"
       - "FastAPI"
@@ -28,6 +30,7 @@ projects:
   - id: SC-03
     title: "AI Sales & CRM Automation System"
     path: projects/sc-03-ai-sales-crm-automation
+    manifest: catalog/sc-03-ai-sales-crm-automation.yml
     technologies:
       - "Python"
       - "FastAPI"
@@ -41,6 +44,7 @@ projects:
   - id: SC-04
     title: "AI Receptionist & Lead Qualification"
     path: projects/sc-04-ai-receptionist-lead-qualification
+    manifest: catalog/sc-04-ai-receptionist-lead-qualification.yml
     technologies:
       - "TypeScript"
       - "Node.js"
@@ -54,6 +58,7 @@ projects:
   - id: SC-05
     title: "Document Intelligence & Due Diligence Agent"
     path: projects/sc-05-document-intelligence-due-diligence-agent
+    manifest: catalog/sc-05-document-intelligence-due-diligence-agent.yml
     technologies:
       - "Python"
       - "FastAPI"
@@ -68,6 +73,7 @@ projects:
   - id: SC-06
     title: "AI Workflow Automation Hub"
     path: projects/sc-06-ai-workflow-automation-hub
+    manifest: catalog/sc-06-ai-workflow-automation-hub.yml
     technologies:
       - "n8n"
       - "Python"
@@ -81,6 +87,7 @@ projects:
   - id: SC-07
     title: "Full-Stack LLM Business Copilot"
     path: projects/sc-07-full-stack-llm-business-copilot
+    manifest: catalog/sc-07-full-stack-llm-business-copilot.yml
     technologies:
       - "Next.js"
       - "TypeScript"
@@ -94,6 +101,7 @@ projects:
   - id: SC-08
     title: "Enterprise Data Integration & API Platform"
     path: projects/sc-08-enterprise-data-integration-api-platform
+    manifest: catalog/sc-08-enterprise-data-integration-api-platform.yml
     technologies:
       - "Python"
       - "FastAPI"
@@ -113,6 +121,7 @@ projects:
   - id: SC-09
     title: "ETL / ELT & Data Quality Pipeline"
     path: projects/sc-09-etl-elt-data-quality-pipeline
+    manifest: catalog/sc-09-etl-elt-data-quality-pipeline.yml
     technologies:
       - "dbt"
       - "DuckDB"
@@ -126,6 +135,7 @@ projects:
   - id: SC-10
     title: "Real-Time Analytics & Monitoring Platform"
     path: projects/sc-10-real-time-analytics-platform
+    manifest: catalog/sc-10-real-time-analytics-platform.yml
     technologies:
       - "Redpanda / Kafka"
       - "ClickHouse"
@@ -140,6 +150,7 @@ projects:
   - id: SC-11
     title: "ML / AI Evaluation & Monitoring Platform"
     path: projects/sc-11-mlops-evaluation-monitoring
+    manifest: catalog/sc-11-mlops-evaluation-monitoring.yml
     technologies:
       - "Python"
       - "MLflow"
@@ -153,6 +164,7 @@ projects:
   - id: SC-12
     title: "Multi-Horizon Demand Forecasting & Inventory Planning"
     path: projects/sc-12-multi-horizon-demand-forecasting
+    manifest: catalog/sc-12-multi-horizon-demand-forecasting.yml
     technologies:
       - "Python"
       - "Pandas"
@@ -166,6 +178,7 @@ projects:
   - id: SC-13
     title: "R Shiny Forecasting & Scenario Planning Application"
     path: projects/sc-13-r-shiny-forecasting-scenario-planning
+    manifest: catalog/sc-13-r-shiny-forecasting-scenario-planning.yml
     technologies:
       - "R"
       - "Shiny"
@@ -178,6 +191,7 @@ projects:
   - id: SC-14
     title: "Power BI Executive Decision System"
     path: projects/sc-14-power-bi-executive-decision-system
+    manifest: catalog/sc-14-power-bi-executive-decision-system.yml
     technologies:
       - "Power BI"
       - "DAX"
@@ -189,6 +203,7 @@ projects:
   - id: SC-15
     title: "Tableau Commercial Analytics & Drill-Down"
     path: projects/sc-15-tableau-commercial-analytics
+    manifest: catalog/sc-15-tableau-commercial-analytics.yml
     technologies:
       - "Tableau"
       - "Tableau Calculated Fields"
@@ -199,6 +214,7 @@ projects:
   - id: SC-16
     title: "Recommendation, Search & Ranking Engine"
     path: projects/sc-16-recommendation-search-ranking-engine
+    manifest: catalog/sc-16-recommendation-search-ranking-engine.yml
     technologies:
       - "Python"
       - "Scikit-learn"
@@ -211,6 +227,7 @@ projects:
   - id: SC-17
     title: "Customer Intelligence: Churn, CLV & Segmentation"
     path: projects/sc-17-customer-intelligence-churn-clv
+    manifest: catalog/sc-17-customer-intelligence-churn-clv.yml
     technologies:
       - "Python"
       - "Scikit-learn"
@@ -223,6 +240,7 @@ projects:
   - id: SC-18
     title: "Credit Risk & Profit Optimization Engine"
     path: projects/sc-18-credit-risk-profit-optimization
+    manifest: catalog/sc-18-credit-risk-profit-optimization.yml
     technologies:
       - "Python"
       - "XGBoost"
@@ -236,6 +254,7 @@ projects:
   - id: SC-19
     title: "Fraud Detection & Explainability System"
     path: projects/sc-19-fraud-detection-explainability
+    manifest: catalog/sc-19-fraud-detection-explainability.yml
     technologies:
       - "Python"
       - "XGBoost"
@@ -248,6 +267,7 @@ projects:
   - id: SC-20
     title: "Supply Chain & Marketplace Optimization"
     path: projects/sc-20-supply-chain-optimization
+    manifest: catalog/sc-20-supply-chain-optimization.yml
     technologies:
       - "Python"
       - "OR-Tools"
@@ -260,6 +280,7 @@ projects:
   - id: SC-21
     title: "Pricing & Revenue Optimization Engine"
     path: projects/sc-21-pricing-revenue-optimization
+    manifest: catalog/sc-21-pricing-revenue-optimization.yml
     technologies:
       - "Python"
       - "Pandas"
@@ -273,6 +294,7 @@ projects:
   - id: SC-22
     title: "Resource, Capacity & Scheduling Optimization"
     path: projects/sc-22-resource-capacity-scheduling-optimization
+    manifest: catalog/sc-22-resource-capacity-scheduling-optimization.yml
     technologies:
       - "Python"
       - "OR-Tools"
@@ -285,6 +307,7 @@ projects:
   - id: SC-23
     title: "Operations Simulation & What-If Engine"
     path: projects/sc-23-operations-simulation-what-if
+    manifest: catalog/sc-23-operations-simulation-what-if.yml
     technologies:
       - "Python"
       - "SimPy"
@@ -297,6 +320,7 @@ projects:
   - id: SC-24
     title: "Financial Modelling & Scenario Engine"
     path: projects/sc-24-financial-modelling-scenario-engine
+    manifest: catalog/sc-24-financial-modelling-scenario-engine.yml
     technologies:
       - "Python"
       - "Pandas"
@@ -309,6 +333,7 @@ projects:
   - id: SC-25
     title: "Debt, Cash Flow & Investment Model"
     path: projects/sc-25-debt-cashflow-investment-model
+    manifest: catalog/sc-25-debt-cashflow-investment-model.yml
     technologies:
       - "Python"
       - "Pandas"
@@ -321,6 +346,7 @@ projects:
   - id: SC-26
     title: "Portfolio Risk & Capital Allocation Engine"
     path: projects/sc-26-portfolio-risk-capital-allocation
+    manifest: catalog/sc-26-portfolio-risk-capital-allocation.yml
     technologies:
       - "Python"
       - "NumPy"
@@ -333,6 +359,7 @@ projects:
   - id: SC-27
     title: "Quantitative Trading & Market Microstructure System"
     path: projects/sc-27-quant-trading-market-microstructure
+    manifest: catalog/sc-27-quant-trading-market-microstructure.yml
     technologies:
       - "Python"
       - "TypeScript"
@@ -347,6 +374,7 @@ projects:
   - id: SC-28
     title: "AI Property Development Feasibility & Operations System"
     path: projects/sc-28-ai-property-development-feasibility
+    manifest: catalog/sc-28-ai-property-development-feasibility.yml
     technologies:
       - "Python"
       - "FastAPI"
@@ -360,6 +388,7 @@ projects:
   - id: SC-29
     title: "Commercial Due Diligence & Market Intelligence System"
     path: projects/sc-29-commercial-due-diligence-market-intelligence
+    manifest: catalog/sc-29-commercial-due-diligence-market-intelligence.yml
     technologies:
       - "Python"
       - "Pandas"
@@ -373,6 +402,7 @@ projects:
   - id: SC-30
     title: "Computer Vision Waste Detection & Sorting System"
     path: projects/sc-30-computer-vision-waste-detection-sorting
+    manifest: catalog/sc-30-computer-vision-waste-detection-sorting.yml
     technologies:
       - "Python"
       - "PyTorch"
