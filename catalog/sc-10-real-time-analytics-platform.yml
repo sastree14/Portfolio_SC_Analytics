@@ -1,18 +1,61 @@
+schema_version: 2
 id: SC-10
-title: Real-Time Analytics & Monitoring Platform
+title: "Real-Time Analytics & Monitoring Platform"
 status: completed
-project_type: implementation
+project_type: public-portfolio-implementation
+family: "Data Engineering & Platforms"
+
+summary: "A streaming architecture for ingesting events, updating analytical state and exposing low-latency operational views."
+
+designed_for:
+  - "Operations monitoring"
+  - "marketplaces"
+  - "telemetry"
+  - "live decision systems"
+
+why_it_matters:
+  - "Reduce event-to-insight latency"
+  - "Separate ingestion from analytical querying"
+  - "Support live dashboards and alerts"
+  - "Retain history for replay and investigation"
+
 technologies:
-  - Redpanda / Kafka
-  - ClickHouse
-  - Python
-  - FastAPI
-  - WebSockets
-  - Grafana
-  - Kubernetes
-  - OpenTelemetry
-  - Docker
-  - SQL
+  - "Redpanda / Kafka"
+  - "ClickHouse"
+  - "Python"
+  - "FastAPI"
+  - "WebSockets"
+  - "Grafana"
+  - "Kubernetes"
+  - "OpenTelemetry"
+  - "Docker"
+  - "SQL"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-10-real-time-analytics-platform/docs/BUSINESS_IMPACT.md
+  results: projects/sc-10-real-time-analytics-platform/docs/RESULTS.md
+  architecture: projects/sc-10-real-time-analytics-platform/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-10-real-time-analytics-platform/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-10-real-time-analytics-platform/docs/DATA.md
+  security_permissions: projects/sc-10-real-time-analytics-platform/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-10-real-time-analytics-platform/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-10-real-time-analytics-platform/docs/ENVIRONMENTS.md
+  limitations: projects/sc-10-real-time-analytics-platform/docs/LIMITATIONS.md
+  examples: projects/sc-10-real-time-analytics-platform/examples/README.md
+  technical: projects/sc-10-real-time-analytics-platform/technical/README.md
+
+visuals:
+  primary: projects/sc-10-real-time-analytics-platform/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-10-real-time-analytics-platform/technical/run_project.py
+
 paths:
   project: projects/sc-10-real-time-analytics-platform
   readme: projects/sc-10-real-time-analytics-platform/README.md
