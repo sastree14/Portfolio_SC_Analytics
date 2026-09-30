@@ -1,25 +1,60 @@
+schema_version: 2
 id: SC-09
-title: ETL / ELT & Data Quality Pipeline
+title: "ETL / ELT & Data Quality Pipeline"
 status: completed
-project_type: implementation
-family: Data Engineering & Platforms
-summary: >
-  A reproducible analytics-engineering pipeline with tests, lineage-friendly transformations and explicit data-quality gates.
-capabilities:
-  - dbt
-  - DuckDB
-  - Python
-  - Pandera
-  - Parquet
-  - Apache Airflow
-  - SQL
-  - Docker
-  - GitHub Actions
-impact_areas:
-  - Catch broken data before it reaches reports or models
-  - Make transformations reviewable in SQL
-  - Separate raw, staging and business-ready layers
-  - Create repeatable build and test steps for analytics
+project_type: public-portfolio-implementation
+family: "Data Engineering & Platforms"
+
+summary: "A reproducible analytics-engineering pipeline with SQL transformations and explicit quality gates."
+
+designed_for:
+  - "Analytics teams"
+  - "reporting"
+  - "ML feature preparation"
+  - "finance data"
+
+why_it_matters:
+  - "Catch broken data before it reaches decisions"
+  - "Make transformations reviewable"
+  - "Separate raw, staging and business-ready layers"
+  - "Automate build and test steps"
+
+technologies:
+  - "dbt"
+  - "DuckDB"
+  - "Python"
+  - "Pandera"
+  - "Parquet"
+  - "Apache Airflow"
+  - "SQL"
+  - "Docker"
+  - "GitHub Actions"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-09-etl-elt-data-quality-pipeline/docs/BUSINESS_IMPACT.md
+  results: projects/sc-09-etl-elt-data-quality-pipeline/docs/RESULTS.md
+  architecture: projects/sc-09-etl-elt-data-quality-pipeline/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-09-etl-elt-data-quality-pipeline/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-09-etl-elt-data-quality-pipeline/docs/DATA.md
+  security_permissions: projects/sc-09-etl-elt-data-quality-pipeline/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-09-etl-elt-data-quality-pipeline/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-09-etl-elt-data-quality-pipeline/docs/ENVIRONMENTS.md
+  limitations: projects/sc-09-etl-elt-data-quality-pipeline/docs/LIMITATIONS.md
+  examples: projects/sc-09-etl-elt-data-quality-pipeline/examples/README.md
+  technical: projects/sc-09-etl-elt-data-quality-pipeline/technical/README.md
+
+visuals:
+  primary: projects/sc-09-etl-elt-data-quality-pipeline/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-09-etl-elt-data-quality-pipeline/technical/run_project.py
+
 paths:
   project: projects/sc-09-etl-elt-data-quality-pipeline
   readme: projects/sc-09-etl-elt-data-quality-pipeline/README.md
