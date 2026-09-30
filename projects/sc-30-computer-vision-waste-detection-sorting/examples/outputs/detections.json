@@ -1,0 +1,53 @@
+{
+  "frame_id": "frame-1042",
+  "status": "review_required",
+  "counts": {
+    "plastic_bottle": 2,
+    "glass_bottle": 1,
+    "aluminum_can": 1,
+    "residual_waste": 1
+  },
+  "stream_counts": {
+    "plastic": 2,
+    "glass": 1,
+    "metal": 1,
+    "residual": 1
+  },
+  "detections": [
+    {
+      "class_name": "plastic_bottle",
+      "confidence": 0.93,
+      "bbox_xyxy": [86, 122, 260, 566],
+      "stream": "plastic",
+      "decision": "automatic"
+    },
+    {
+      "class_name": "plastic_bottle",
+      "confidence": 0.88,
+      "bbox_xyxy": [304, 160, 447, 538],
+      "stream": "plastic",
+      "decision": "automatic"
+    },
+    {
+      "class_name": "glass_bottle",
+      "confidence": 0.91,
+      "bbox_xyxy": [496, 98, 622, 548],
+      "stream": "glass",
+      "decision": "automatic"
+    },
+    {
+      "class_name": "aluminum_can",
+      "confidence": 0.86,
+      "bbox_xyxy": [682, 318, 804, 530],
+      "stream": "metal",
+      "decision": "automatic"
+    },
+    {
+      "class_name": "residual_waste",
+      "confidence": 0.58,
+      "bbox_xyxy": [844, 246, 1120, 558],
+      "stream": "residual",
+      "decision": "manual_review"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+ultralytics>=8.3,<9
+torch>=2.4,<3
+torchvision>=0.19,<1
+opencv-python-headless>=4.10,<5
+fastapi>=0.115,<1
+uvicorn[standard]>=0.30,<1
+python-multipart>=0.0.12,<1
+numpy>=2,<3
+pandas>=2.2,<3
+plotly>=5,<7
+pydantic>=2.8,<3
+pytest>=8,<9

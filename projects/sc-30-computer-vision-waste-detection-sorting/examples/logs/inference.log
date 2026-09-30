@@ -1,0 +1,5 @@
+2026-09-30T10:00:00Z frame_received frame_id=frame-1042 width=1280 height=720
+2026-09-30T10:00:00Z preprocessing_complete frame_id=frame-1042
+2026-09-30T10:00:00Z inference_complete frame_id=frame-1042 detections=5 latency_ms=42
+2026-09-30T10:00:00Z postprocess_complete frame_id=frame-1042 automatic=4 review=1
+2026-09-30T10:00:00Z result_persisted frame_id=frame-1042 status=review_required
