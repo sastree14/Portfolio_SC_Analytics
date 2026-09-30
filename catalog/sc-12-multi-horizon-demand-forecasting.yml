@@ -1,17 +1,60 @@
+schema_version: 2
 id: SC-12
-title: Multi-Horizon Demand Forecasting & Inventory Planning
+title: "Multi-Horizon Demand Forecasting & Inventory Planning"
 status: completed
-project_type: implementation
+project_type: public-portfolio-implementation
+family: "Forecasting & Planning"
+
+summary: "A forecasting system that compares baselines and machine-learning models across multiple planning horizons."
+
+designed_for:
+  - "E-commerce"
+  - "retail"
+  - "inventory planning"
+  - "finance"
+
+why_it_matters:
+  - "Measure forecast quality by horizon"
+  - "Expose forecast bias as well as absolute error"
+  - "Translate predictions into planning decisions"
+  - "Benchmark complex models against simple baselines"
+
 technologies:
-  - Python
-  - Pandas
-  - Statsmodels
-  - XGBoost
-  - LightGBM
-  - Plotly
-  - FastAPI
-  - PostgreSQL
-  - Prefect
+  - "Python"
+  - "Pandas"
+  - "Statsmodels"
+  - "XGBoost"
+  - "LightGBM"
+  - "Plotly"
+  - "FastAPI"
+  - "PostgreSQL"
+  - "Prefect"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-12-multi-horizon-demand-forecasting/docs/BUSINESS_IMPACT.md
+  results: projects/sc-12-multi-horizon-demand-forecasting/docs/RESULTS.md
+  architecture: projects/sc-12-multi-horizon-demand-forecasting/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-12-multi-horizon-demand-forecasting/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-12-multi-horizon-demand-forecasting/docs/DATA.md
+  security_permissions: projects/sc-12-multi-horizon-demand-forecasting/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-12-multi-horizon-demand-forecasting/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-12-multi-horizon-demand-forecasting/docs/ENVIRONMENTS.md
+  limitations: projects/sc-12-multi-horizon-demand-forecasting/docs/LIMITATIONS.md
+  examples: projects/sc-12-multi-horizon-demand-forecasting/examples/README.md
+  technical: projects/sc-12-multi-horizon-demand-forecasting/technical/README.md
+
+visuals:
+  primary: projects/sc-12-multi-horizon-demand-forecasting/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-12-multi-horizon-demand-forecasting/technical/run_project.py
+
 paths:
   project: projects/sc-12-multi-horizon-demand-forecasting
   readme: projects/sc-12-multi-horizon-demand-forecasting/README.md
