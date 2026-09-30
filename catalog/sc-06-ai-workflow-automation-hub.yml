@@ -1,25 +1,60 @@
+schema_version: 2
 id: SC-06
-title: AI Workflow Automation Hub
+title: "AI Workflow Automation Hub"
 status: completed
-project_type: implementation
-family: AI Agents & Intelligent Automation
-summary: >
-  An event-driven automation layer that combines deterministic workflows with AI steps where interpretation is actually useful.
-capabilities:
-  - n8n
-  - Python
-  - FastAPI
-  - PostgreSQL
-  - Redis
-  - Webhooks
-  - Zapier Webhooks
-  - Make Webhooks
-  - Docker
-impact_areas:
-  - Automate repetitive cross-system workflows without turning every step into an AI decision
-  - Use model calls only where classification, extraction or drafting adds value
-  - Keep retries, approvals and failure handling visible
-  - Reduce manual movement of data between SaaS tools
+project_type: public-portfolio-implementation
+family: "AI Agents & Intelligent Automation"
+
+summary: "An event-driven automation layer that combines deterministic workflows with AI steps only where interpretation is useful."
+
+designed_for:
+  - "Operations"
+  - "finance"
+  - "sales"
+  - "internal automation"
+
+why_it_matters:
+  - "Automate repetitive cross-system work"
+  - "Keep deterministic steps deterministic"
+  - "Use AI selectively for extraction, classification or drafting"
+  - "Make retries and exceptions visible"
+
+technologies:
+  - "n8n"
+  - "Python"
+  - "FastAPI"
+  - "PostgreSQL"
+  - "Redis"
+  - "Webhooks"
+  - "Zapier"
+  - "Make"
+  - "Docker"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-06-ai-workflow-automation-hub/docs/BUSINESS_IMPACT.md
+  results: projects/sc-06-ai-workflow-automation-hub/docs/RESULTS.md
+  architecture: projects/sc-06-ai-workflow-automation-hub/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-06-ai-workflow-automation-hub/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-06-ai-workflow-automation-hub/docs/DATA.md
+  security_permissions: projects/sc-06-ai-workflow-automation-hub/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-06-ai-workflow-automation-hub/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-06-ai-workflow-automation-hub/docs/ENVIRONMENTS.md
+  limitations: projects/sc-06-ai-workflow-automation-hub/docs/LIMITATIONS.md
+  examples: projects/sc-06-ai-workflow-automation-hub/examples/README.md
+  technical: projects/sc-06-ai-workflow-automation-hub/technical/README.md
+
+visuals:
+  primary: projects/sc-06-ai-workflow-automation-hub/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-06-ai-workflow-automation-hub/technical/run_project.py
+
 paths:
   project: projects/sc-06-ai-workflow-automation-hub
   readme: projects/sc-06-ai-workflow-automation-hub/README.md
