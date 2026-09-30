@@ -1,18 +1,61 @@
+schema_version: 2
 id: SC-05
-title: Document Intelligence & Due Diligence Agent
+title: "Document Intelligence & Due Diligence Agent"
 status: completed
-project_type: implementation
+project_type: public-portfolio-implementation
+family: "AI Agents & Intelligent Automation"
+
+summary: "A document-analysis system that extracts evidence, retrieves supporting passages and produces reviewable findings."
+
+designed_for:
+  - "Due diligence"
+  - "legal review"
+  - "investment analysis"
+  - "compliance"
+
+why_it_matters:
+  - "Reduce time spent searching large document sets"
+  - "Keep every finding tied to source evidence"
+  - "Separate extracted fact from interpretation"
+  - "Make document review repeatable"
+
 technologies:
-  - Python
-  - FastAPI
-  - Qdrant
-  - pgvector
-  - PostgreSQL
-  - PyMuPDF
-  - OpenAI
-  - S3 / MinIO
-  - Docker
-  - Pydantic
+  - "Python"
+  - "FastAPI"
+  - "Qdrant"
+  - "pgvector"
+  - "PostgreSQL"
+  - "PyMuPDF"
+  - "OpenAI"
+  - "S3 / MinIO"
+  - "Docker"
+  - "Pydantic"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-05-document-intelligence-due-diligence-agent/docs/BUSINESS_IMPACT.md
+  results: projects/sc-05-document-intelligence-due-diligence-agent/docs/RESULTS.md
+  architecture: projects/sc-05-document-intelligence-due-diligence-agent/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-05-document-intelligence-due-diligence-agent/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-05-document-intelligence-due-diligence-agent/docs/DATA.md
+  security_permissions: projects/sc-05-document-intelligence-due-diligence-agent/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-05-document-intelligence-due-diligence-agent/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-05-document-intelligence-due-diligence-agent/docs/ENVIRONMENTS.md
+  limitations: projects/sc-05-document-intelligence-due-diligence-agent/docs/LIMITATIONS.md
+  examples: projects/sc-05-document-intelligence-due-diligence-agent/examples/README.md
+  technical: projects/sc-05-document-intelligence-due-diligence-agent/technical/README.md
+
+visuals:
+  primary: projects/sc-05-document-intelligence-due-diligence-agent/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-05-document-intelligence-due-diligence-agent/technical/run_project.py
+
 paths:
   project: projects/sc-05-document-intelligence-due-diligence-agent
   readme: projects/sc-05-document-intelligence-due-diligence-agent/README.md
