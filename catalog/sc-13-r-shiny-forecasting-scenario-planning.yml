@@ -1,24 +1,59 @@
+schema_version: 2
 id: SC-13
-title: R Shiny Forecasting & Scenario Planning Application
+title: "R Shiny Forecasting & Scenario Planning Application"
 status: completed
-project_type: implementation
-family: Forecasting & Planning
-summary: >
-  An interactive R application for time-series decomposition, forecasting and business what-if scenarios.
+project_type: public-portfolio-implementation
+family: "Forecasting & Planning"
+
+summary: "An interactive R application for decomposition, forecasting and business what-if scenarios."
+
+designed_for:
+  - "Finance"
+  - "planning"
+  - "sales operations"
+  - "R analytics teams"
+
+why_it_matters:
+  - "Inspect trend and seasonality interactively"
+  - "Compare statistical forecasts without editing code"
+  - "Turn assumptions into scenario outputs"
+  - "Keep analytical logic reproducible in R"
+
 technologies:
-  - R
-  - Shiny
-  - forecast
-  - fable
-  - ggplot2
-  - dplyr
-  - DBI
-  - PostgreSQL
-impact_areas:
-  - Let users inspect trend, seasonality and uncertainty interactively
-  - Compare statistical forecasting methods without editing code
-  - Translate forecast assumptions into scenario outputs
-  - Keep analytical logic reproducible in R
+  - "R"
+  - "Shiny"
+  - "forecast"
+  - "fable"
+  - "ggplot2"
+  - "dplyr"
+  - "DBI"
+  - "PostgreSQL"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/BUSINESS_IMPACT.md
+  results: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/RESULTS.md
+  architecture: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/DATA.md
+  security_permissions: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/ENVIRONMENTS.md
+  limitations: projects/sc-13-r-shiny-forecasting-scenario-planning/docs/LIMITATIONS.md
+  examples: projects/sc-13-r-shiny-forecasting-scenario-planning/examples/README.md
+  technical: projects/sc-13-r-shiny-forecasting-scenario-planning/technical/README.md
+
+visuals:
+  primary: projects/sc-13-r-shiny-forecasting-scenario-planning/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-13-r-shiny-forecasting-scenario-planning/technical/run_project.R
+
 paths:
   project: projects/sc-13-r-shiny-forecasting-scenario-planning
   readme: projects/sc-13-r-shiny-forecasting-scenario-planning/README.md
