@@ -1,24 +1,59 @@
+schema_version: 2
 id: SC-26
-title: Portfolio Risk & Capital Allocation Engine
+title: "Portfolio Risk & Capital Allocation Engine"
 status: completed
-project_type: implementation
-family: Finance & Quantitative Systems
-summary: >
-  A portfolio analytics engine for expected return, covariance, stress testing and constrained capital allocation.
+project_type: public-portfolio-implementation
+family: "Finance & Quantitative Systems"
+
+summary: "A portfolio engine for expected return, covariance, stress testing and constrained capital allocation."
+
+designed_for:
+  - "Investment"
+  - "treasury"
+  - "wealth analytics"
+  - "quantitative risk"
+
+why_it_matters:
+  - "Measure portfolio-level risk"
+  - "Compare constrained allocations"
+  - "Stress adverse scenarios"
+  - "Translate risk appetite into allocation limits"
+
 technologies:
-  - Python
-  - NumPy
-  - Pandas
-  - SciPy
-  - CVXPY
-  - Plotly
-  - Monte Carlo
-  - FastAPI
-impact_areas:
-  - Measure portfolio risk using more than standalone asset volatility
-  - Compare allocation choices under explicit constraints
-  - Stress the portfolio under adverse return scenarios
-  - Translate risk appetite into a reproducible allocation problem
+  - "Python"
+  - "NumPy"
+  - "Pandas"
+  - "SciPy"
+  - "CVXPY"
+  - "Plotly"
+  - "Monte Carlo"
+  - "FastAPI"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-26-portfolio-risk-capital-allocation/docs/BUSINESS_IMPACT.md
+  results: projects/sc-26-portfolio-risk-capital-allocation/docs/RESULTS.md
+  architecture: projects/sc-26-portfolio-risk-capital-allocation/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-26-portfolio-risk-capital-allocation/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-26-portfolio-risk-capital-allocation/docs/DATA.md
+  security_permissions: projects/sc-26-portfolio-risk-capital-allocation/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-26-portfolio-risk-capital-allocation/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-26-portfolio-risk-capital-allocation/docs/ENVIRONMENTS.md
+  limitations: projects/sc-26-portfolio-risk-capital-allocation/docs/LIMITATIONS.md
+  examples: projects/sc-26-portfolio-risk-capital-allocation/examples/README.md
+  technical: projects/sc-26-portfolio-risk-capital-allocation/technical/README.md
+
+visuals:
+  primary: projects/sc-26-portfolio-risk-capital-allocation/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-26-portfolio-risk-capital-allocation/technical/run_project.py
+
 paths:
   project: projects/sc-26-portfolio-risk-capital-allocation
   readme: projects/sc-26-portfolio-risk-capital-allocation/README.md
