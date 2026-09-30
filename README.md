@@ -1,6 +1,6 @@
 # SC-Analytics Portfolio
 
-This repository contains **29 completed projects** developed by SC-Analytics across AI agents, data engineering, forecasting, business intelligence, machine learning, risk, optimization, finance and quantitative systems.
+This repository contains **30 completed projects** developed by SC-Analytics across AI agents, data engineering, forecasting, business intelligence, machine learning, risk, optimization, finance and quantitative systems.
 
 The portfolio is designed for two audiences at the same time:
 
@@ -9,7 +9,7 @@ The portfolio is designed for two audiences at the same time:
 
 ## Start here
 
-- [Browse all 29 projects](PROJECTS.md)
+- [Browse all 30 projects](PROJECTS.md)
 - [Browse by technology](TECHNOLOGIES.md)
 - [Browse all project visuals](VISUALS.md)
 - [Open the principal code entrypoints](EXECUTION.md)
@@ -26,6 +26,8 @@ The portfolio is designed for two audiences at the same time:
 **Forecasting & decision interfaces** — multi-horizon forecasting, R Shiny, Power BI and Tableau.
 
 **Machine learning & risk** — recommendation, churn, CLV, survival analysis, credit risk, fraud and explainability.
+
+**Computer vision & edge AI** — object detection, image processing, counting, visual quality control and confidence-aware automation.
 
 **Optimization & operations** — supply chain, pricing, scheduling and simulation.
 

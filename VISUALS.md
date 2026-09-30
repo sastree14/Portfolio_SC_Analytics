@@ -145,3 +145,10 @@ Every project has a technical visual designed to communicate real analytical or 
 ![SC-29 visual](projects/sc-29-commercial-due-diligence-market-intelligence/examples/visuals/result.svg)
 
 
+
+## 10. Computer Vision & Edge AI
+
+### SC-30 · Computer Vision Waste Detection & Sorting System
+
+![SC-30 visual](projects/sc-30-computer-vision-waste-detection-sorting/examples/visuals/result.svg)
+

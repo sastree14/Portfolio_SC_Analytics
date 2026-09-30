@@ -370,3 +370,16 @@ projects:
       - "OpenAI"
       - "PostgreSQL"
       - "Plotly"
+  - id: SC-30
+    title: "Computer Vision Waste Detection & Sorting System"
+    path: projects/sc-30-computer-vision-waste-detection-sorting
+    technologies:
+      - "Python"
+      - "PyTorch"
+      - "Ultralytics YOLO"
+      - "OpenCV"
+      - "FastAPI"
+      - "NumPy"
+      - "Pandas"
+      - "Plotly"
+      - "Docker"

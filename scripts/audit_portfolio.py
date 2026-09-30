@@ -53,8 +53,8 @@ def entrypoint(project: Path) -> Path:
 
 def validate_structure(errors: list[str]) -> list[Path]:
     dirs = sorted(p for p in PROJECTS.iterdir() if p.is_dir() and p.name.startswith("sc-"))
-    if len(dirs) != 29:
-        fail(errors, f"expected 29 project directories, found {len(dirs)}")
+    if len(dirs) != 30:
+        fail(errors, f"expected 30 project directories, found {len(dirs)}")
 
     for project in dirs:
         for rel in REQUIRED:
@@ -154,7 +154,7 @@ def validate_indexes(errors: list[str], dirs: list[Path]) -> None:
             if project_id not in text:
                 fail(errors, f"{project_id} missing from {name}")
 
-    for heading in range(1, 10):
+    for heading in range(1, 11):
         if f"## {heading}." not in projects_md:
             fail(errors, f"PROJECTS.md missing numbered group {heading}")
 
@@ -197,8 +197,8 @@ def main() -> int:
         return 1
 
     print(f"Portfolio audit passed: {len(dirs)} projects")
-    print("29/29 principal execution files executed successfully.")
-    print("29/29 technical visuals passed structure and typography checks.")
+    print("30/30 principal execution files executed successfully.")
+    print("30/30 technical visuals passed structure and typography checks.")
     return 0
 
 
