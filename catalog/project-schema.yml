@@ -1,22 +1,54 @@
-# Schema used when a completed project is added to the public catalog.
+# Project Manifest v2
+#
+# Machine-facing contract for every completed portfolio project.
+# The manifest is intentionally factual and points to deeper evidence rather
+# than duplicating technical documentation.
+#
+# Editorial systems may derive narratives from this file, but project claims
+# must remain traceable to the referenced project evidence.
 
+schema_version: 2
 id: SC-XX
-title: Project title
+title: "Project title"
 status: completed
-project_type: public-reference-implementation
+project_type: public-portfolio-implementation
+family: "Portfolio family"
 
-summary: Short description of the business problem and system.
+summary: "One factual sentence describing the system and problem."
 
-business_problems: []
-capabilities: []
-industries: []
-business_functions: []
+designed_for:
+  - "Business / operating context"
 
-technologies: []
-integrations: []
-environments: []
+why_it_matters:
+  - "Documented business or operating value"
 
-impact_areas: []
+technologies:
+  - "Technology"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/path-to-project/docs/BUSINESS_IMPACT.md
+  results: projects/path-to-project/docs/RESULTS.md
+  architecture: projects/path-to-project/docs/ARCHITECTURE.md
+  technical_decisions: projects/path-to-project/docs/TECHNICAL_DECISIONS.md
+  data: projects/path-to-project/docs/DATA.md
+  security_permissions: projects/path-to-project/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/path-to-project/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/path-to-project/docs/ENVIRONMENTS.md
+  limitations: projects/path-to-project/docs/LIMITATIONS.md
+  examples: projects/path-to-project/examples/README.md
+  technical: projects/path-to-project/technical/README.md
+
+visuals:
+  primary: projects/path-to-project/examples/visuals/result.svg
+
+execution:
+  primary: projects/path-to-project/technical/run_project.py
 
 paths:
   project: projects/path-to-project
