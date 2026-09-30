@@ -1,18 +1,60 @@
+schema_version: 2
 id: SC-27
-title: Quantitative Trading & Market Microstructure System
+title: "Quantitative Trading & Market Microstructure System"
 status: completed
-project_type: implementation
+project_type: public-portfolio-implementation
+family: "Finance & Quantitative Systems"
+
+summary: "A research stack for order-book events, microstructure signals, backtesting and strategy evaluation."
+
+designed_for:
+  - "Quant research"
+  - "market data engineering"
+  - "execution research"
+
+why_it_matters:
+  - "Separate raw market events from signals"
+  - "Replay history reproducibly"
+  - "Inspect imbalance and execution conditions"
+  - "Evaluate strategies with costs"
+
 technologies:
-  - Python
-  - TypeScript
-  - Vite
-  - WebSockets
-  - ClickHouse
-  - Redis
-  - Pandas
-  - NumPy
-  - Plotly
-  - Docker
+  - "Python"
+  - "TypeScript"
+  - "Vite"
+  - "WebSockets"
+  - "ClickHouse"
+  - "Redis"
+  - "Pandas"
+  - "NumPy"
+  - "Plotly"
+  - "Docker"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-27-quant-trading-market-microstructure/docs/BUSINESS_IMPACT.md
+  results: projects/sc-27-quant-trading-market-microstructure/docs/RESULTS.md
+  architecture: projects/sc-27-quant-trading-market-microstructure/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-27-quant-trading-market-microstructure/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-27-quant-trading-market-microstructure/docs/DATA.md
+  security_permissions: projects/sc-27-quant-trading-market-microstructure/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-27-quant-trading-market-microstructure/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-27-quant-trading-market-microstructure/docs/ENVIRONMENTS.md
+  limitations: projects/sc-27-quant-trading-market-microstructure/docs/LIMITATIONS.md
+  examples: projects/sc-27-quant-trading-market-microstructure/examples/README.md
+  technical: projects/sc-27-quant-trading-market-microstructure/technical/README.md
+
+visuals:
+  primary: projects/sc-27-quant-trading-market-microstructure/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-27-quant-trading-market-microstructure/technical/run_project.py
+
 paths:
   project: projects/sc-27-quant-trading-market-microstructure
   readme: projects/sc-27-quant-trading-market-microstructure/README.md
