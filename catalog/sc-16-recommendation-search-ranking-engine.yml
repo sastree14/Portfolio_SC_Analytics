@@ -1,24 +1,59 @@
+schema_version: 2
 id: SC-16
-title: Recommendation, Search & Ranking Engine
+title: "Recommendation, Search & Ranking Engine"
 status: completed
-project_type: implementation
-family: Machine Learning & Customer Analytics
-summary: >
-  A hybrid recommendation and ranking system combining behavioural signals, content similarity and business rules.
+project_type: public-portfolio-implementation
+family: "Machine Learning & Customer Analytics"
+
+summary: "A hybrid recommendation and ranking system combining behavioural signals, semantic similarity and business rules."
+
+designed_for:
+  - "Marketplaces"
+  - "e-commerce"
+  - "media"
+  - "knowledge discovery"
+
+why_it_matters:
+  - "Improve relevance beyond popularity sorting"
+  - "Combine behaviour with item content"
+  - "Keep business constraints explicit"
+  - "Measure ranking quality offline"
+
 technologies:
-  - Python
-  - Scikit-learn
-  - LightGBM
-  - Sentence Transformers
-  - FAISS
-  - FastAPI
-  - PostgreSQL
-  - Redis
-impact_areas:
-  - Increase relevance beyond simple popularity sorting
-  - Combine customer behaviour with item content
-  - Keep business constraints visible in final ranking
-  - Measure ranking quality using offline evaluation
+  - "Python"
+  - "Scikit-learn"
+  - "LightGBM"
+  - "Sentence Transformers"
+  - "FAISS"
+  - "FastAPI"
+  - "PostgreSQL"
+  - "Redis"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-16-recommendation-search-ranking-engine/docs/BUSINESS_IMPACT.md
+  results: projects/sc-16-recommendation-search-ranking-engine/docs/RESULTS.md
+  architecture: projects/sc-16-recommendation-search-ranking-engine/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-16-recommendation-search-ranking-engine/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-16-recommendation-search-ranking-engine/docs/DATA.md
+  security_permissions: projects/sc-16-recommendation-search-ranking-engine/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-16-recommendation-search-ranking-engine/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-16-recommendation-search-ranking-engine/docs/ENVIRONMENTS.md
+  limitations: projects/sc-16-recommendation-search-ranking-engine/docs/LIMITATIONS.md
+  examples: projects/sc-16-recommendation-search-ranking-engine/examples/README.md
+  technical: projects/sc-16-recommendation-search-ranking-engine/technical/README.md
+
+visuals:
+  primary: projects/sc-16-recommendation-search-ranking-engine/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-16-recommendation-search-ranking-engine/technical/run_project.py
+
 paths:
   project: projects/sc-16-recommendation-search-ranking-engine
   readme: projects/sc-16-recommendation-search-ranking-engine/README.md
