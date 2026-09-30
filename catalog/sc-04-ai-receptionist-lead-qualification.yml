@@ -1,25 +1,60 @@
+schema_version: 2
 id: SC-04
-title: AI Receptionist & Lead Qualification
+title: "AI Receptionist & Lead Qualification"
 status: completed
-project_type: implementation
-family: AI Agents & Intelligent Automation
-summary: >
-  A conversational intake layer that qualifies enquiries, captures structured requirements and routes the next action.
-capabilities:
-  - TypeScript
-  - Node.js
-  - Fastify
-  - Twilio
-  - Calendly
-  - OpenAI
-  - PostgreSQL
-  - Docker
-  - Webhooks
-impact_areas:
-  - Respond consistently to inbound enquiries
-  - Capture structured qualification data instead of free-form notes
-  - Route high-value requests to the right person or scheduling path
-  - Reduce repetitive intake work while preserving human escalation
+project_type: public-portfolio-implementation
+family: "AI Agents & Intelligent Automation"
+
+summary: "A conversational intake layer that qualifies enquiries, captures structured requirements and routes the next action."
+
+designed_for:
+  - "Service businesses"
+  - "consultancies"
+  - "clinics"
+  - "real estate"
+
+why_it_matters:
+  - "Respond consistently to new enquiries"
+  - "Capture structured qualification data"
+  - "Route high-value requests quickly"
+  - "Reduce repetitive intake work while preserving escalation"
+
+technologies:
+  - "TypeScript"
+  - "Node.js"
+  - "Fastify"
+  - "Twilio"
+  - "Calendly"
+  - "OpenAI"
+  - "PostgreSQL"
+  - "Docker"
+  - "Webhooks"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-04-ai-receptionist-lead-qualification/docs/BUSINESS_IMPACT.md
+  results: projects/sc-04-ai-receptionist-lead-qualification/docs/RESULTS.md
+  architecture: projects/sc-04-ai-receptionist-lead-qualification/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-04-ai-receptionist-lead-qualification/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-04-ai-receptionist-lead-qualification/docs/DATA.md
+  security_permissions: projects/sc-04-ai-receptionist-lead-qualification/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-04-ai-receptionist-lead-qualification/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-04-ai-receptionist-lead-qualification/docs/ENVIRONMENTS.md
+  limitations: projects/sc-04-ai-receptionist-lead-qualification/docs/LIMITATIONS.md
+  examples: projects/sc-04-ai-receptionist-lead-qualification/examples/README.md
+  technical: projects/sc-04-ai-receptionist-lead-qualification/technical/README.md
+
+visuals:
+  primary: projects/sc-04-ai-receptionist-lead-qualification/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-04-ai-receptionist-lead-qualification/technical/run_project.ts
+
 paths:
   project: projects/sc-04-ai-receptionist-lead-qualification
   readme: projects/sc-04-ai-receptionist-lead-qualification/README.md
