@@ -1,24 +1,59 @@
+schema_version: 2
 id: SC-19
-title: Fraud Detection & Explainability System
+title: "Fraud Detection & Explainability System"
 status: completed
-project_type: implementation
-family: Machine Learning & Risk
-summary: >
-  A cost-sensitive fraud scoring system with threshold optimization, explainability and investigation prioritization.
+project_type: public-portfolio-implementation
+family: "Machine Learning & Risk"
+
+summary: "A cost-sensitive fraud scoring system with threshold optimization, explanations and investigation prioritization."
+
+designed_for:
+  - "Payments"
+  - "banking"
+  - "insurance"
+  - "marketplaces"
+
+why_it_matters:
+  - "Prioritize limited investigation capacity"
+  - "Balance fraud capture against false positives"
+  - "Explain suspicious scores"
+  - "Choose thresholds using cost rather than accuracy"
+
 technologies:
-  - Python
-  - XGBoost
-  - SHAP
-  - Scikit-learn
-  - Imbalanced-learn
-  - FastAPI
-  - PostgreSQL
-  - Plotly
-impact_areas:
-  - Prioritize the transactions most worth reviewing
-  - Balance fraud capture against false-positive customer friction
-  - Explain why a transaction was scored as suspicious
-  - Tune decision thresholds using business cost rather than accuracy alone
+  - "Python"
+  - "XGBoost"
+  - "SHAP"
+  - "Scikit-learn"
+  - "Imbalanced-learn"
+  - "FastAPI"
+  - "PostgreSQL"
+  - "Plotly"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-19-fraud-detection-explainability/docs/BUSINESS_IMPACT.md
+  results: projects/sc-19-fraud-detection-explainability/docs/RESULTS.md
+  architecture: projects/sc-19-fraud-detection-explainability/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-19-fraud-detection-explainability/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-19-fraud-detection-explainability/docs/DATA.md
+  security_permissions: projects/sc-19-fraud-detection-explainability/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-19-fraud-detection-explainability/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-19-fraud-detection-explainability/docs/ENVIRONMENTS.md
+  limitations: projects/sc-19-fraud-detection-explainability/docs/LIMITATIONS.md
+  examples: projects/sc-19-fraud-detection-explainability/examples/README.md
+  technical: projects/sc-19-fraud-detection-explainability/technical/README.md
+
+visuals:
+  primary: projects/sc-19-fraud-detection-explainability/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-19-fraud-detection-explainability/technical/run_project.py
+
 paths:
   project: projects/sc-19-fraud-detection-explainability
   readme: projects/sc-19-fraud-detection-explainability/README.md
