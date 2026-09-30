@@ -1,32 +1,63 @@
+schema_version: 2
 id: SC-30
-title: Computer Vision Waste Detection & Sorting System
+title: "Computer Vision Waste Detection & Sorting System"
 status: completed
-project_type: implementation
-family: Computer Vision & Edge AI
-summary: >
-  Object detection, counting and confidence-aware material routing from camera images.
+project_type: public-portfolio-implementation
+family: "Computer Vision & Edge AI"
+
+summary: "A computer-vision system for detecting, counting and classifying waste items from camera images, then mapping detections to material streams or manual review."
+
+designed_for:
+  - "recycling"
+  - "waste sorting"
+  - "hospitality operations"
+  - "quality control"
+  - "edge-AI inspection"
+
+why_it_matters:
+  - "detect multiple objects in the same frame"
+  - "distinguish visually identifiable materials and item types"
+  - "count detections by class"
+  - "map detected classes to disposal streams"
+  - "route low-confidence or ambiguous objects to review"
+  - "retain frame-level results for traceability and model improvement"
+
 technologies:
-  - Python
-  - PyTorch
-  - Ultralytics YOLO
-  - OpenCV
-  - FastAPI
-  - NumPy
-  - Pandas
-  - Plotly
-  - Docker
-capabilities:
-  - computer-vision
-  - object-detection
-  - image-processing
-  - transfer-learning
-  - edge-ai
-  - visual-quality-control
-  - item-counting
-business_functions:
-  - operations
-  - quality-control
-  - waste-sorting
+  - "Python"
+  - "PyTorch"
+  - "Ultralytics YOLO"
+  - "OpenCV"
+  - "FastAPI"
+  - "NumPy"
+  - "Pandas"
+  - "Plotly"
+  - "Docker"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-30-computer-vision-waste-detection-sorting/docs/BUSINESS_IMPACT.md
+  results: projects/sc-30-computer-vision-waste-detection-sorting/docs/RESULTS.md
+  architecture: projects/sc-30-computer-vision-waste-detection-sorting/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-30-computer-vision-waste-detection-sorting/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-30-computer-vision-waste-detection-sorting/docs/DATA.md
+  security_permissions: projects/sc-30-computer-vision-waste-detection-sorting/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-30-computer-vision-waste-detection-sorting/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-30-computer-vision-waste-detection-sorting/docs/ENVIRONMENTS.md
+  limitations: projects/sc-30-computer-vision-waste-detection-sorting/docs/LIMITATIONS.md
+  examples: projects/sc-30-computer-vision-waste-detection-sorting/examples/README.md
+  technical: projects/sc-30-computer-vision-waste-detection-sorting/technical/README.md
+
+visuals:
+  primary: projects/sc-30-computer-vision-waste-detection-sorting/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-30-computer-vision-waste-detection-sorting/technical/run_project.py
+
 paths:
   project: projects/sc-30-computer-vision-waste-detection-sorting
   readme: projects/sc-30-computer-vision-waste-detection-sorting/README.md
