@@ -1,25 +1,60 @@
+schema_version: 2
 id: SC-03
-title: AI Sales & CRM Automation System
+title: "AI Sales & CRM Automation System"
 status: completed
-project_type: implementation
-family: AI Agents & Intelligent Automation
-summary: >
-  A sales-operations system that scores inbound activity, prepares follow-ups and keeps CRM actions controlled.
-capabilities:
-  - Python
-  - FastAPI
-  - PostgreSQL
-  - n8n
-  - HubSpot API
-  - Webhooks
-  - OpenAI
-  - Docker
-  - SQL
-impact_areas:
-  - Prioritize leads using consistent scoring rules and model signals
-  - Reduce manual CRM updates and follow-up preparation
-  - Keep the salesperson in control before high-impact customer communication
-  - Create a measurable path from inbound signal to next action
+project_type: public-portfolio-implementation
+family: "AI Agents & Intelligent Automation"
+
+summary: "A sales-operations system that scores inbound activity, prepares follow-ups and controls CRM actions."
+
+designed_for:
+  - "B2B sales"
+  - "agencies"
+  - "SaaS"
+  - "RevOps"
+
+why_it_matters:
+  - "Prioritize leads consistently"
+  - "Reduce manual CRM administration"
+  - "Prepare context-aware follow-ups"
+  - "Keep salespeople in control of material customer actions"
+
+technologies:
+  - "Python"
+  - "FastAPI"
+  - "PostgreSQL"
+  - "n8n"
+  - "HubSpot API"
+  - "Webhooks"
+  - "OpenAI"
+  - "Docker"
+  - "SQL"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-03-ai-sales-crm-automation/docs/BUSINESS_IMPACT.md
+  results: projects/sc-03-ai-sales-crm-automation/docs/RESULTS.md
+  architecture: projects/sc-03-ai-sales-crm-automation/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-03-ai-sales-crm-automation/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-03-ai-sales-crm-automation/docs/DATA.md
+  security_permissions: projects/sc-03-ai-sales-crm-automation/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-03-ai-sales-crm-automation/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-03-ai-sales-crm-automation/docs/ENVIRONMENTS.md
+  limitations: projects/sc-03-ai-sales-crm-automation/docs/LIMITATIONS.md
+  examples: projects/sc-03-ai-sales-crm-automation/examples/README.md
+  technical: projects/sc-03-ai-sales-crm-automation/technical/README.md
+
+visuals:
+  primary: projects/sc-03-ai-sales-crm-automation/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-03-ai-sales-crm-automation/technical/run_project.py
+
 paths:
   project: projects/sc-03-ai-sales-crm-automation
   readme: projects/sc-03-ai-sales-crm-automation/README.md
