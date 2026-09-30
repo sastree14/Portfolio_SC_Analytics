@@ -143,6 +143,33 @@ def validate_secrets(errors: list[str]) -> None:
                 fail(errors, f"secret-like token found in {path.relative_to(ROOT)}")
 
 
+def validate_manifests(errors: list[str], dirs: list[Path]) -> None:
+    catalog = ROOT / "catalog"
+    index = (catalog / "projects.yml").read_text(encoding="utf-8")
+    required_markers = [
+        "schema_version: 2",
+        "project_type: public-portfolio-implementation",
+        "designed_for:",
+        "why_it_matters:",
+        "provenance:",
+        "client_claim_allowed: false",
+        "evidence:",
+        "visuals:",
+        "execution:",
+    ]
+    for project in dirs:
+        manifest = catalog / f"{project.name}.yml"
+        if not manifest.exists():
+            fail(errors, f"{project.name}: missing v2 project manifest")
+            continue
+        text = manifest.read_text(encoding="utf-8")
+        for marker in required_markers:
+            if marker not in text:
+                fail(errors, f"{project.name}: manifest missing {marker}")
+        if f"catalog/{project.name}.yml" not in index:
+            fail(errors, f"{project.name}: manifest missing from catalog/projects.yml")
+
+
 def validate_indexes(errors: list[str], dirs: list[Path]) -> None:
     projects_md = (ROOT / "PROJECTS.md").read_text(encoding="utf-8")
     visuals_md = (ROOT / "VISUALS.md").read_text(encoding="utf-8")
@@ -187,6 +214,7 @@ def main() -> int:
     validate_python(errors)
     validate_links(errors)
     validate_secrets(errors)
+    validate_manifests(errors, dirs)
     validate_indexes(errors, dirs)
     validate_entrypoints(errors, dirs)
 
