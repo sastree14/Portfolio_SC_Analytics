@@ -1,0 +1,7 @@
+{
+  "frame_id": "frame-1042",
+  "source": "sorting_station_camera_01",
+  "width": 1280,
+  "height": 720,
+  "expected_environment": "mixed waste inspection tray"
+}

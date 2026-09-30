@@ -5,7 +5,7 @@ This is the public technical portfolio of SC-Analytics.
 ## Navigation
 
 - `README.md` — portfolio entry point
-- `PROJECTS.md` — all 29 projects by business problem
+- `PROJECTS.md` — all 30 projects by business problem
 - `TECHNOLOGIES.md` — project evidence by tool or technology
 - `catalog/projects.yml` — structured project catalogue
 - `projects/<project>/README.md` — business-first project entry

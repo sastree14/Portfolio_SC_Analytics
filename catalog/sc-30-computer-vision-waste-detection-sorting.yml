@@ -1,0 +1,32 @@
+id: SC-30
+title: Computer Vision Waste Detection & Sorting System
+status: completed
+project_type: implementation
+family: Computer Vision & Edge AI
+summary: >
+  Object detection, counting and confidence-aware material routing from camera images.
+technologies:
+  - Python
+  - PyTorch
+  - Ultralytics YOLO
+  - OpenCV
+  - FastAPI
+  - NumPy
+  - Pandas
+  - Plotly
+  - Docker
+capabilities:
+  - computer-vision
+  - object-detection
+  - image-processing
+  - transfer-learning
+  - edge-ai
+  - visual-quality-control
+  - item-counting
+business_functions:
+  - operations
+  - quality-control
+  - waste-sorting
+paths:
+  project: projects/sc-30-computer-vision-waste-detection-sorting
+  readme: projects/sc-30-computer-vision-waste-detection-sorting/README.md

@@ -4,11 +4,11 @@ The repository is validated as a client-facing technical product.
 
 The automated audit checks:
 
-- exactly 29 projects
+- exactly 30 projects
 - the complete business and technical documentation set
 - one explicit principal execution file per project
 - that the principal file is linked from both README layers
-- execution of all 29 principal public code paths
+- execution of all 30 principal public code paths
 - Python syntax across the repository
 - TypeScript principal execution through Node's type stripping
 - R principal execution through Rscript

@@ -83,6 +83,7 @@ This index answers one practical question: **where can I inspect evidence of a s
 - [SC-23 · Operations Simulation & What-If Engine](projects/sc-23-operations-simulation-what-if/README.md)
 - [SC-27 · Quantitative Trading & Market Microstructure System](projects/sc-27-quant-trading-market-microstructure/README.md)
 - [SC-28 · AI Property Development Feasibility & Operations System](projects/sc-28-ai-property-development-feasibility/README.md)
+- [SC-30 · Computer Vision Waste Detection & Sorting System](projects/sc-30-computer-vision-waste-detection-sorting/README.md)
 
 ## dplyr
 

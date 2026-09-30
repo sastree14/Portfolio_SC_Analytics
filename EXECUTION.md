@@ -58,3 +58,8 @@ Every project has one deliberately obvious **main execution file**. Start there 
 - **SC-28 · AI Property Development Feasibility & Operations System** — [`technical/run_project.py`](projects/sc-28-ai-property-development-feasibility/technical/run_project.py)
 - **SC-29 · Commercial Due Diligence & Market Intelligence System** — [`technical/run_project.py`](projects/sc-29-commercial-due-diligence-market-intelligence/technical/run_project.py)
 
+
+## 10. Computer Vision & Edge AI
+
+- **SC-30 · Computer Vision Waste Detection & Sorting System** — [`technical/run_project.py`](projects/sc-30-computer-vision-waste-detection-sorting/technical/run_project.py)
+

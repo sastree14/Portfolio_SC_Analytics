@@ -38,6 +38,7 @@ PROJECTS = [
     ("SC-27", "Quantitative Trading & Market Microstructure System", "sc-27-quant-trading-market-microstructure"),
     ("SC-28", "AI Property Development Feasibility & Operations System", "sc-28-ai-property-development-feasibility"),
     ("SC-29", "Commercial Due Diligence & Market Intelligence System", "sc-29-commercial-due-diligence-market-intelligence"),
+    ("SC-30", "Computer Vision Waste Detection & Sorting System", "sc-30-computer-vision-waste-detection-sorting"),
 ]
 
 
@@ -93,7 +94,7 @@ def main() -> None:
     rendered = render_all()
     contact_sheet(rendered[:10], "SC-Analytics Visuals 01-10")
     contact_sheet(rendered[10:20], "SC-Analytics Visuals 11-20")
-    contact_sheet(rendered[20:], "SC-Analytics Visuals 21-29")
+    contact_sheet(rendered[20:], "SC-Analytics Visuals 21-30")
     print(f"Rendered {len(rendered)} visual PNGs and 3 contact sheets.")
 
 

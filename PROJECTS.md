@@ -1,6 +1,6 @@
 # Projects
 
-SC-Analytics currently publishes **29 completed projects**. The index is intentionally business-first: choose the problem area, then open the project. If your first question is technical, use [TECHNOLOGIES.md](TECHNOLOGIES.md).
+SC-Analytics currently publishes **30 completed projects**. The index is intentionally business-first: choose the problem area, then open the project. If your first question is technical, use [TECHNOLOGIES.md](TECHNOLOGIES.md).
 
 ## 1. AI Agents & Intelligent Automation
 
@@ -222,4 +222,14 @@ Evidence-backed market research, competitor analysis and investment questions.
 
 - [Open project](projects/sc-29-commercial-due-diligence-market-intelligence/README.md)
 - *Stack:* Playwright · BeautifulSoup · DuckDB · OpenAI · PostgreSQL
+
+
+## 10. Computer Vision & Edge AI
+
+### 10.1 SC-30 · Computer Vision Waste Detection & Sorting System
+
+Object detection, counting and confidence-aware material routing from camera images.
+
+- [Open project](projects/sc-30-computer-vision-waste-detection-sorting/README.md)
+- *Stack:* Python · PyTorch · Ultralytics YOLO · OpenCV · FastAPI · NumPy · Pandas · Plotly · Docker
 
