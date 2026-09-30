@@ -13,6 +13,7 @@ The portfolio is designed for two audiences at the same time:
 - [Browse by technology](TECHNOLOGIES.md)
 - [Browse all project visuals](VISUALS.md)
 - [Open the principal code entrypoints](EXECUTION.md)
+- [Project Manifest v2 / machine catalog](catalog/README.md)
 - [SC-Analytics methodology](docs/methodology.md)
 - [Data confidentiality](docs/data-confidentiality.md)
 - [Explore the repository with a coding agent](docs/ai-exploration.md)
