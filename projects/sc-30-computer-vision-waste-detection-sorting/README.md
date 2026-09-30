@@ -76,6 +76,8 @@ That distinction is important in real operations because silently forcing every 
 - [Architecture](docs/ARCHITECTURE.md)
 - [Technical decisions](docs/TECHNICAL_DECISIONS.md)
 - [Data and annotation structure](docs/DATA.md)
+- [Model card](docs/MODEL_CARD.md)
+- [Edge deployment](docs/EDGE_DEPLOYMENT.md)
 - [Security and permissions](docs/SECURITY_AND_PERMISSIONS.md)
 - [Credentials and integrations](docs/CREDENTIALS_AND_INTEGRATIONS.md)
 - [Environments](docs/ENVIRONMENTS.md)

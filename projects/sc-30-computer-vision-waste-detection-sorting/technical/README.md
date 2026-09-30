@@ -17,6 +17,8 @@ The detector-specific training and image inference code lives in supporting modu
 - `src/postprocess.py` — class mapping and review policy
 - `src/evaluation.py` — class-level evaluation helpers
 - `src/api.py` — FastAPI serving layer
+- `src/camera_stream.py` — live camera / RTSP inference loop
+- `src/export_model.py` — ONNX export for optimized deployment
 - `data/dataset.yaml` — class configuration
 - `tests/` — deterministic validation
 - `infra/Dockerfile` — container runtime
@@ -60,4 +62,5 @@ python src/inference.py --model runs/detect/sc30/weights/best.pt --image path/to
 2. `run_project.py`
 3. `src/postprocess.py`
 4. `src/train.py` and `src/inference.py`
-5. API, tests and dataset configuration
+5. camera / edge deployment
+6. API, tests and dataset configuration
