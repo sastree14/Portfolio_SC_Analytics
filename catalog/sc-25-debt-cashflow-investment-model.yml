@@ -1,24 +1,59 @@
+schema_version: 2
 id: SC-25
-title: Debt, Cash Flow & Investment Model
+title: "Debt, Cash Flow & Investment Model"
 status: completed
-project_type: implementation
-family: Finance & Quantitative Systems
-summary: >
-  An integrated debt and investment model for repayment schedules, covenant headroom, returns and downside analysis.
+project_type: public-portfolio-implementation
+family: "Finance & Quantitative Systems"
+
+summary: "An integrated debt and investment model for repayment schedules, covenant headroom, returns and downside analysis."
+
+designed_for:
+  - "Infrastructure"
+  - "real estate"
+  - "corporate finance"
+  - "project finance"
+
+why_it_matters:
+  - "Connect financing to project cash flows"
+  - "Measure covenant headroom"
+  - "Separate operating and financing effects"
+  - "Calculate returns consistently"
+
 technologies:
-  - Python
-  - Pandas
-  - NumPy
-  - OpenPyXL
-  - Plotly
-  - XIRR
-  - PostgreSQL
-  - Excel
-impact_areas:
-  - Connect financing structure to project cash flows
-  - Measure covenant headroom under multiple scenarios
-  - Separate operating performance from financing effects
-  - Calculate return and debt-service metrics consistently
+  - "Python"
+  - "Pandas"
+  - "NumPy"
+  - "OpenPyXL"
+  - "Plotly"
+  - "XIRR"
+  - "PostgreSQL"
+  - "Excel"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. Do not present it as named client work unless separate approved evidence explicitly permits that claim."
+
+evidence:
+  business_impact: projects/sc-25-debt-cashflow-investment-model/docs/BUSINESS_IMPACT.md
+  results: projects/sc-25-debt-cashflow-investment-model/docs/RESULTS.md
+  architecture: projects/sc-25-debt-cashflow-investment-model/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-25-debt-cashflow-investment-model/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-25-debt-cashflow-investment-model/docs/DATA.md
+  security_permissions: projects/sc-25-debt-cashflow-investment-model/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-25-debt-cashflow-investment-model/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-25-debt-cashflow-investment-model/docs/ENVIRONMENTS.md
+  limitations: projects/sc-25-debt-cashflow-investment-model/docs/LIMITATIONS.md
+  examples: projects/sc-25-debt-cashflow-investment-model/examples/README.md
+  technical: projects/sc-25-debt-cashflow-investment-model/technical/README.md
+
+visuals:
+  primary: projects/sc-25-debt-cashflow-investment-model/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-25-debt-cashflow-investment-model/technical/run_project.py
+
 paths:
   project: projects/sc-25-debt-cashflow-investment-model
   readme: projects/sc-25-debt-cashflow-investment-model/README.md
