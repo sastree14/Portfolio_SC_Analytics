@@ -28,12 +28,24 @@ def forecast_horizon(values: list[float], horizon: int) -> list[float]:
     return [round(base + slope * (i + 1), 2) for i in range(horizon)]
 
 def backtest(values: list[float]) -> dict:
-    errors = []
+    absolute_errors = []
+    signed_errors = []
+    actuals = []
+
     for idx in range(6, len(values)):
         pred = mean(values[idx-3:idx])
         actual = values[idx]
-        errors.append(abs(actual - pred) / max(actual, 1))
-    return {"wape_proxy": round(mean(errors), 4), "observations": len(errors)}
+        absolute_errors.append(abs(actual - pred))
+        signed_errors.append(pred - actual)
+        actuals.append(actual)
+
+    actual_total = max(sum(actuals), 1)
+    return {
+        "wape": round(sum(absolute_errors) / actual_total, 4),
+        "mae": round(mean(absolute_errors), 2),
+        "forecast_bias": round(sum(signed_errors) / actual_total, 4),
+        "observations": len(absolute_errors),
+    }
 
 def main() -> dict:
     horizons = {f"H{h}": forecast_horizon(HISTORY, h) for h in (1, 3, 6, 9)}
