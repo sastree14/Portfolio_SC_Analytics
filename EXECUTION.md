@@ -28,6 +28,8 @@ Every project has one deliberately obvious **main execution file**. Start there 
 
 - **SC-14 · Power BI Executive Decision System** — [`technical/run_project.py`](projects/sc-14-power-bi-executive-decision-system/technical/run_project.py)
 - **SC-15 · Tableau Commercial Analytics & Drill-Down** — [`technical/run_project.py`](projects/sc-15-tableau-commercial-analytics/technical/run_project.py)
+- **SC-31 · Power BI Forecast & Inventory Planning Dashboard** — [`technical/run_project.py`](projects/sc-31-power-bi-forecast-inventory-planning/technical/run_project.py)
+- **SC-32 · Power BI Order Fulfilment & Service Control Tower** — [`technical/run_project.py`](projects/sc-32-power-bi-order-fulfilment-control-tower/technical/run_project.py)
 
 ## 5. Machine Learning & Customer Analytics
 
