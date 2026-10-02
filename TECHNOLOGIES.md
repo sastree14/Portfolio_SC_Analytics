@@ -57,6 +57,8 @@ This index answers one practical question: **where can I inspect evidence of a s
 ## DAX
 
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
+- [SC-31 · Power BI Forecast & Inventory Planning Dashboard](projects/sc-31-power-bi-forecast-inventory-planning/README.md)
+- [SC-32 · Power BI Order Fulfilment & Service Control Tower](projects/sc-32-power-bi-order-fulfilment-control-tower/README.md)
 
 ## DBI
 
@@ -103,6 +105,8 @@ This index answers one practical question: **where can I inspect evidence of a s
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
 - [SC-24 · Financial Modelling & Scenario Engine](projects/sc-24-financial-modelling-scenario-engine/README.md)
 - [SC-25 · Debt, Cash Flow & Investment Model](projects/sc-25-debt-cashflow-investment-model/README.md)
+- [SC-31 · Power BI Forecast & Inventory Planning Dashboard](projects/sc-31-power-bi-forecast-inventory-planning/README.md)
+- [SC-32 · Power BI Order Fulfilment & Service Control Tower](projects/sc-32-power-bi-order-fulfilment-control-tower/README.md)
 
 ## fable
 
@@ -334,14 +338,20 @@ This index answers one practical question: **where can I inspect evidence of a s
 - [SC-25 · Debt, Cash Flow & Investment Model](projects/sc-25-debt-cashflow-investment-model/README.md)
 - [SC-28 · AI Property Development Feasibility & Operations System](projects/sc-28-ai-property-development-feasibility/README.md)
 - [SC-29 · Commercial Due Diligence & Market Intelligence System](projects/sc-29-commercial-due-diligence-market-intelligence/README.md)
+- [SC-31 · Power BI Forecast & Inventory Planning Dashboard](projects/sc-31-power-bi-forecast-inventory-planning/README.md)
+- [SC-32 · Power BI Order Fulfilment & Service Control Tower](projects/sc-32-power-bi-order-fulfilment-control-tower/README.md)
 
 ## Power BI
 
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
+- [SC-31 · Power BI Forecast & Inventory Planning Dashboard](projects/sc-31-power-bi-forecast-inventory-planning/README.md)
+- [SC-32 · Power BI Order Fulfilment & Service Control Tower](projects/sc-32-power-bi-order-fulfilment-control-tower/README.md)
 
 ## Power Query
 
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
+- [SC-31 · Power BI Forecast & Inventory Planning Dashboard](projects/sc-31-power-bi-forecast-inventory-planning/README.md)
+- [SC-32 · Power BI Order Fulfilment & Service Control Tower](projects/sc-32-power-bi-order-fulfilment-control-tower/README.md)
 
 ## Prefect
 
@@ -462,6 +472,8 @@ This index answers one practical question: **where can I inspect evidence of a s
 - [SC-10 · Real-Time Analytics & Monitoring Platform](projects/sc-10-real-time-analytics-platform/README.md)
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
 - [SC-15 · Tableau Commercial Analytics & Drill-Down](projects/sc-15-tableau-commercial-analytics/README.md)
+- [SC-31 · Power BI Forecast & Inventory Planning Dashboard](projects/sc-31-power-bi-forecast-inventory-planning/README.md)
+- [SC-32 · Power BI Order Fulfilment & Service Control Tower](projects/sc-32-power-bi-order-fulfilment-control-tower/README.md)
 
 ## SQL Server
 
@@ -470,6 +482,8 @@ This index answers one practical question: **where can I inspect evidence of a s
 ## Star Schema
 
 - [SC-14 · Power BI Executive Decision System](projects/sc-14-power-bi-executive-decision-system/README.md)
+- [SC-31 · Power BI Forecast & Inventory Planning Dashboard](projects/sc-31-power-bi-forecast-inventory-planning/README.md)
+- [SC-32 · Power BI Order Fulfilment & Service Control Tower](projects/sc-32-power-bi-order-fulfilment-control-tower/README.md)
 
 ## Statsmodels
 
