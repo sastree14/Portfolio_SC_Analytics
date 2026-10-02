@@ -413,3 +413,28 @@ projects:
       - "Pandas"
       - "Plotly"
       - "Docker"
+
+  - id: SC-31
+    title: "Power BI Forecast & Inventory Planning Dashboard"
+    path: projects/sc-31-power-bi-forecast-inventory-planning
+    manifest: catalog/sc-31-power-bi-forecast-inventory-planning.yml
+    technologies:
+      - "Power BI"
+      - "DAX"
+      - "Power Query"
+      - "SQL"
+      - "Star Schema"
+      - "PostgreSQL"
+      - "Excel"
+  - id: SC-32
+    title: "Power BI Order Fulfilment & Service Control Tower"
+    path: projects/sc-32-power-bi-order-fulfilment-control-tower
+    manifest: catalog/sc-32-power-bi-order-fulfilment-control-tower.yml
+    technologies:
+      - "Power BI"
+      - "DAX"
+      - "Power Query"
+      - "SQL"
+      - "Star Schema"
+      - "PostgreSQL"
+      - "Excel"
