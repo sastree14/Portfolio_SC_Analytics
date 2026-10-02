@@ -53,8 +53,8 @@ def entrypoint(project: Path) -> Path:
 
 def validate_structure(errors: list[str]) -> list[Path]:
     dirs = sorted(p for p in PROJECTS.iterdir() if p.is_dir() and p.name.startswith("sc-"))
-    if len(dirs) != 30:
-        fail(errors, f"expected 30 project directories, found {len(dirs)}")
+    if len(dirs) != 32:
+        fail(errors, f"expected 32 project directories, found {len(dirs)}")
 
     for project in dirs:
         for rel in REQUIRED:
@@ -225,8 +225,8 @@ def main() -> int:
         return 1
 
     print(f"Portfolio audit passed: {len(dirs)} projects")
-    print("30/30 principal execution files executed successfully.")
-    print("30/30 technical visuals passed structure and typography checks.")
+    print(f"{len(dirs)}/{len(dirs)} principal execution files executed successfully.")
+    print(f"{len(dirs)}/{len(dirs)} technical visuals passed structure and typography checks.")
     return 0
 
 
