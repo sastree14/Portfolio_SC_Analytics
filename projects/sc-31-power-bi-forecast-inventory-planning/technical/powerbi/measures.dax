@@ -1,0 +1,14 @@
+WAPE =
+DIVIDE(
+    SUMX(FactForecast, ABS(FactForecast[Actual] - FactForecast[Forecast])),
+    SUM(FactForecast[Actual])
+)
+
+Forecast Bias =
+DIVIDE(
+    SUMX(FactForecast, FactForecast[Forecast] - FactForecast[Actual]),
+    SUM(FactForecast[Actual])
+)
+
+Stock Coverage Days =
+DIVIDE([On Hand Units], [Average Daily Demand])
