@@ -1,6 +1,6 @@
 # Project visuals
 
-Every project has a technical visual designed to communicate real analytical or system information rather than act as decoration. Power BI and Tableau currently show their model / interaction blueprint; their native-tool screenshots can be added later without replacing this evidence.
+Every project has a technical visual designed to communicate real analytical or system information rather than act as decoration. Power BI projects include sanitized representative interfaces reconstructed from genuine Power BI design references; source PBIX files and confidential data are not published. Tableau retains its model / interaction blueprint.
 
 ## 1. AI Agents & Intelligent Automation
 
@@ -72,6 +72,14 @@ Every project has a technical visual designed to communicate real analytical or 
 ### SC-15 · Tableau Commercial Analytics & Drill-Down
 
 ![SC-15 visual](projects/sc-15-tableau-commercial-analytics/examples/visuals/result.svg)
+
+### SC-31 · Power BI Forecast & Inventory Planning Dashboard
+
+![SC-31 visual](projects/sc-31-power-bi-forecast-inventory-planning/examples/visuals/result.svg)
+
+### SC-32 · Power BI Order Fulfilment & Service Control Tower
+
+![SC-32 visual](projects/sc-32-power-bi-order-fulfilment-control-tower/examples/visuals/result.svg)
 
 
 ## 5. Machine Learning & Customer Analytics
