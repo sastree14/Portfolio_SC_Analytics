@@ -25,20 +25,17 @@
 - tests for the public datasource
 - tool-specific calculations and model specification
 - local data preparation scripts
+- representative Power BI interface derived from genuine design references
 
-## Native visual layer
+## Representative Power BI interface
 
-The Power BI screenshot set is the only intentionally pending layer. It will be added from a native-tool visual reference rather than fabricated.
+![SC-14 representative Power BI interface](examples/visuals/result.svg)
 
-## Visual evidence
-
-![SC-14 project visual](examples/visuals/result.svg)
-
-This visual documents the analytical/model structure. The native BI screenshot layer remains pending until the real tool reference is supplied.
+The published visual is a **sanitized reconstruction based on genuine Power BI design references supplied privately**. It demonstrates the intended executive information architecture while using public-safe illustrative data. The private PBIX source files and client data are not published.
 
 ## Main technical execution
 
-**Start with [`technical/run_project.py`](technical/run_project.py).** This is the principal end-to-end code path for the public implementation.
+**Start with [`technical/run_project.py`](technical/run_project.py).**
 
 ## Technical review
 
