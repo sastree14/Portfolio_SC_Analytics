@@ -1,6 +1,6 @@
 # Projects
 
-SC-Analytics currently publishes **30 completed projects**. The index is intentionally business-first: choose the problem area, then open the project. If your first question is technical, use [TECHNOLOGIES.md](TECHNOLOGIES.md).
+SC-Analytics currently publishes **32 completed projects**. The index is intentionally business-first: choose the problem area, then open the project. If your first question is technical, use [TECHNOLOGIES.md](TECHNOLOGIES.md).
 
 ## 1. AI Agents & Intelligent Automation
 
@@ -114,6 +114,20 @@ Commercial exploration, cohorts and account-level drill-down.
 
 - [Open project](projects/sc-15-tableau-commercial-analytics/README.md)
 - *Stack:* Tableau · LOD Expressions · SQL · PostgreSQL · CSV
+
+### 4.3 SC-31 · Power BI Forecast & Inventory Planning Dashboard
+
+Multi-horizon forecast accuracy, stock coverage and replenishment decisions in one Power BI planning interface.
+
+- [Open project](projects/sc-31-power-bi-forecast-inventory-planning/README.md)
+- *Stack:* Power BI · DAX · Power Query · SQL · PostgreSQL · Excel
+
+### 4.4 SC-32 · Power BI Order Fulfilment & Service Control Tower
+
+Service level, delivery lead times, order status and operational exception management.
+
+- [Open project](projects/sc-32-power-bi-order-fulfilment-control-tower/README.md)
+- *Stack:* Power BI · DAX · Power Query · SQL · PostgreSQL · Excel
 
 ## 5. Machine Learning & Customer Analytics
 

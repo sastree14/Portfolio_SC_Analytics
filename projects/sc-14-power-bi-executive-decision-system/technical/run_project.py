@@ -3,20 +3,16 @@
 MAIN EXECUTION FILE
 
 This file is the clearest end-to-end public execution path for the project.
-It keeps the major steps in one place so a reviewer can see how the project
-runs without navigating the entire repository.
 """
 from __future__ import annotations
 
+import csv
 import json
 from pathlib import Path
 
 TECHNICAL = Path(__file__).resolve().parent
 PROJECT = TECHNICAL.parent
 EXAMPLES = PROJECT / "examples"
-
-import csv
-
 DATA = TECHNICAL / "data"
 
 def read_csv(name: str) -> list[dict]:
@@ -41,7 +37,7 @@ def main() -> dict:
         "sales": summarize_sales(sales),
         "pipeline_rows": len(pipeline),
         "target_rows": len(targets),
-        "native_visual_layer": "pending Power BI screenshot reference",
+        "visual_layer": "sanitized Power BI reconstruction based on genuine design references",
     }
     output = EXAMPLES / "outputs" / "main_run.json"
     output.parent.mkdir(parents=True, exist_ok=True)

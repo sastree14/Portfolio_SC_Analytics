@@ -45,8 +45,8 @@ required_manifest_markers = [
 errors = []
 dirs = sorted(p for p in projects.iterdir() if p.is_dir() and p.name.startswith("sc-"))
 
-if len(dirs) != 30:
-    errors.append(f"expected 30 project directories, found {len(dirs)}")
+if len(dirs) != 32:
+    errors.append(f"expected 32 project directories, found {len(dirs)}")
 
 for project in dirs:
     for rel in required_project_files:

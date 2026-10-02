@@ -1,0 +1,58 @@
+schema_version: 2
+id: SC-31
+title: "Power BI Forecast & Inventory Planning Dashboard"
+status: completed
+project_type: public-portfolio-implementation
+family: "BI & Decision Interfaces"
+
+summary: "A Power BI planning interface that connects multi-horizon forecast accuracy with inventory coverage, service level and replenishment decisions."
+
+designed_for:
+  - "Supply chain"
+  - "demand planning"
+  - "purchasing"
+  - "operations management"
+
+why_it_matters:
+  - "Make forecast accuracy visible at the same horizon where purchasing decisions are taken"
+  - "Connect demand signal, inventory coverage and service risk in one decision interface"
+  - "Separate forecast quality from stock policy instead of hiding both inside one KPI"
+  - "Give planners a repeatable drill-down from portfolio level to product and market"
+
+technologies:
+  - "Power BI"
+  - "DAX"
+  - "Power Query"
+  - "SQL"
+  - "Star Schema"
+  - "PostgreSQL"
+  - "Excel"
+
+provenance:
+  evidence_class: public_portfolio_implementation
+  client_claim_allowed: false
+  confidentiality: public_safe_example
+  note: "Use as capability and implementation proof. The published visual is a sanitized reconstruction based on genuine Power BI references; source PBIX files and client data are not public."
+
+evidence:
+  business_impact: projects/sc-31-power-bi-forecast-inventory-planning/docs/BUSINESS_IMPACT.md
+  results: projects/sc-31-power-bi-forecast-inventory-planning/docs/RESULTS.md
+  architecture: projects/sc-31-power-bi-forecast-inventory-planning/docs/ARCHITECTURE.md
+  technical_decisions: projects/sc-31-power-bi-forecast-inventory-planning/docs/TECHNICAL_DECISIONS.md
+  data: projects/sc-31-power-bi-forecast-inventory-planning/docs/DATA.md
+  security_permissions: projects/sc-31-power-bi-forecast-inventory-planning/docs/SECURITY_AND_PERMISSIONS.md
+  credentials_integrations: projects/sc-31-power-bi-forecast-inventory-planning/docs/CREDENTIALS_AND_INTEGRATIONS.md
+  environments: projects/sc-31-power-bi-forecast-inventory-planning/docs/ENVIRONMENTS.md
+  limitations: projects/sc-31-power-bi-forecast-inventory-planning/docs/LIMITATIONS.md
+  examples: projects/sc-31-power-bi-forecast-inventory-planning/examples/README.md
+  technical: projects/sc-31-power-bi-forecast-inventory-planning/technical/README.md
+
+visuals:
+  primary: projects/sc-31-power-bi-forecast-inventory-planning/examples/visuals/result.svg
+
+execution:
+  primary: projects/sc-31-power-bi-forecast-inventory-planning/technical/run_project.py
+
+paths:
+  project: projects/sc-31-power-bi-forecast-inventory-planning
+  readme: projects/sc-31-power-bi-forecast-inventory-planning/README.md

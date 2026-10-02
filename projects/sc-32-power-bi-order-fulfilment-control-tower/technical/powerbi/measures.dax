@@ -1,0 +1,17 @@
+Service Level =
+DIVIDE(
+    CALCULATE(COUNTROWS(FactOrders), FactOrders[DeliveredOnTime] = TRUE()),
+    CALCULATE(COUNTROWS(FactOrders), NOT ISBLANK(FactOrders[DeliveryDate]))
+)
+
+Open Exceptions =
+CALCULATE(
+    COUNTROWS(FactOrders),
+    FactOrders[ExceptionStatus] = "Open"
+)
+
+Average Lead Time =
+AVERAGEX(
+    FactOrders,
+    DATEDIFF(FactOrders[OrderDate], FactOrders[DeliveryDate], DAY)
+)
