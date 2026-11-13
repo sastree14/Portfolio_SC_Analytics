@@ -1,5 +1,12 @@
 # SC-Analytics Portfolio
 
+**SC-Analytics** is a Barcelona-based quantitative consultancy focused on forecasting, mathematical optimisation, decision support systems and practical AI applications. We start with the business decision and its constraints rather than treating AI as the default answer.
+
+- [Company website](https://www.sc-analytics.io/)
+- [Explore services](https://www.sc-analytics.io/services)
+- [Business enquiries and project discussions](https://www.sc-analytics.io/contact?intent=problem)
+
+
 This repository contains **32 completed projects** developed by SC-Analytics across AI agents, data engineering, forecasting, business intelligence, machine learning, risk, optimization, finance and quantitative systems.
 
 The portfolio is designed for two audiences at the same time:
